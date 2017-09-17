@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Nothing to check, but this file is required as a target
+# for the symlink in .git/hooks and needs to return 0 so
+# that pushing is allowed.
+
+exit 0
