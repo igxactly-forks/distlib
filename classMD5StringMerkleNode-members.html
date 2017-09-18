@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +52,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classMD5StringMerkleNode.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,7 +81,6 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">MD5StringMerkleNode Member List</div>  </div>
@@ -69,31 +90,34 @@ $(function() {
 <p>This is the complete list of members for <a class="el" href="classMD5StringMerkleNode.html">MD5StringMerkleNode</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classMD5StringMerkleNode.html#a26a4c4c48d529f0f88e7d319eb056cd0">computeHash</a>() const</td><td class="entry"><a class="el" href="classMD5StringMerkleNode.html">MD5StringMerkleNode</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>hasChildren</b>() const (defined in <a class="el" href="classMerkleNode.html">MerkleNode&lt; std::string, hash_str_func, MD5_DIGEST_LENGTH &gt;</a>)</td><td class="entry"><a class="el" href="classMerkleNode.html">MerkleNode&lt; std::string, hash_str_func, MD5_DIGEST_LENGTH &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classMerkleNode.html#ad9f44d9deb8b918b90b9af15f8a9124d">hasChildren</a>() const</td><td class="entry"><a class="el" href="classMerkleNode.html">MerkleNode&lt; std::string, hash_str_func, MD5_DIGEST_LENGTH &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classMerkleNode.html#ab978eff15d1fc7b5b7a0fb0be643480b">hash</a>() const</td><td class="entry"><a class="el" href="classMerkleNode.html">MerkleNode&lt; std::string, hash_str_func, MD5_DIGEST_LENGTH &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>hash_</b> (defined in <a class="el" href="classMerkleNode.html">MerkleNode&lt; std::string, hash_str_func, MD5_DIGEST_LENGTH &gt;</a>)</td><td class="entry"><a class="el" href="classMerkleNode.html">MerkleNode&lt; std::string, hash_str_func, MD5_DIGEST_LENGTH &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>LEFT</b> enum value (defined in <a class="el" href="classMerkleNode.html">MerkleNode&lt; std::string, hash_str_func, MD5_DIGEST_LENGTH &gt;</a>)</td><td class="entry"><a class="el" href="classMerkleNode.html">MerkleNode&lt; std::string, hash_str_func, MD5_DIGEST_LENGTH &gt;</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>left</b>() const (defined in <a class="el" href="classMerkleNode.html">MerkleNode&lt; std::string, hash_str_func, MD5_DIGEST_LENGTH &gt;</a>)</td><td class="entry"><a class="el" href="classMerkleNode.html">MerkleNode&lt; std::string, hash_str_func, MD5_DIGEST_LENGTH &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>left_</b> (defined in <a class="el" href="classMerkleNode.html">MerkleNode&lt; std::string, hash_str_func, MD5_DIGEST_LENGTH &gt;</a>)</td><td class="entry"><a class="el" href="classMerkleNode.html">MerkleNode&lt; std::string, hash_str_func, MD5_DIGEST_LENGTH &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classMerkleNode.html#a12cddea5ea8f8d1b1c2e15af8966e774">hash_</a></td><td class="entry"><a class="el" href="classMerkleNode.html">MerkleNode&lt; std::string, hash_str_func, MD5_DIGEST_LENGTH &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classMerkleNode.html#a3b3409b820a2e9278f86939fc537909aa14770ca7ddbeca0d0ba2f70adef5f737">LEFT</a> enum value</td><td class="entry"><a class="el" href="classMerkleNode.html">MerkleNode&lt; std::string, hash_str_func, MD5_DIGEST_LENGTH &gt;</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classMerkleNode.html#a6ea516ffa58d431d484fcfbcff406af9">left</a>() const</td><td class="entry"><a class="el" href="classMerkleNode.html">MerkleNode&lt; std::string, hash_str_func, MD5_DIGEST_LENGTH &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classMerkleNode.html#a2debbd1814516039c8dc2b4943b88cdc">left_</a></td><td class="entry"><a class="el" href="classMerkleNode.html">MerkleNode&lt; std::string, hash_str_func, MD5_DIGEST_LENGTH &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="classMerkleNode.html#a8c4eafbfe22bf2a93baf215b0d94baec">len</a>() const</td><td class="entry"><a class="el" href="classMerkleNode.html">MerkleNode&lt; std::string, hash_str_func, MD5_DIGEST_LENGTH &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>MD5StringMerkleNode</b>(const std::string &amp;value) (defined in <a class="el" href="classMD5StringMerkleNode.html">MD5StringMerkleNode</a>)</td><td class="entry"><a class="el" href="classMD5StringMerkleNode.html">MD5StringMerkleNode</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>MD5StringMerkleNode</b>(const MD5StringMerkleNode *lhs, const MD5StringMerkleNode *rhs) (defined in <a class="el" href="classMD5StringMerkleNode.html">MD5StringMerkleNode</a>)</td><td class="entry"><a class="el" href="classMD5StringMerkleNode.html">MD5StringMerkleNode</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classMD5StringMerkleNode.html#aded968a6f0cdf4d3ef9e0b02e48379db">MD5StringMerkleNode</a>(const std::string &amp;value)</td><td class="entry"><a class="el" href="classMD5StringMerkleNode.html">MD5StringMerkleNode</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classMD5StringMerkleNode.html#acc65909414232ad031874ee05811c028">MD5StringMerkleNode</a>(const MD5StringMerkleNode *lhs, const MD5StringMerkleNode *rhs)</td><td class="entry"><a class="el" href="classMD5StringMerkleNode.html">MD5StringMerkleNode</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classMerkleNode.html#ac66700c737c088665b0aa9635c408f09">MerkleNode</a>(const std::string &amp;value)</td><td class="entry"><a class="el" href="classMerkleNode.html">MerkleNode&lt; std::string, hash_str_func, MD5_DIGEST_LENGTH &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classMerkleNode.html#a7f2ca1dd2188359817c04b93b618ae0d">MerkleNode</a>(const MerkleNode&lt; std::string, hash_func, hash_len &gt; *left, const MerkleNode&lt; std::string, hash_func, hash_len &gt; *right)</td><td class="entry"><a class="el" href="classMerkleNode.html">MerkleNode&lt; std::string, hash_str_func, MD5_DIGEST_LENGTH &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>right</b>() const (defined in <a class="el" href="classMerkleNode.html">MerkleNode&lt; std::string, hash_str_func, MD5_DIGEST_LENGTH &gt;</a>)</td><td class="entry"><a class="el" href="classMerkleNode.html">MerkleNode&lt; std::string, hash_str_func, MD5_DIGEST_LENGTH &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>RIGHT</b> enum value (defined in <a class="el" href="classMerkleNode.html">MerkleNode&lt; std::string, hash_str_func, MD5_DIGEST_LENGTH &gt;</a>)</td><td class="entry"><a class="el" href="classMerkleNode.html">MerkleNode&lt; std::string, hash_str_func, MD5_DIGEST_LENGTH &gt;</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>right_</b> (defined in <a class="el" href="classMerkleNode.html">MerkleNode&lt; std::string, hash_str_func, MD5_DIGEST_LENGTH &gt;</a>)</td><td class="entry"><a class="el" href="classMerkleNode.html">MerkleNode&lt; std::string, hash_str_func, MD5_DIGEST_LENGTH &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>setNode</b>(const MerkleNode *node, const WhichNode which) (defined in <a class="el" href="classMerkleNode.html">MerkleNode&lt; std::string, hash_str_func, MD5_DIGEST_LENGTH &gt;</a>)</td><td class="entry"><a class="el" href="classMerkleNode.html">MerkleNode&lt; std::string, hash_str_func, MD5_DIGEST_LENGTH &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classMerkleNode.html#a093e772c6bffa7e1a8380bb85ad2743c">right</a>() const</td><td class="entry"><a class="el" href="classMerkleNode.html">MerkleNode&lt; std::string, hash_str_func, MD5_DIGEST_LENGTH &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classMerkleNode.html#a3b3409b820a2e9278f86939fc537909aa350f82019b943a0acedbe495ac474df7">RIGHT</a> enum value</td><td class="entry"><a class="el" href="classMerkleNode.html">MerkleNode&lt; std::string, hash_str_func, MD5_DIGEST_LENGTH &gt;</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classMerkleNode.html#a1ef13045fcde7ce701e0b5ce324208ba">right_</a></td><td class="entry"><a class="el" href="classMerkleNode.html">MerkleNode&lt; std::string, hash_str_func, MD5_DIGEST_LENGTH &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classMerkleNode.html#a83633e8a13498fc38daef6aa909f43ce">setNode</a>(const MerkleNode *node, const WhichNode which)</td><td class="entry"><a class="el" href="classMerkleNode.html">MerkleNode&lt; std::string, hash_str_func, MD5_DIGEST_LENGTH &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classMerkleNode.html#a09d27ad3e76c1bde9b927c07897f24bc">validate</a>() const</td><td class="entry"><a class="el" href="classMerkleNode.html">MerkleNode&lt; std::string, hash_str_func, MD5_DIGEST_LENGTH &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>value_</b> (defined in <a class="el" href="classMerkleNode.html">MerkleNode&lt; std::string, hash_str_func, MD5_DIGEST_LENGTH &gt;</a>)</td><td class="entry"><a class="el" href="classMerkleNode.html">MerkleNode&lt; std::string, hash_str_func, MD5_DIGEST_LENGTH &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>WhichNode</b> enum name (defined in <a class="el" href="classMerkleNode.html">MerkleNode&lt; std::string, hash_str_func, MD5_DIGEST_LENGTH &gt;</a>)</td><td class="entry"><a class="el" href="classMerkleNode.html">MerkleNode&lt; std::string, hash_str_func, MD5_DIGEST_LENGTH &gt;</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classMerkleNode.html#addfb9c657756177c533237f10bf78a4f">value_</a></td><td class="entry"><a class="el" href="classMerkleNode.html">MerkleNode&lt; std::string, hash_str_func, MD5_DIGEST_LENGTH &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classMerkleNode.html#a3b3409b820a2e9278f86939fc537909a">WhichNode</a> enum name</td><td class="entry"><a class="el" href="classMerkleNode.html">MerkleNode&lt; std::string, hash_str_func, MD5_DIGEST_LENGTH &gt;</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classMerkleNode.html#ad1c111659c71f7fba9f052e27e12e864">~MerkleNode</a>()</td><td class="entry"><a class="el" href="classMerkleNode.html">MerkleNode&lt; std::string, hash_str_func, MD5_DIGEST_LENGTH &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

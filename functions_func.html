@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -46,6 +53,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions_func.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -86,8 +107,14 @@ $(function() {
 
 
 <h3><a id="index_b"></a>- b -</h3><ul>
+<li>Bucket()
+: <a class="el" href="classBucket.html#a6678a7751e0bcf473e89d791a59315d3">Bucket</a>
+</li>
 <li>bucket()
 : <a class="el" href="classView.html#aa1e88c1bd6b1019f21636aad78526797">View</a>
+</li>
+<li>buckets()
+: <a class="el" href="classView.html#ae30eec0a4d472ca1cb17f3b7e7c15bd3">View</a>
 </li>
 </ul>
 
@@ -96,6 +123,13 @@ $(function() {
 <li>computeHash()
 : <a class="el" href="classMD5StringMerkleNode.html#a26a4c4c48d529f0f88e7d319eb056cd0">MD5StringMerkleNode</a>
 , <a class="el" href="classMerkleNode.html#a072f76a1e27364f69315d301bc33ad46">MerkleNode&lt; T,, hash_len &gt;</a>
+</li>
+</ul>
+
+
+<h3><a id="index_d"></a>- d -</h3><ul>
+<li>destinationUri()
+: <a class="el" href="classswim_1_1SwimClient.html#aadce8af4591de69ef909f18ce82c4e1c">swim::SwimClient</a>
 </li>
 </ul>
 
@@ -123,8 +157,14 @@ $(function() {
 <li>GetRandomNeighbor()
 : <a class="el" href="classswim_1_1SwimServer.html#aaea7385ad987bd094f47953a0994c7f2">swim::SwimServer</a>
 </li>
+<li>gossip_server()
+: <a class="el" href="classswim_1_1GossipFailureDetector.html#ab4bdbaa1e8909cc4c8df8d26296e484a">swim::GossipFailureDetector</a>
+</li>
 <li>GossipFailureDetector()
-: <a class="el" href="classswim_1_1GossipFailureDetector.html#a07c08cad3aee1bd9702086b1516feacb">swim::GossipFailureDetector</a>
+: <a class="el" href="classswim_1_1GossipFailureDetector.html#a68c2e712d58b9fa398b8f5e098502b8e">swim::GossipFailureDetector</a>
+</li>
+<li>grace_period()
+: <a class="el" href="classswim_1_1GossipFailureDetector.html#aaf55561efd0cb142e9268cf6fc462d49">swim::GossipFailureDetector</a>
 </li>
 </ul>
 
@@ -132,6 +172,9 @@ $(function() {
 <h3><a id="index_h"></a>- h -</h3><ul>
 <li>has()
 : <a class="el" href="classutils_1_1ParseArgs.html#a4553dc2716a857aa5c804dfb77ed10e2">utils::ParseArgs</a>
+</li>
+<li>hasChildren()
+: <a class="el" href="classMerkleNode.html#ad9f44d9deb8b918b90b9af15f8a9124d">MerkleNode&lt; T,, hash_len &gt;</a>
 </li>
 <li>hash()
 : <a class="el" href="classMerkleNode.html#ab978eff15d1fc7b5b7a0fb0be643480b">MerkleNode&lt; T,, hash_len &gt;</a>
@@ -143,10 +186,16 @@ $(function() {
 <li>InitAllBackgroundThreads()
 : <a class="el" href="classswim_1_1GossipFailureDetector.html#a86af22f043e202697212295f305654f9">swim::GossipFailureDetector</a>
 </li>
+<li>isRunning()
+: <a class="el" href="classswim_1_1SwimServer.html#aedfd0ad6424b51f655e22d66fc522776">swim::SwimServer</a>
+</li>
 </ul>
 
 
 <h3><a id="index_l"></a>- l -</h3><ul>
+<li>left()
+: <a class="el" href="classMerkleNode.html#a6ea516ffa58d431d484fcfbcff406af9">MerkleNode&lt; T,, hash_len &gt;</a>
+</li>
 <li>len()
 : <a class="el" href="classMerkleNode.html#a8c4eafbfe22bf2a93baf215b0d94baec">MerkleNode&lt; T,, hash_len &gt;</a>
 </li>
@@ -154,6 +203,12 @@ $(function() {
 
 
 <h3><a id="index_m"></a>- m -</h3><ul>
+<li>max_allowed_reports()
+: <a class="el" href="classswim_1_1SwimClient.html#aa2841a0a5fa9bdc3217084b779160002">swim::SwimClient</a>
+</li>
+<li>MD5StringMerkleNode()
+: <a class="el" href="classMD5StringMerkleNode.html#aded968a6f0cdf4d3ef9e0b02e48379db">MD5StringMerkleNode</a>
+</li>
 <li>MerkleNode()
 : <a class="el" href="classMerkleNode.html#ac66700c737c088665b0aa9635c408f09">MerkleNode&lt; T,, hash_len &gt;</a>
 </li>
@@ -161,6 +216,9 @@ $(function() {
 
 
 <h3><a id="index_n"></a>- n -</h3><ul>
+<li>name()
+: <a class="el" href="classBucket.html#a67bed83edf088821410bb418c6012e36">Bucket</a>
+</li>
 <li>nearest_partition_point()
 : <a class="el" href="classBucket.html#a3d7c480b5f347b98b2533f0f2a9516f8">Bucket</a>
 </li>
@@ -183,6 +241,10 @@ $(function() {
 <li>operator()()
 : <a class="el" href="structswim_1_1ServerRecordPtrLess.html#a2dd81352822c76483d02e1254b39e5b9">swim::ServerRecordPtrLess</a>
 </li>
+<li>operator=()
+: <a class="el" href="classBucket.html#aea0ce6a99fd62845537b656e5b098947">Bucket</a>
+, <a class="el" href="classswim_1_1GossipFailureDetector.html#a8259ba03eec8d54eea158b2b133c81ca">swim::GossipFailureDetector</a>
+</li>
 <li>operator[]()
 : <a class="el" href="classutils_1_1ParseArgs.html#acb7f3c6ed90ef25a6e915bd05593e9e0">utils::ParseArgs</a>
 </li>
@@ -190,17 +252,47 @@ $(function() {
 
 
 <h3><a id="index_p"></a>- p -</h3><ul>
+<li>parse()
+: <a class="el" href="classutils_1_1ParseArgs.html#a5856651872515788ce26a69f40bd1cea">utils::ParseArgs</a>
+</li>
+<li>parse_error()
+: <a class="el" href="classutils_1_1parse__error.html#a54e0eb7b01daf0f8b34f3c6bbf20d45f">utils::parse_error</a>
+</li>
 <li>ParseArgs()
 : <a class="el" href="classutils_1_1ParseArgs.html#ad11f5d72072df4c52c728f2795b14500">utils::ParseArgs</a>
 </li>
+<li>parsed_options()
+: <a class="el" href="classutils_1_1ParseArgs.html#a54c234c07b0263572d55ba9627ad6592">utils::ParseArgs</a>
+</li>
+<li>partition_point()
+: <a class="el" href="classBucket.html#a733b29890cfaa4e9769f25cfb970089e">Bucket</a>
+</li>
 <li>partition_points()
-: <a class="el" href="classBucket.html#a2c33e7d8d6cd091b9366c1d4adfbbd1c">Bucket</a>
+: <a class="el" href="classBucket.html#a09d1c2af4912cc20c1e0a141dea35719">Bucket</a>
+</li>
+<li>partitions()
+: <a class="el" href="classBucket.html#ab9b421ae7c95fe525c6b79d597bb9ada">Bucket</a>
 </li>
 <li>Ping()
 : <a class="el" href="classswim_1_1SwimClient.html#a87c000ef79101d1750935d7e83c69e5d">swim::SwimClient</a>
 </li>
+<li>ping_interval()
+: <a class="el" href="classswim_1_1GossipFailureDetector.html#a432588f7ce6f3e405d07c49949484954">swim::GossipFailureDetector</a>
+</li>
+<li>ping_timeout()
+: <a class="el" href="classswim_1_1GossipFailureDetector.html#af1123d153f021d7be42e01ec4c47579d">swim::GossipFailureDetector</a>
+</li>
 <li>PingNeighbor()
 : <a class="el" href="classswim_1_1GossipFailureDetector.html#a1e57562db99d24138fc3f785145bd6d2">swim::GossipFailureDetector</a>
+</li>
+<li>port()
+: <a class="el" href="classswim_1_1SwimServer.html#a4640bf38b341a632da28133924272e9c">swim::SwimServer</a>
+</li>
+<li>positional_args()
+: <a class="el" href="classutils_1_1ParseArgs.html#a103a13e9c812a8c6967382494dfe1e5d">utils::ParseArgs</a>
+</li>
+<li>postMessage()
+: <a class="el" href="classswim_1_1SwimClient.html#a79dab0f6c4b597dd7107c16fd5813c32">swim::SwimClient</a>
 </li>
 <li>PrepareReport()
 : <a class="el" href="classswim_1_1SwimServer.html#af1d032e23c16e72e630edfeb50f0f23b">swim::SwimServer</a>
@@ -224,6 +316,9 @@ $(function() {
 <li>RequestPing()
 : <a class="el" href="classswim_1_1SwimClient.html#a4c6e5cd54e6477c7a62fe40bc41ade26">swim::SwimClient</a>
 </li>
+<li>right()
+: <a class="el" href="classMerkleNode.html#a093e772c6bffa7e1a8380bb85ad2743c">MerkleNode&lt; T,, hash_len &gt;</a>
+</li>
 </ul>
 
 
@@ -238,11 +333,38 @@ $(function() {
 <li>SendReport()
 : <a class="el" href="classswim_1_1GossipFailureDetector.html#a7ad4f0a92fb6e5b0d775645f76711122">swim::GossipFailureDetector</a>
 </li>
+<li>set_grace_period()
+: <a class="el" href="classswim_1_1GossipFailureDetector.html#ae596781949ae4c804a570ff57eb57afd">swim::GossipFailureDetector</a>
+</li>
+<li>set_max_allowed_reports()
+: <a class="el" href="classswim_1_1SwimClient.html#afffcd08b9cf30611cd2bc9309e98f39d">swim::SwimClient</a>
+</li>
+<li>set_ping_interval()
+: <a class="el" href="classswim_1_1GossipFailureDetector.html#ae0866a90a94225b2bf0ee68f44c19085">swim::GossipFailureDetector</a>
+</li>
+<li>set_ping_timeout()
+: <a class="el" href="classswim_1_1GossipFailureDetector.html#af81a45134eca153f2bb933b41cea9811">swim::GossipFailureDetector</a>
+</li>
+<li>set_timeout()
+: <a class="el" href="classswim_1_1SwimClient.html#a7b7f79296da38a7242b07b10686899d4">swim::SwimClient</a>
+</li>
+<li>set_update_round_interval()
+: <a class="el" href="classswim_1_1GossipFailureDetector.html#a9361737a7d7016dc71eacac33b27aae2">swim::GossipFailureDetector</a>
+</li>
+<li>setNode()
+: <a class="el" href="classMerkleNode.html#a83633e8a13498fc38daef6aa909f43ce">MerkleNode&lt; T,, hash_len &gt;</a>
+</li>
+<li>setSelf()
+: <a class="el" href="classswim_1_1SwimClient.html#a7ebb7c7e9c9d66b9a76b1895d4587c43">swim::SwimClient</a>
+</li>
 <li>size()
 : <a class="el" href="classutils_1_1ParseArgs.html#af8f4f36553b17de8481440ba4943dd3e">utils::ParseArgs</a>
 </li>
 <li>start()
 : <a class="el" href="classswim_1_1SwimServer.html#ac8b9fb31375db9e48d2b5f3af3cb93cf">swim::SwimServer</a>
+</li>
+<li>stop()
+: <a class="el" href="classswim_1_1SwimServer.html#a4086039ab0277341aa4f33f45466a5cf">swim::SwimServer</a>
 </li>
 <li>StopAllBackgroundThreads()
 : <a class="el" href="classswim_1_1GossipFailureDetector.html#a739d790db4a7540515ae627ae6011e24">swim::GossipFailureDetector</a>
@@ -256,6 +378,23 @@ $(function() {
 <li>SwimClient()
 : <a class="el" href="classswim_1_1SwimClient.html#a2d52b2d600f71154cb6f66803da20dfc">swim::SwimClient</a>
 </li>
+<li>SwimServer()
+: <a class="el" href="classswim_1_1SwimServer.html#a0a1d97de728da23900e74e1015bd591f">swim::SwimServer</a>
+</li>
+</ul>
+
+
+<h3><a id="index_t"></a>- t -</h3><ul>
+<li>timeout()
+: <a class="el" href="classswim_1_1SwimClient.html#ae5f42c0b3236e6f033f27250b2499791">swim::SwimClient</a>
+</li>
+</ul>
+
+
+<h3><a id="index_u"></a>- u -</h3><ul>
+<li>update_round_interval()
+: <a class="el" href="classswim_1_1GossipFailureDetector.html#a827c3a26f1d88b098a5094bbbb033268">swim::GossipFailureDetector</a>
+</li>
 </ul>
 
 
@@ -263,20 +402,49 @@ $(function() {
 <li>validate()
 : <a class="el" href="classMerkleNode.html#a09d27ad3e76c1bde9b927c07897f24bc">MerkleNode&lt; T,, hash_len &gt;</a>
 </li>
+<li>View()
+: <a class="el" href="classView.html#a44ad60a768422d3fa8fbd7576950080a">View</a>
+</li>
+</ul>
+
+
+<h3><a id="index_w"></a>- w -</h3><ul>
+<li>what()
+: <a class="el" href="structswim_1_1empty__set.html#a19563f2c029039ab5ee5ecc3cb37197a">swim::empty_set</a>
+, <a class="el" href="classutils_1_1parse__error.html#ab58658084789c15bb7a1dd2c3e9658b4">utils::parse_error</a>
+</li>
 </ul>
 
 
 <h3><a id="index_0x7e"></a>- ~ -</h3><ul>
+<li>~Bucket()
+: <a class="el" href="classBucket.html#aa729679ff3b7b6145af16cc8de52c58e">Bucket</a>
+</li>
+<li>~GossipFailureDetector()
+: <a class="el" href="classswim_1_1GossipFailureDetector.html#a710769ad07b114610af3a45167484f0d">swim::GossipFailureDetector</a>
+</li>
 <li>~MerkleNode()
 : <a class="el" href="classMerkleNode.html#ad1c111659c71f7fba9f052e27e12e864">MerkleNode&lt; T,, hash_len &gt;</a>
 </li>
+<li>~SwimClient()
+: <a class="el" href="classswim_1_1SwimClient.html#a76ed81af7ede50f34e28b2dca51d45a8">swim::SwimClient</a>
+</li>
+<li>~SwimServer()
+: <a class="el" href="classswim_1_1SwimServer.html#aced242427b803102067ca469388a0467">swim::SwimServer</a>
+</li>
+<li>~View()
+: <a class="el" href="classView.html#aa02a820358e1a7bf7e34d205212ae8f3">View</a>
+</li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

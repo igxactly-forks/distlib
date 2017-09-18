@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +52,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classswim_1_1SwimServer.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,37 +81,33 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><b>swim</b></li><li class="navelem"><a class="el" href="classswim_1_1SwimServer.html">SwimServer</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classswim_1_1SwimServer-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">swim::SwimServer Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="SwimServer_8hpp_source.html">SwimServer.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0a1d97de728da23900e74e1015bd591f"><td class="memItemLeft" align="right" valign="top"><a id="a0a1d97de728da23900e74e1015bd591f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SwimServer</b> (unsigned short port, unsigned int threads=<a class="el" href="classswim_1_1SwimServer.html#a582914df4f8bbfcb0d243a120e30aca4">NUM_THREADS</a>, unsigned long polling_interval=<a class="el" href="classswim_1_1SwimServer.html#af083b6ff99cfddc3fc19287c84661f3c">DEFAULT_POLLING_INTERVAL_MSEC</a>)</td></tr>
+<tr class="memitem:a0a1d97de728da23900e74e1015bd591f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimServer.html#a0a1d97de728da23900e74e1015bd591f">SwimServer</a> (unsigned short <a class="el" href="classswim_1_1SwimServer.html#a4640bf38b341a632da28133924272e9c">port</a>, unsigned int threads=<a class="el" href="classswim_1_1SwimServer.html#a582914df4f8bbfcb0d243a120e30aca4">NUM_THREADS</a>, unsigned long polling_interval=<a class="el" href="classswim_1_1SwimServer.html#af083b6ff99cfddc3fc19287c84661f3c">DEFAULT_POLLING_INTERVAL_MSEC</a>)</td></tr>
 <tr class="separator:a0a1d97de728da23900e74e1015bd591f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aced242427b803102067ca469388a0467"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimServer.html#aced242427b803102067ca469388a0467">~SwimServer</a> ()</td></tr>
+<tr class="separator:aced242427b803102067ca469388a0467"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8b9fb31375db9e48d2b5f3af3cb93cf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimServer.html#ac8b9fb31375db9e48d2b5f3af3cb93cf">start</a> ()</td></tr>
 <tr class="separator:ac8b9fb31375db9e48d2b5f3af3cb93cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4086039ab0277341aa4f33f45466a5cf"><td class="memItemLeft" align="right" valign="top"><a id="a4086039ab0277341aa4f33f45466a5cf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> ()</td></tr>
+<tr class="memitem:a4086039ab0277341aa4f33f45466a5cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimServer.html#a4086039ab0277341aa4f33f45466a5cf">stop</a> ()</td></tr>
 <tr class="separator:a4086039ab0277341aa4f33f45466a5cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedfd0ad6424b51f655e22d66fc522776"><td class="memItemLeft" align="right" valign="top"><a id="aedfd0ad6424b51f655e22d66fc522776"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isRunning</b> () const</td></tr>
+<tr class="memitem:aedfd0ad6424b51f655e22d66fc522776"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimServer.html#aedfd0ad6424b51f655e22d66fc522776">isRunning</a> () const</td></tr>
 <tr class="separator:aedfd0ad6424b51f655e22d66fc522776"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4640bf38b341a632da28133924272e9c"><td class="memItemLeft" align="right" valign="top"><a id="a4640bf38b341a632da28133924272e9c"></a>
-unsigned short&#160;</td><td class="memItemRight" valign="bottom"><b>port</b> () const</td></tr>
+<tr class="memitem:a4640bf38b341a632da28133924272e9c"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimServer.html#a4640bf38b341a632da28133924272e9c">port</a> () const</td></tr>
 <tr class="separator:a4640bf38b341a632da28133924272e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49b15dff35afbf6609aefb467ca3724e"><td class="memItemLeft" align="right" valign="top">const Server&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimServer.html#a49b15dff35afbf6609aefb467ca3724e">self</a> () const</td></tr>
 <tr class="separator:a49b15dff35afbf6609aefb467ca3724e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,7 +147,94 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a9884133fa20a346be034058bc4d2888b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a101a4cfc5f907a8ed75e41fd35054f04"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimServer.html#a101a4cfc5f907a8ed75e41fd35054f04">onPingRequest</a> (Server *sender, Server *destination)</td></tr>
 <tr class="separator:a101a4cfc5f907a8ed75e41fd35054f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a53159d5acabc3082872dc74ce1e9cff7"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimServer.html#a53159d5acabc3082872dc74ce1e9cff7">port_</a></td></tr>
+<tr class="separator:a53159d5acabc3082872dc74ce1e9cff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a407c684fcef528edbf470452eb4aa8f6"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimServer.html#a407c684fcef528edbf470452eb4aa8f6">num_threads_</a></td></tr>
+<tr class="separator:a407c684fcef528edbf470452eb4aa8f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ae66c6374018ed9bb9afb1bc6323a30"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimServer.html#a1ae66c6374018ed9bb9afb1bc6323a30">stopped_</a></td></tr>
+<tr class="separator:a1ae66c6374018ed9bb9afb1bc6323a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7925d558fa41ac5d9e696160db833c5a"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimServer.html#a7925d558fa41ac5d9e696160db833c5a">polling_interval_</a></td></tr>
+<tr class="separator:a7925d558fa41ac5d9e696160db833c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a630a2a3b6881f6705da53b019d818bbb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceswim.html#a17086daba511450e4936c3be404583cb">ServerRecordsSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimServer.html#a630a2a3b6881f6705da53b019d818bbb">alive_</a></td></tr>
+<tr class="separator:a630a2a3b6881f6705da53b019d818bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28ade0f69bab2b21d6700a03b99253e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceswim.html#a17086daba511450e4936c3be404583cb">ServerRecordsSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimServer.html#a28ade0f69bab2b21d6700a03b99253e9">suspected_</a></td></tr>
+<tr class="separator:a28ade0f69bab2b21d6700a03b99253e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e917344051adc999e1922f0780cecc7"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimServer.html#a5e917344051adc999e1922f0780cecc7">alive_mutex_</a></td></tr>
+<tr class="separator:a5e917344051adc999e1922f0780cecc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41693e9a733e3bb3e0b9cd8a255abe6d"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimServer.html#a41693e9a733e3bb3e0b9cd8a255abe6d">suspected_mutex_</a></td></tr>
+<tr class="separator:a41693e9a733e3bb3e0b9cd8a255abe6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a0a1d97de728da23900e74e1015bd591f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a1d97de728da23900e74e1015bd591f">&#9670;&nbsp;</a></span>SwimServer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">swim::SwimServer::SwimServer </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>threads</em> = <code><a class="el" href="classswim_1_1SwimServer.html#a582914df4f8bbfcb0d243a120e30aca4">NUM_THREADS</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>polling_interval</em> = <code><a class="el" href="classswim_1_1SwimServer.html#af083b6ff99cfddc3fc19287c84661f3c">DEFAULT_POLLING_INTERVAL_MSEC</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aced242427b803102067ca469388a0467"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aced242427b803102067ca469388a0467">&#9670;&nbsp;</a></span>~SwimServer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual swim::SwimServer::~SwimServer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a36c42ee8a0e0a3573add6be573bcb9bd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a36c42ee8a0e0a3573add6be573bcb9bd">&#9670;&nbsp;</a></span>AddAlive()</h2>
@@ -233,6 +338,31 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aedfd0ad6424b51f655e22d66fc522776"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedfd0ad6424b51f655e22d66fc522776">&#9670;&nbsp;</a></span>isRunning()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool swim::SwimServer::isRunning </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a101a4cfc5f907a8ed75e41fd35054f04"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a101a4cfc5f907a8ed75e41fd35054f04">&#9670;&nbsp;</a></span>onPingRequest()</h2>
 
@@ -275,7 +405,6 @@ Protected Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">sender</td><td>the server that just sent the message; the callee obtains ownership of the pointer and is responsible for freeing the memory. </td></tr>
     <tr><td class="paramname">destination</td><td>the other server that the requestor (<code>client</code>) is asksing this server to ping and report status back. </td></tr>
-    <tr><td class="paramname">timestamp</td><td>when the message was sent (according to the <code>client</code>'s clock). </td></tr>
   </table>
   </dd>
 </dl>
@@ -322,7 +451,6 @@ Protected Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">sender</td><td>the server that just sent the message; the callee obtains ownership of the pointer and is responsible for freeing the memory. </td></tr>
     <tr><td class="paramname">report</td><td>the <code>SwimReport</code> that the <code>client</code> sent and can be used by this server to update its membership list. </td></tr>
-    <tr><td class="paramname">timestamp</td><td>when the message was sent (according to the <code>client</code>'s clock). </td></tr>
   </table>
   </dd>
 </dl>
@@ -361,6 +489,31 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a4640bf38b341a632da28133924272e9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4640bf38b341a632da28133924272e9c">&#9670;&nbsp;</a></span>port()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short swim::SwimServer::port </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -483,8 +636,33 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Run the server forever until <code>stop()</code> is called.</p>
+<p>Run the server forever until <code><a class="el" href="classswim_1_1SwimServer.html#a4086039ab0277341aa4f33f45466a5cf">stop()</a></code> is called.</p>
 <p>If you want to run it asynchronously, the easiest way is to override this virtual function and run it inside its own thread. </p>
+
+</div>
+</div>
+<a id="a4086039ab0277341aa4f33f45466a5cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4086039ab0277341aa4f33f45466a5cf">&#9670;&nbsp;</a></span>stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void swim::SwimServer::stop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -541,6 +719,51 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a630a2a3b6881f6705da53b019d818bbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a630a2a3b6881f6705da53b019d818bbb">&#9670;&nbsp;</a></span>alive_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceswim.html#a17086daba511450e4936c3be404583cb">ServerRecordsSet</a> swim::SwimServer::alive_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The list of servers that we deem to be healthy (they responded to a ping request). The timestamp is the last time we successfully pinged the server. </p>
+
+</div>
+</div>
+<a id="a5e917344051adc999e1922f0780cecc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e917344051adc999e1922f0780cecc7">&#9670;&nbsp;</a></span>alive_mutex_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::mutex swim::SwimServer::alive_mutex_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af083b6ff99cfddc3fc19287c84661f3c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af083b6ff99cfddc3fc19287c84661f3c">&#9670;&nbsp;</a></span>DEFAULT_POLLING_INTERVAL_MSEC</h2>
 
@@ -611,16 +834,153 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a407c684fcef528edbf470452eb4aa8f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a407c684fcef528edbf470452eb4aa8f6">&#9670;&nbsp;</a></span>num_threads_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int swim::SwimServer::num_threads_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7925d558fa41ac5d9e696160db833c5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7925d558fa41ac5d9e696160db833c5a">&#9670;&nbsp;</a></span>polling_interval_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long swim::SwimServer::polling_interval_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a53159d5acabc3082872dc74ce1e9cff7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53159d5acabc3082872dc74ce1e9cff7">&#9670;&nbsp;</a></span>port_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short swim::SwimServer::port_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1ae66c6374018ed9bb9afb1bc6323a30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ae66c6374018ed9bb9afb1bc6323a30">&#9670;&nbsp;</a></span>stopped_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic&lt;bool&gt; swim::SwimServer::stopped_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a28ade0f69bab2b21d6700a03b99253e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28ade0f69bab2b21d6700a03b99253e9">&#9670;&nbsp;</a></span>suspected_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceswim.html#a17086daba511450e4936c3be404583cb">ServerRecordsSet</a> swim::SwimServer::suspected_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The list of servers we suspect to have crashed; the timestamp was the time at which the server was placed on this list (and will dictate when we finally determine it to have crashed, after the <code>grace_period_</code> time has elapsed). </p>
+
+</div>
+</div>
+<a id="a41693e9a733e3bb3e0b9cd8a255abe6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41693e9a733e3bb3e0b9cd8a255abe6d">&#9670;&nbsp;</a></span>suspected_mutex_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::mutex swim::SwimServer::suspected_mutex_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/swim/<a class="el" href="SwimServer_8hpp_source.html">SwimServer.hpp</a></li>
-<li>src/swim/SwimServer.cpp</li>
+<li>src/swim/<a class="el" href="SwimServer_8cpp.html">SwimServer.cpp</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceswim.html">swim</a></li><li class="navelem"><a class="el" href="classswim_1_1SwimServer.html">SwimServer</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

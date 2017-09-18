@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +52,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classBucket.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,10 +81,10 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classBucket-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Bucket Class Reference</div>  </div>
@@ -73,36 +95,148 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6678a7751e0bcf473e89d791a59315d3"><td class="memItemLeft" align="right" valign="top"><a id="a6678a7751e0bcf473e89d791a59315d3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Bucket</b> (const std::string &amp;name, unsigned int replicas)</td></tr>
+<tr class="memitem:a6678a7751e0bcf473e89d791a59315d3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBucket.html#a6678a7751e0bcf473e89d791a59315d3">Bucket</a> (const std::string &amp;<a class="el" href="classBucket.html#a67bed83edf088821410bb418c6012e36">name</a>, unsigned int replicas)</td></tr>
 <tr class="separator:a6678a7751e0bcf473e89d791a59315d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bce2336f371a0fd1273cfec7ceb8869"><td class="memItemLeft" align="right" valign="top"><a id="a7bce2336f371a0fd1273cfec7ceb8869"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Bucket</b> (const <a class="el" href="classBucket.html">Bucket</a> &amp;)=delete</td></tr>
+<tr class="memitem:aa729679ff3b7b6145af16cc8de52c58e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBucket.html#aa729679ff3b7b6145af16cc8de52c58e">~Bucket</a> ()</td></tr>
+<tr class="separator:aa729679ff3b7b6145af16cc8de52c58e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bce2336f371a0fd1273cfec7ceb8869"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBucket.html#a7bce2336f371a0fd1273cfec7ceb8869">Bucket</a> (const <a class="el" href="classBucket.html">Bucket</a> &amp;)=delete</td></tr>
 <tr class="separator:a7bce2336f371a0fd1273cfec7ceb8869"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea0ce6a99fd62845537b656e5b098947"><td class="memItemLeft" align="right" valign="top"><a id="aea0ce6a99fd62845537b656e5b098947"></a>
-<a class="el" href="classBucket.html">Bucket</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classBucket.html">Bucket</a> &amp;)=delete</td></tr>
+<tr class="memitem:aea0ce6a99fd62845537b656e5b098947"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBucket.html">Bucket</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBucket.html#aea0ce6a99fd62845537b656e5b098947">operator=</a> (const <a class="el" href="classBucket.html">Bucket</a> &amp;)=delete</td></tr>
 <tr class="separator:aea0ce6a99fd62845537b656e5b098947"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67bed83edf088821410bb418c6012e36"><td class="memItemLeft" align="right" valign="top"><a id="a67bed83edf088821410bb418c6012e36"></a>
-const std::string&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> () const</td></tr>
+<tr class="memitem:a67bed83edf088821410bb418c6012e36"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBucket.html#a67bed83edf088821410bb418c6012e36">name</a> () const</td></tr>
 <tr class="separator:a67bed83edf088821410bb418c6012e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c33e7d8d6cd091b9366c1d4adfbbd1c"><td class="memItemLeft" align="right" valign="top">const std::shared_ptr&lt; std::vector&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBucket.html#a2c33e7d8d6cd091b9366c1d4adfbbd1c">partition_points</a> () const</td></tr>
-<tr class="separator:a2c33e7d8d6cd091b9366c1d4adfbbd1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a733b29890cfaa4e9769f25cfb970089e"><td class="memItemLeft" align="right" valign="top"><a id="a733b29890cfaa4e9769f25cfb970089e"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>partition_point</b> (int i) const</td></tr>
+<tr class="memitem:a09d1c2af4912cc20c1e0a141dea35719"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBucket.html#a09d1c2af4912cc20c1e0a141dea35719">partition_points</a> () const</td></tr>
+<tr class="separator:a09d1c2af4912cc20c1e0a141dea35719"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a733b29890cfaa4e9769f25cfb970089e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBucket.html#a733b29890cfaa4e9769f25cfb970089e">partition_point</a> (int i) const</td></tr>
 <tr class="separator:a733b29890cfaa4e9769f25cfb970089e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d7c480b5f347b98b2533f0f2a9516f8"><td class="memItemLeft" align="right" valign="top">std::pair&lt; int, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBucket.html#a3d7c480b5f347b98b2533f0f2a9516f8">nearest_partition_point</a> (float x) const</td></tr>
 <tr class="separator:a3d7c480b5f347b98b2533f0f2a9516f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9b421ae7c95fe525c6b79d597bb9ada"><td class="memItemLeft" align="right" valign="top"><a id="ab9b421ae7c95fe525c6b79d597bb9ada"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>partitions</b> () const</td></tr>
+<tr class="memitem:ab9b421ae7c95fe525c6b79d597bb9ada"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBucket.html#ab9b421ae7c95fe525c6b79d597bb9ada">partitions</a> () const</td></tr>
 <tr class="separator:ab9b421ae7c95fe525c6b79d597bb9ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ae312331c291010539cfe483643fc710d"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBucket.html#ae312331c291010539cfe483643fc710d">name_</a></td></tr>
+<tr class="separator:ae312331c291010539cfe483643fc710d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c1ca502797aba1c23eadc0127d6f274"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBucket.html#a4c1ca502797aba1c23eadc0127d6f274">hash_points_</a></td></tr>
+<tr class="separator:a4c1ca502797aba1c23eadc0127d6f274"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2581a72f6ad7237c3505f991b272b646"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBucket.html#a2581a72f6ad7237c3505f991b272b646">partitions_</a></td></tr>
+<tr class="separator:a2581a72f6ad7237c3505f991b272b646"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A "bucket" abstracts the concept of a hashed partition, using consistent hashing.</p>
 <p>Each <a class="el" href="classBucket.html">Bucket</a>, further, owns a number of <code>partitions</code> that are essentially points on the unity circle and which determine which items will be allocated to this <a class="el" href="classBucket.html">Bucket</a> (respective to other buckets, if any).</p>
-<p>A <a class="el" href="classBucket.html">Bucket</a> holds no information about the items that (nominally) assigned to it, however, it has a <code>name</code> that can be used as a unique ID (or, e.g., a hostname) when distributing items to a set of nodes; the only information the bucket holds is around the number of its <code>partitions</code> and their position on the unit circle.</p>
-<p>The <code>partition_points</code> are assumed (but not guaranteed) to be roughly equally (and randomly, but deterministically - once the <a class="el" href="">hashing_function()</a> is given) spaced around the unit circle, thus providing an approximately uniform and constant time-complexity for lookups (more specifically, the lookup complexity has been demonstrated to be O(log(C)), where C is the number of caches, or Buckets, used).</p>
-<p>For more details, see the <code>Consistent Hashing</code> paper. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<p>A <a class="el" href="classBucket.html">Bucket</a> holds no information about the items that are (nominally) assigned to it, however, it has a <code><a class="el" href="classBucket.html#ae312331c291010539cfe483643fc710d">name_</a></code> that can be used as a unique ID (or, e.g., a hostname) when distributing items to a set of nodes; the only information the bucket holds is about the number of its <code><a class="el" href="classBucket.html#a2581a72f6ad7237c3505f991b272b646">partitions_</a></code> and their position on the unit circle.</p>
+<p>The <code><a class="el" href="classBucket.html#a09d1c2af4912cc20c1e0a141dea35719">partition_points()</a></code> are assumed (but not guaranteed) to be roughly equally (and randomly, but deterministically, according to a hashing function) spaced around the unit circle, thus providing an approximately uniform and constant time-complexity for lookups (more specifically, the lookup complexity has been demonstrated to be O(log(C)), where C is the number of caches, or Buckets, used).</p>
+<p>For more details, see the <a href="http://www.cs.princeton.edu/courses/archive/fall07/cos518/papers/chash.pdf">Consistent Hashing</a> paper. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a6678a7751e0bcf473e89d791a59315d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6678a7751e0bcf473e89d791a59315d3">&#9670;&nbsp;</a></span>Bucket() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Bucket::Bucket </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>replicas</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa729679ff3b7b6145af16cc8de52c58e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa729679ff3b7b6145af16cc8de52c58e">&#9670;&nbsp;</a></span>~Bucket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Bucket::~Bucket </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7bce2336f371a0fd1273cfec7ceb8869"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bce2336f371a0fd1273cfec7ceb8869">&#9670;&nbsp;</a></span>Bucket() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Bucket::Bucket </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classBucket.html">Bucket</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a67bed83edf088821410bb418c6012e36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67bed83edf088821410bb418c6012e36">&#9670;&nbsp;</a></span>name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string Bucket::name </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Every <code><a class="el" href="classBucket.html">Bucket</a></code> should have a unique name that can be used to identify it.</p>
+<dl class="section return"><dt>Returns</dt><dd>the bucket's name </dd></dl>
+
+</div>
+</div>
 <a id="a3d7c480b5f347b98b2533f0f2a9516f8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3d7c480b5f347b98b2533f0f2a9516f8">&#9670;&nbsp;</a></span>nearest_partition_point()</h2>
 
@@ -118,7 +252,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>partitions</b> () cons
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Given a point on the unit circle, we return the closest <a class="el" href="">partition_point(int)</a> as well as its index.</p>
+<p>Given a point on the unit circle, we return the closest <a class="el" href="classBucket.html#a733b29890cfaa4e9769f25cfb970089e">partition_point()</a> as well as its index.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>a point in the [0, 1] interval. </td></tr>
@@ -129,8 +263,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>partitions</b> () cons
 
 </div>
 </div>
-<a id="a2c33e7d8d6cd091b9366c1d4adfbbd1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c33e7d8d6cd091b9366c1d4adfbbd1c">&#9670;&nbsp;</a></span>partition_points()</h2>
+<a id="aea0ce6a99fd62845537b656e5b098947"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea0ce6a99fd62845537b656e5b098947">&#9670;&nbsp;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -139,7 +273,59 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>partitions</b> () cons
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::shared_ptr&lt;std::vector&lt;float&gt; &gt; Bucket::partition_points </td>
+          <td class="memname"><a class="el" href="classBucket.html">Bucket</a> Bucket::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classBucket.html">Bucket</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a733b29890cfaa4e9769f25cfb970089e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a733b29890cfaa4e9769f25cfb970089e">&#9670;&nbsp;</a></span>partition_point()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Bucket::partition_point </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a09d1c2af4912cc20c1e0a141dea35719"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09d1c2af4912cc20c1e0a141dea35719">&#9670;&nbsp;</a></span>partition_points()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt;float&gt; Bucket::partition_points </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -152,20 +338,116 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>partitions</b> () cons
 </table>
 </div><div class="memdoc">
 <p>The partition points for this bucket will determine which items will be "allocated" to it, based on a "nearest point" from the item's hash.</p>
-<dl class="section return"><dt>Returns</dt><dd>the set of <a class="el" href="">partitions()</a> points that define this bucket </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the set of <a class="el" href="classBucket.html#ab9b421ae7c95fe525c6b79d597bb9ada">partitions()</a> points that define this bucket </dd></dl>
+
+</div>
+</div>
+<a id="ab9b421ae7c95fe525c6b79d597bb9ada"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9b421ae7c95fe525c6b79d597bb9ada">&#9670;&nbsp;</a></span>partitions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Bucket::partitions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a4c1ca502797aba1c23eadc0127d6f274"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c1ca502797aba1c23eadc0127d6f274">&#9670;&nbsp;</a></span>hash_points_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;float&gt; Bucket::hash_points_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae312331c291010539cfe483643fc710d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae312331c291010539cfe483643fc710d">&#9670;&nbsp;</a></span>name_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string Bucket::name_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2581a72f6ad7237c3505f991b272b646"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2581a72f6ad7237c3505f991b272b646">&#9670;&nbsp;</a></span>partitions_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Bucket::partitions_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/<a class="el" href="Bucket_8hpp_source.html">Bucket.hpp</a></li>
-<li>src/Bucket.cpp</li>
+<li>src/<a class="el" href="Bucket_8cpp.html">Bucket.cpp</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classBucket.html">Bucket</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

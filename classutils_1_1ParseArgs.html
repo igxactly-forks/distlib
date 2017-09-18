@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +52,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classutils_1_1ParseArgs.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,15 +81,11 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><b>utils</b></li><li class="navelem"><a class="el" href="classutils_1_1ParseArgs.html">ParseArgs</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classutils_1_1ParseArgs-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">utils::ParseArgs Class Reference</div>  </div>
@@ -78,8 +96,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3cf22469b70b6aa4b1ca15c37376db22"><td class="memItemLeft" align="right" valign="top"><a id="a3cf22469b70b6aa4b1ca15c37376db22"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ParseArgs</b> (const <a class="el" href="classutils_1_1ParseArgs.html">ParseArgs</a> &amp;other)=delete</td></tr>
+<tr class="memitem:a4eb0b185ed7abbd12cd0d1abc403ec51"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutils_1_1ParseArgs.html#a4eb0b185ed7abbd12cd0d1abc403ec51">ParseArgs</a> ()=delete</td></tr>
+<tr class="separator:a4eb0b185ed7abbd12cd0d1abc403ec51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cf22469b70b6aa4b1ca15c37376db22"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutils_1_1ParseArgs.html#a3cf22469b70b6aa4b1ca15c37376db22">ParseArgs</a> (const <a class="el" href="classutils_1_1ParseArgs.html">ParseArgs</a> &amp;other)=delete</td></tr>
 <tr class="separator:a3cf22469b70b6aa4b1ca15c37376db22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad11f5d72072df4c52c728f2795b14500"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutils_1_1ParseArgs.html#ad11f5d72072df4c52c728f2795b14500">ParseArgs</a> (const std::vector&lt; std::string &gt; &amp;args)</td></tr>
 <tr class="separator:ad11f5d72072df4c52c728f2795b14500"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -108,22 +127,83 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a54c234c07b0263572d55ba9627ad6592"><td class="memItemLeft" align="right" valign="top"><a id="a54c234c07b0263572d55ba9627ad6592"></a>
-std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>parsed_options</b> () const</td></tr>
+<tr class="memitem:a54c234c07b0263572d55ba9627ad6592"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutils_1_1ParseArgs.html#a54c234c07b0263572d55ba9627ad6592">parsed_options</a> () const</td></tr>
 <tr class="separator:a54c234c07b0263572d55ba9627ad6592"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a103a13e9c812a8c6967382494dfe1e5d"><td class="memItemLeft" align="right" valign="top"><a id="a103a13e9c812a8c6967382494dfe1e5d"></a>
-std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>positional_args</b> () const</td></tr>
+<tr class="memitem:a103a13e9c812a8c6967382494dfe1e5d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutils_1_1ParseArgs.html#a103a13e9c812a8c6967382494dfe1e5d">positional_args</a> () const</td></tr>
 <tr class="separator:a103a13e9c812a8c6967382494dfe1e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5856651872515788ce26a69f40bd1cea"><td class="memItemLeft" align="right" valign="top"><a id="a5856651872515788ce26a69f40bd1cea"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>parse</b> ()</td></tr>
+<tr class="memitem:a5856651872515788ce26a69f40bd1cea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutils_1_1ParseArgs.html#a5856651872515788ce26a69f40bd1cea">parse</a> ()</td></tr>
 <tr class="separator:a5856651872515788ce26a69f40bd1cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aa7045df29764a0b3dd6b5501319524b2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutils_1_1ParseArgs.html#aa7045df29764a0b3dd6b5501319524b2">args_</a></td></tr>
+<tr class="separator:aa7045df29764a0b3dd6b5501319524b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab55e8366a8feaf6cc0fef329c3ed1ee"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutils_1_1ParseArgs.html#aab55e8366a8feaf6cc0fef329c3ed1ee">parsed_options_</a></td></tr>
+<tr class="separator:aab55e8366a8feaf6cc0fef329c3ed1ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af266e9267af2f82d0b026caf2b25e6c0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutils_1_1ParseArgs.html#af266e9267af2f82d0b026caf2b25e6c0">positional_args_</a></td></tr>
+<tr class="separator:af266e9267af2f82d0b026caf2b25e6c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e9bc3bbf8c3adab1a65b722c05dd9a4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutils_1_1ParseArgs.html#a0e9bc3bbf8c3adab1a65b722c05dd9a4">progname_</a></td></tr>
+<tr class="separator:a0e9bc3bbf8c3adab1a65b722c05dd9a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a705264ce9a4d231d7c7a9a06f611552c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutils_1_1ParseArgs.html#a705264ce9a4d231d7c7a9a06f611552c">parsed_</a></td></tr>
+<tr class="separator:a705264ce9a4d231d7c7a9a06f611552c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Command-line options parser.</p>
 <dl class="section author"><dt>Author</dt><dd>M. Massenzio (<a href="#" onclick="location.href='mai'+'lto:'+'mar'+'co'+'@al'+'er'+'tav'+'er'+'t.c'+'om'; return false;">marco<span style="display: none;">.nosp@m.</span>@ale<span style="display: none;">.nosp@m.</span>rtave<span style="display: none;">.nosp@m.</span>rt.c<span style="display: none;">.nosp@m.</span>om</a>) 2016-11-24 </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a4eb0b185ed7abbd12cd0d1abc403ec51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4eb0b185ed7abbd12cd0d1abc403ec51">&#9670;&nbsp;</a></span>ParseArgs() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">utils::ParseArgs::ParseArgs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3cf22469b70b6aa4b1ca15c37376db22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cf22469b70b6aa4b1ca15c37376db22">&#9670;&nbsp;</a></span>ParseArgs() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">utils::ParseArgs::ParseArgs </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classutils_1_1ParseArgs.html">ParseArgs</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ad11f5d72072df4c52c728f2795b14500"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad11f5d72072df4c52c728f2795b14500">&#9670;&nbsp;</a></span>ParseArgs() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad11f5d72072df4c52c728f2795b14500">&#9670;&nbsp;</a></span>ParseArgs() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -157,7 +237,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>parse</b> ()</td></tr
 </div>
 </div>
 <a id="a83a11e32f19220cb7d8ad71abb58662c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83a11e32f19220cb7d8ad71abb58662c">&#9670;&nbsp;</a></span>ParseArgs() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a83a11e32f19220cb7d8ad71abb58662c">&#9670;&nbsp;</a></span>ParseArgs() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -190,12 +270,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>parse</b> ()</td></tr
 </table>
 </div><div class="memdoc">
 <p>Builds a command-line arguments parser.</p>
-<p>Use directly with your <code>main()</code> arguments, to parse the <code>--option=value</code> named arguments and all other "positional" arguments.</p>
+<p>Use directly with your <code><a class="el" href="gossip__example_8cpp.html#ac0f2228420376f4db7e1274f2b41667c">main()</a></code> arguments, to parse the <code>--option=value</code> named arguments and all other "positional" arguments.</p>
 <p>Example: </p><pre>
-  int main(int argc, const char* argv[]) {
+  int <a class="el" href="server__demo_8cpp.html#ac0f2228420376f4db7e1274f2b41667c">main(int argc, const char* argv[])</a> {
     <a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a> parser(argv, argc);
     parser.parse();</pre><pre>    if (parser.has("help")) {
-      usage();
+      <a class="el" href="merkle__demo_8cpp.html#a5917228704855a04c5270e239d2069e1">usage()</a>;
       return EXIT_SUCCESS;
     }
     // ...
@@ -329,10 +409,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>parse</b> ()</td></tr
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Gets the value of the <code>--flag=value</code> option.</p>
+<p>Gets the value of the <code>--name=value</code> option.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">flag</td><td>the name of the flag </td></tr>
+    <tr><td class="paramname">name</td><td>the name of the option to lookup </td></tr>
     <tr><td class="paramname">defaultValue</td><td>the default value to return if no flag was passed in </td></tr>
   </table>
   </dd>
@@ -515,6 +595,81 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>parse</b> ()</td></tr
 
 </div>
 </div>
+<a id="a5856651872515788ce26a69f40bd1cea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5856651872515788ce26a69f40bd1cea">&#9670;&nbsp;</a></span>parse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void utils::ParseArgs::parse </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a54c234c07b0263572d55ba9627ad6592"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54c234c07b0263572d55ba9627ad6592">&#9670;&nbsp;</a></span>parsed_options()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;std::string, std::string&gt; utils::ParseArgs::parsed_options </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a103a13e9c812a8c6967382494dfe1e5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a103a13e9c812a8c6967382494dfe1e5d">&#9670;&nbsp;</a></span>positional_args()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::string&gt; utils::ParseArgs::positional_args </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ad5f4fdc88527cfe4d25fc53afac07223"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad5f4fdc88527cfe4d25fc53afac07223">&#9670;&nbsp;</a></span>progname()</h2>
 
@@ -568,15 +723,130 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>parse</b> ()</td></tr
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aa7045df29764a0b3dd6b5501319524b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7045df29764a0b3dd6b5501319524b2">&#9670;&nbsp;</a></span>args_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::string&gt; utils::ParseArgs::args_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a705264ce9a4d231d7c7a9a06f611552c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a705264ce9a4d231d7c7a9a06f611552c">&#9670;&nbsp;</a></span>parsed_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool utils::ParseArgs::parsed_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aab55e8366a8feaf6cc0fef329c3ed1ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab55e8366a8feaf6cc0fef329c3ed1ee">&#9670;&nbsp;</a></span>parsed_options_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;std::string, std::string&gt; utils::ParseArgs::parsed_options_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af266e9267af2f82d0b026caf2b25e6c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af266e9267af2f82d0b026caf2b25e6c0">&#9670;&nbsp;</a></span>positional_args_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::string&gt; utils::ParseArgs::positional_args_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0e9bc3bbf8c3adab1a65b722c05dd9a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e9bc3bbf8c3adab1a65b722c05dd9a4">&#9670;&nbsp;</a></span>progname_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string utils::ParseArgs::progname_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/utils/<a class="el" href="ParseArgs_8hpp_source.html">ParseArgs.hpp</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceutils.html">utils</a></li><li class="navelem"><a class="el" href="classutils_1_1ParseArgs.html">ParseArgs</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

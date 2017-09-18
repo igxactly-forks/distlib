@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +52,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classswim_1_1GossipFailureDetector.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,14 +81,10 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><b>swim</b></li><li class="navelem"><a class="el" href="classswim_1_1GossipFailureDetector.html">GossipFailureDetector</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classswim_1_1GossipFailureDetector-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">swim::GossipFailureDetector Class Reference</div>  </div>
@@ -77,46 +95,35 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a68c2e712d58b9fa398b8f5e098502b8e"><td class="memItemLeft" align="right" valign="top"><a id="a68c2e712d58b9fa398b8f5e098502b8e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>GossipFailureDetector</b> (const <a class="el" href="classswim_1_1GossipFailureDetector.html">GossipFailureDetector</a> &amp;)=delete</td></tr>
+<tr class="memitem:a68c2e712d58b9fa398b8f5e098502b8e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1GossipFailureDetector.html#a68c2e712d58b9fa398b8f5e098502b8e">GossipFailureDetector</a> (const <a class="el" href="classswim_1_1GossipFailureDetector.html">GossipFailureDetector</a> &amp;)=delete</td></tr>
 <tr class="separator:a68c2e712d58b9fa398b8f5e098502b8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8259ba03eec8d54eea158b2b133c81ca"><td class="memItemLeft" align="right" valign="top"><a id="a8259ba03eec8d54eea158b2b133c81ca"></a>
-<a class="el" href="classswim_1_1GossipFailureDetector.html">GossipFailureDetector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classswim_1_1GossipFailureDetector.html">GossipFailureDetector</a> &amp;)=delete</td></tr>
+<tr class="memitem:a8259ba03eec8d54eea158b2b133c81ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classswim_1_1GossipFailureDetector.html">GossipFailureDetector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1GossipFailureDetector.html#a8259ba03eec8d54eea158b2b133c81ca">operator=</a> (const <a class="el" href="classswim_1_1GossipFailureDetector.html">GossipFailureDetector</a> &amp;)=delete</td></tr>
 <tr class="separator:a8259ba03eec8d54eea158b2b133c81ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ed9921456f74038aee171f71174f72b"><td class="memItemLeft" align="right" valign="top"><a id="a7ed9921456f74038aee171f71174f72b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>GossipFailureDetector</b> (const <a class="el" href="classswim_1_1GossipFailureDetector.html">GossipFailureDetector</a> &amp;&amp;)=delete</td></tr>
+<tr class="memitem:a7ed9921456f74038aee171f71174f72b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1GossipFailureDetector.html#a7ed9921456f74038aee171f71174f72b">GossipFailureDetector</a> (const <a class="el" href="classswim_1_1GossipFailureDetector.html">GossipFailureDetector</a> &amp;&amp;)=delete</td></tr>
 <tr class="separator:a7ed9921456f74038aee171f71174f72b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91fb2682a33a8c54ae996d7438bb82d3"><td class="memItemLeft" align="right" valign="top"><a id="a91fb2682a33a8c54ae996d7438bb82d3"></a>
-<a class="el" href="classswim_1_1GossipFailureDetector.html">GossipFailureDetector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classswim_1_1GossipFailureDetector.html">GossipFailureDetector</a> &amp;&amp;)=delete</td></tr>
+<tr class="memitem:a91fb2682a33a8c54ae996d7438bb82d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classswim_1_1GossipFailureDetector.html">GossipFailureDetector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1GossipFailureDetector.html#a91fb2682a33a8c54ae996d7438bb82d3">operator=</a> (const <a class="el" href="classswim_1_1GossipFailureDetector.html">GossipFailureDetector</a> &amp;&amp;)=delete</td></tr>
 <tr class="separator:a91fb2682a33a8c54ae996d7438bb82d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07c08cad3aee1bd9702086b1516feacb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1GossipFailureDetector.html#a07c08cad3aee1bd9702086b1516feacb">GossipFailureDetector</a> (unsigned short port, const long update_round_interval, const long grace_period, const long ping_timeout_msec, const long ping_interval)</td></tr>
+<tr class="memitem:a07c08cad3aee1bd9702086b1516feacb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1GossipFailureDetector.html#a07c08cad3aee1bd9702086b1516feacb">GossipFailureDetector</a> (unsigned short port, const long <a class="el" href="classswim_1_1GossipFailureDetector.html#a827c3a26f1d88b098a5094bbbb033268">update_round_interval</a>, const long <a class="el" href="classswim_1_1GossipFailureDetector.html#aaf55561efd0cb142e9268cf6fc462d49">grace_period</a>, const long ping_timeout_msec, const long <a class="el" href="classswim_1_1GossipFailureDetector.html#a432588f7ce6f3e405d07c49949484954">ping_interval</a>)</td></tr>
 <tr class="separator:a07c08cad3aee1bd9702086b1516feacb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a827c3a26f1d88b098a5094bbbb033268"><td class="memItemLeft" align="right" valign="top"><a id="a827c3a26f1d88b098a5094bbbb033268"></a>
-const seconds &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>update_round_interval</b> () const</td></tr>
+<tr class="memitem:a710769ad07b114610af3a45167484f0d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1GossipFailureDetector.html#a710769ad07b114610af3a45167484f0d">~GossipFailureDetector</a> ()</td></tr>
+<tr class="separator:a710769ad07b114610af3a45167484f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a827c3a26f1d88b098a5094bbbb033268"><td class="memItemLeft" align="right" valign="top">const seconds &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1GossipFailureDetector.html#a827c3a26f1d88b098a5094bbbb033268">update_round_interval</a> () const</td></tr>
 <tr class="separator:a827c3a26f1d88b098a5094bbbb033268"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf55561efd0cb142e9268cf6fc462d49"><td class="memItemLeft" align="right" valign="top"><a id="aaf55561efd0cb142e9268cf6fc462d49"></a>
-const seconds &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>grace_period</b> () const</td></tr>
+<tr class="memitem:aaf55561efd0cb142e9268cf6fc462d49"><td class="memItemLeft" align="right" valign="top">const seconds &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1GossipFailureDetector.html#aaf55561efd0cb142e9268cf6fc462d49">grace_period</a> () const</td></tr>
 <tr class="separator:aaf55561efd0cb142e9268cf6fc462d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1123d153f021d7be42e01ec4c47579d"><td class="memItemLeft" align="right" valign="top"><a id="af1123d153f021d7be42e01ec4c47579d"></a>
-const milliseconds &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>ping_timeout</b> () const</td></tr>
+<tr class="memitem:af1123d153f021d7be42e01ec4c47579d"><td class="memItemLeft" align="right" valign="top">const milliseconds &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1GossipFailureDetector.html#af1123d153f021d7be42e01ec4c47579d">ping_timeout</a> () const</td></tr>
 <tr class="separator:af1123d153f021d7be42e01ec4c47579d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a432588f7ce6f3e405d07c49949484954"><td class="memItemLeft" align="right" valign="top"><a id="a432588f7ce6f3e405d07c49949484954"></a>
-const seconds &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>ping_interval</b> () const</td></tr>
+<tr class="memitem:a432588f7ce6f3e405d07c49949484954"><td class="memItemLeft" align="right" valign="top">const seconds &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1GossipFailureDetector.html#a432588f7ce6f3e405d07c49949484954">ping_interval</a> () const</td></tr>
 <tr class="separator:a432588f7ce6f3e405d07c49949484954"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9361737a7d7016dc71eacac33b27aae2"><td class="memItemLeft" align="right" valign="top"><a id="a9361737a7d7016dc71eacac33b27aae2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_update_round_interval</b> (const seconds &amp;update_round_interval)</td></tr>
+<tr class="memitem:a9361737a7d7016dc71eacac33b27aae2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1GossipFailureDetector.html#a9361737a7d7016dc71eacac33b27aae2">set_update_round_interval</a> (const seconds &amp;<a class="el" href="classswim_1_1GossipFailureDetector.html#a827c3a26f1d88b098a5094bbbb033268">update_round_interval</a>)</td></tr>
 <tr class="separator:a9361737a7d7016dc71eacac33b27aae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae596781949ae4c804a570ff57eb57afd"><td class="memItemLeft" align="right" valign="top"><a id="ae596781949ae4c804a570ff57eb57afd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_grace_period</b> (const seconds &amp;grace_period)</td></tr>
+<tr class="memitem:ae596781949ae4c804a570ff57eb57afd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1GossipFailureDetector.html#ae596781949ae4c804a570ff57eb57afd">set_grace_period</a> (const seconds &amp;<a class="el" href="classswim_1_1GossipFailureDetector.html#aaf55561efd0cb142e9268cf6fc462d49">grace_period</a>)</td></tr>
 <tr class="separator:ae596781949ae4c804a570ff57eb57afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af81a45134eca153f2bb933b41cea9811"><td class="memItemLeft" align="right" valign="top"><a id="af81a45134eca153f2bb933b41cea9811"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_ping_timeout</b> (const milliseconds &amp;ping_timeout)</td></tr>
+<tr class="memitem:af81a45134eca153f2bb933b41cea9811"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1GossipFailureDetector.html#af81a45134eca153f2bb933b41cea9811">set_ping_timeout</a> (const milliseconds &amp;<a class="el" href="classswim_1_1GossipFailureDetector.html#af1123d153f021d7be42e01ec4c47579d">ping_timeout</a>)</td></tr>
 <tr class="separator:af81a45134eca153f2bb933b41cea9811"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0866a90a94225b2bf0ee68f44c19085"><td class="memItemLeft" align="right" valign="top"><a id="ae0866a90a94225b2bf0ee68f44c19085"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_ping_interval</b> (const seconds &amp;ping_interval)</td></tr>
+<tr class="memitem:ae0866a90a94225b2bf0ee68f44c19085"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1GossipFailureDetector.html#ae0866a90a94225b2bf0ee68f44c19085">set_ping_interval</a> (const seconds &amp;<a class="el" href="classswim_1_1GossipFailureDetector.html#a432588f7ce6f3e405d07c49949484954">ping_interval</a>)</td></tr>
 <tr class="separator:ae0866a90a94225b2bf0ee68f44c19085"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4bdbaa1e8909cc4c8df8d26296e484a"><td class="memItemLeft" align="right" valign="top"><a id="ab4bdbaa1e8909cc4c8df8d26296e484a"></a>
-const <a class="el" href="classswim_1_1SwimServer.html">SwimServer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>gossip_server</b> () const</td></tr>
+<tr class="memitem:ab4bdbaa1e8909cc4c8df8d26296e484a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classswim_1_1SwimServer.html">SwimServer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1GossipFailureDetector.html#ab4bdbaa1e8909cc4c8df8d26296e484a">gossip_server</a> () const</td></tr>
 <tr class="separator:ab4bdbaa1e8909cc4c8df8d26296e484a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86af22f043e202697212295f305654f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1GossipFailureDetector.html#a86af22f043e202697212295f305654f9">InitAllBackgroundThreads</a> ()</td></tr>
 <tr class="separator:a86af22f043e202697212295f305654f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,12 +137,89 @@ const <a class="el" href="classswim_1_1SwimServer.html">SwimServer</a> &amp;&#16
 <tr class="separator:a7ad4f0a92fb6e5b0d775645f76711122"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fbe134aa9c8e0fabf7d75968e23fecd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1GossipFailureDetector.html#a6fbe134aa9c8e0fabf7d75968e23fecd">GarbageCollectSuspected</a> () const</td></tr>
 <tr class="separator:a6fbe134aa9c8e0fabf7d75968e23fecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:af78ba636e496b1f4ab5a7027ffab128b"><td class="memItemLeft" align="right" valign="top">seconds&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1GossipFailureDetector.html#af78ba636e496b1f4ab5a7027ffab128b">update_round_interval_</a> {}</td></tr>
+<tr class="separator:af78ba636e496b1f4ab5a7027ffab128b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a120ca6ba4eaca4934f31e829ccfb1c8e"><td class="memItemLeft" align="right" valign="top">seconds&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1GossipFailureDetector.html#a120ca6ba4eaca4934f31e829ccfb1c8e">grace_period_</a> {}</td></tr>
+<tr class="separator:a120ca6ba4eaca4934f31e829ccfb1c8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11e2ea4fac9f6bc16f96356b203cf1a6"><td class="memItemLeft" align="right" valign="top">milliseconds&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1GossipFailureDetector.html#a11e2ea4fac9f6bc16f96356b203cf1a6">ping_timeout_</a> {}</td></tr>
+<tr class="separator:a11e2ea4fac9f6bc16f96356b203cf1a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53f76038a85040c83f3ccd3d856e1206"><td class="memItemLeft" align="right" valign="top">seconds&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1GossipFailureDetector.html#a53f76038a85040c83f3ccd3d856e1206">ping_interval_</a> {}</td></tr>
+<tr class="separator:a53f76038a85040c83f3ccd3d856e1206"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1ebf97f64236b342b591390d16dcbdb"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classswim_1_1SwimServer.html">SwimServer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1GossipFailureDetector.html#aa1ebf97f64236b342b591390d16dcbdb">gossip_server_</a> {}</td></tr>
+<tr class="separator:aa1ebf97f64236b342b591390d16dcbdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac69bec059fdd52443fa03b007904ca7b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; std::thread &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1GossipFailureDetector.html#ac69bec059fdd52443fa03b007904ca7b">threads_</a> {}</td></tr>
+<tr class="separator:ac69bec059fdd52443fa03b007904ca7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A failure detector that implements the SWIM protocol. See: <a href="https://goo.gl/VUn4iQ">https://goo.gl/VUn4iQ</a> </p>
+<div class="textblock"><p>A failure detector that implements the <a href="https://goo.gl/VUn4iQ">SWIM protocol</a></p>
+<p>The detector embeds a <code><a class="el" href="classswim_1_1SwimServer.html">SwimServer</a></code> that is actually used to connect to external "neighbors" and report/detect health: a const reference can be retrieved via the <code><a class="el" href="classswim_1_1GossipFailureDetector.html#ab4bdbaa1e8909cc4c8df8d26296e484a">gossip_server()</a></code> method.</p>
+<p>This detector runs several background threads that will <b>not</b> be started at creation, but <b>must</b> be started after the embedded <code><a class="el" href="classswim_1_1SwimServer.html">SwimServer</a></code> is running (use <code><a class="el" href="classswim_1_1SwimServer.html#aedfd0ad6424b51f655e22d66fc522776">SwimServer::isRunning()</a></code>) using <code><a class="el" href="classswim_1_1GossipFailureDetector.html#a86af22f043e202697212295f305654f9">InitAllBackgroundThreads()</a></code>.</p>
+<p>Each thread is responsibe for the various tasks that this detector must undertake: </p><ul>
+<li>
+<code><a class="el" href="classswim_1_1GossipFailureDetector.html#a1e57562db99d24138fc3f785145bd6d2">PingNeighbor()</a></code> to detect failures; </li>
+<li>
+<code><a class="el" href="classswim_1_1GossipFailureDetector.html#a7ad4f0a92fb6e5b0d775645f76711122">SendReport()</a></code> to other detectors, to report failures, etc.; and </li>
+<li>
+<code><a class="el" href="classswim_1_1GossipFailureDetector.html#a6fbe134aa9c8e0fabf7d75968e23fecd">GarbageCollectSuspected()</a></code> to remove "suspected" failed server, after the <a class="el" href="classswim_1_1GossipFailureDetector.html#aaf55561efd0cb142e9268cf6fc462d49">grace_period()</a> has elapsed. </li>
+</ul>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a68c2e712d58b9fa398b8f5e098502b8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68c2e712d58b9fa398b8f5e098502b8e">&#9670;&nbsp;</a></span>GossipFailureDetector() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">swim::GossipFailureDetector::GossipFailureDetector </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classswim_1_1GossipFailureDetector.html">GossipFailureDetector</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7ed9921456f74038aee171f71174f72b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ed9921456f74038aee171f71174f72b">&#9670;&nbsp;</a></span>GossipFailureDetector() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">swim::GossipFailureDetector::GossipFailureDetector </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classswim_1_1GossipFailureDetector.html">GossipFailureDetector</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a07c08cad3aee1bd9702086b1516feacb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07c08cad3aee1bd9702086b1516feacb">&#9670;&nbsp;</a></span>GossipFailureDetector()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a07c08cad3aee1bd9702086b1516feacb">&#9670;&nbsp;</a></span>GossipFailureDetector() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -187,8 +271,9 @@ const <a class="el" href="classswim_1_1SwimServer.html">SwimServer</a> &amp;&#16
 </div><div class="memdoc">
 <p>Creates a new detector and starts the embedded Gossip Server; the background threads are <b>not</b> started: use <code><a class="el" href="classswim_1_1GossipFailureDetector.html#a86af22f043e202697212295f305654f9">InitAllBackgroundThreads()</a></code> once the server <code>isRunning()</code>.</p>
 <p>All time intervals, except for <code>ping_timeout_msec</code>, are expressed in seconds.</p>
-<p>param port for this server to listening to incoming requests </p><dl class="params"><dt>Parameters</dt><dd>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">port</td><td>for this server to listening to incoming requests </td></tr>
     <tr><td class="paramname">update_round_interval</td><td>the time, in seconds, between updates to neighbors </td></tr>
     <tr><td class="paramname">grace_period</td><td>the time, in seconds, we will wait for a suspected server to come back </td></tr>
     <tr><td class="paramname">ping_timeout_msec</td><td>the time, in milliseconds, we will wait for the ping response </td></tr>
@@ -196,6 +281,31 @@ const <a class="el" href="classswim_1_1SwimServer.html">SwimServer</a> &amp;&#16
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a710769ad07b114610af3a45167484f0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a710769ad07b114610af3a45167484f0d">&#9670;&nbsp;</a></span>~GossipFailureDetector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual swim::GossipFailureDetector::~GossipFailureDetector </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -247,7 +357,59 @@ const <a class="el" href="classswim_1_1SwimServer.html">SwimServer</a> &amp;&#16
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Scan the set of <code>suspected()</code> servers: if any has been there for longer than the allowed <code>grace_period()</code>, then evict it and consider it "dead". </p>
+<p>Scan the set of <code>suspected()</code> servers: if any has been there for longer than the allowed <code><a class="el" href="classswim_1_1GossipFailureDetector.html#aaf55561efd0cb142e9268cf6fc462d49">grace_period()</a></code>, then evict it and consider it "dead". </p>
+
+</div>
+</div>
+<a id="ab4bdbaa1e8909cc4c8df8d26296e484a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4bdbaa1e8909cc4c8df8d26296e484a">&#9670;&nbsp;</a></span>gossip_server()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classswim_1_1SwimServer.html">SwimServer</a>&amp; swim::GossipFailureDetector::gossip_server </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>A reference to the embedded <a class="el" href="classswim_1_1SwimServer.html">SwimServer</a> that is used to connect to neighbors. </dd></dl>
+
+</div>
+</div>
+<a id="aaf55561efd0cb142e9268cf6fc462d49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf55561efd0cb142e9268cf6fc462d49">&#9670;&nbsp;</a></span>grace_period()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const seconds&amp; swim::GossipFailureDetector::grace_period </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the time in seconds after which a "suspected" server is declared "dead" </dd></dl>
 
 </div>
 </div>
@@ -266,7 +428,111 @@ const <a class="el" href="classswim_1_1SwimServer.html">SwimServer</a> &amp;&#16
       </table>
 </div><div class="memdoc">
 <p>Starts all the gossip protocol threads: ping neighbors, send reports and evict suspects once the grace period has elapsed.</p>
-<p>This method starts a number of (detached) background threads that will be running for as long as the <code>gossip_server()</code> is running. </p>
+<p>This method starts a number of (detached) background threads that will be running for as long as the <code><a class="el" href="classswim_1_1GossipFailureDetector.html#ab4bdbaa1e8909cc4c8df8d26296e484a">gossip_server()</a></code> is running. </p>
+
+</div>
+</div>
+<a id="a8259ba03eec8d54eea158b2b133c81ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8259ba03eec8d54eea158b2b133c81ca">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classswim_1_1GossipFailureDetector.html">GossipFailureDetector</a> swim::GossipFailureDetector::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classswim_1_1GossipFailureDetector.html">GossipFailureDetector</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a91fb2682a33a8c54ae996d7438bb82d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91fb2682a33a8c54ae996d7438bb82d3">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classswim_1_1GossipFailureDetector.html">GossipFailureDetector</a> swim::GossipFailureDetector::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classswim_1_1GossipFailureDetector.html">GossipFailureDetector</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a432588f7ce6f3e405d07c49949484954"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a432588f7ce6f3e405d07c49949484954">&#9670;&nbsp;</a></span>ping_interval()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const seconds&amp; swim::GossipFailureDetector::ping_interval </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the interval, in seconds, between <code>PingNeighbors()</code> </dd></dl>
+
+</div>
+</div>
+<a id="af1123d153f021d7be42e01ec4c47579d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1123d153f021d7be42e01ec4c47579d">&#9670;&nbsp;</a></span>ping_timeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const milliseconds&amp; swim::GossipFailureDetector::ping_timeout </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the timeout for a <a class="el" href="classswim_1_1GossipFailureDetector.html#a1e57562db99d24138fc3f785145bd6d2">PingNeighbor()</a> to a server: if the server does not respond within the given timeout, it will be declared "suspected" and placed in the <code><a class="el" href="classswim_1_1SwimServer.html#a28ade0f69bab2b21d6700a03b99253e9">SwimServer::suspected_</a></code> set. </dd></dl>
 
 </div>
 </div>
@@ -312,6 +578,138 @@ if we already have gossipped with all the neighbors, pick one at random from the
 
 </div>
 </div>
+<a id="ae596781949ae4c804a570ff57eb57afd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae596781949ae4c804a570ff57eb57afd">&#9670;&nbsp;</a></span>set_grace_period()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void swim::GossipFailureDetector::set_grace_period </td>
+          <td>(</td>
+          <td class="paramtype">const seconds &amp;&#160;</td>
+          <td class="paramname"><em>grace_period</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Updates the time after which we evict a suspected server.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">grace_period</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae0866a90a94225b2bf0ee68f44c19085"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0866a90a94225b2bf0ee68f44c19085">&#9670;&nbsp;</a></span>set_ping_interval()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void swim::GossipFailureDetector::set_ping_interval </td>
+          <td>(</td>
+          <td class="paramtype">const seconds &amp;&#160;</td>
+          <td class="paramname"><em>ping_interval</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Updates the time between pings to neighbors.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ping_interval</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af81a45134eca153f2bb933b41cea9811"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af81a45134eca153f2bb933b41cea9811">&#9670;&nbsp;</a></span>set_ping_timeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void swim::GossipFailureDetector::set_ping_timeout </td>
+          <td>(</td>
+          <td class="paramtype">const milliseconds &amp;&#160;</td>
+          <td class="paramname"><em>ping_timeout</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Updates the time in milliseconds we are prepared to wait for a server to respond, before we suspect it to be unavailable.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ping_timeout</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9361737a7d7016dc71eacac33b27aae2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9361737a7d7016dc71eacac33b27aae2">&#9670;&nbsp;</a></span>set_update_round_interval()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void swim::GossipFailureDetector::set_update_round_interval </td>
+          <td>(</td>
+          <td class="paramtype">const seconds &amp;&#160;</td>
+          <td class="paramname"><em>update_round_interval</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Updates the interval between sending reports to neighbors.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">update_round_interval</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a739d790db4a7540515ae627ae6011e24"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a739d790db4a7540515ae627ae6011e24">&#9670;&nbsp;</a></span>StopAllBackgroundThreads()</h2>
 
@@ -330,16 +728,179 @@ if we already have gossipped with all the neighbors, pick one at random from the
 
 </div>
 </div>
+<a id="a827c3a26f1d88b098a5094bbbb033268"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a827c3a26f1d88b098a5094bbbb033268">&#9670;&nbsp;</a></span>update_round_interval()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const seconds&amp; swim::GossipFailureDetector::update_round_interval </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the time between two successive reports (sent using <code><a class="el" href="classswim_1_1GossipFailureDetector.html#a7ad4f0a92fb6e5b0d775645f76711122">SendReport()</a></code>) </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aa1ebf97f64236b342b591390d16dcbdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1ebf97f64236b342b591390d16dcbdb">&#9670;&nbsp;</a></span>gossip_server_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classswim_1_1SwimServer.html">SwimServer</a>&gt; swim::GossipFailureDetector::gossip_server_ {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a120ca6ba4eaca4934f31e829ccfb1c8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a120ca6ba4eaca4934f31e829ccfb1c8e">&#9670;&nbsp;</a></span>grace_period_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">seconds swim::GossipFailureDetector::grace_period_ {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a53f76038a85040c83f3ccd3d856e1206"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53f76038a85040c83f3ccd3d856e1206">&#9670;&nbsp;</a></span>ping_interval_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">seconds swim::GossipFailureDetector::ping_interval_ {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a11e2ea4fac9f6bc16f96356b203cf1a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11e2ea4fac9f6bc16f96356b203cf1a6">&#9670;&nbsp;</a></span>ping_timeout_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">milliseconds swim::GossipFailureDetector::ping_timeout_ {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac69bec059fdd52443fa03b007904ca7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac69bec059fdd52443fa03b007904ca7b">&#9670;&nbsp;</a></span>threads_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::unique_ptr&lt;std::thread&gt; &gt; swim::GossipFailureDetector::threads_ {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af78ba636e496b1f4ab5a7027ffab128b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af78ba636e496b1f4ab5a7027ffab128b">&#9670;&nbsp;</a></span>update_round_interval_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">seconds swim::GossipFailureDetector::update_round_interval_ {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/swim/<a class="el" href="GossipFailureDetector_8hpp_source.html">GossipFailureDetector.hpp</a></li>
-<li>src/swim/GossipFailureDetector.cpp</li>
+<li>src/swim/<a class="el" href="GossipFailureDetector_8cpp.html">GossipFailureDetector.cpp</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceswim.html">swim</a></li><li class="navelem"><a class="el" href="classswim_1_1GossipFailureDetector.html">GossipFailureDetector</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

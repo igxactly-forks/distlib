@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +52,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classutils_1_1ParseArgs.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,11 +81,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><b>utils</b></li><li class="navelem"><a class="el" href="classutils_1_1ParseArgs.html">ParseArgs</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">utils::ParseArgs Member List</div>  </div>
@@ -72,29 +89,37 @@ $(function() {
 
 <p>This is the complete list of members for <a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html#a7af74ca9fa73611d7a5f05d4514c644c">at</a>(int pos) const</td><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html#a67742351012b97ed14baa9fc1913ec9f">enabled</a>(const std::string &amp;name, bool ifAbsentValue=false)</td><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html#a6b20f782c3f7c3ae39824f1ddca65b6e">get</a>(const std::string &amp;name, std::string defaultValue=&quot;&quot;) const</td><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html#ac0b61e628d39f17928bfd98cd37bffcf">getInt</a>(const std::string &amp;name, int defaultInt=0)</td><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html#a01acbfadf18c09adc82261e1f5886c13">getNames</a>()</td><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html#a4553dc2716a857aa5c804dfb77ed10e2">has</a>(const std::string &amp;name)</td><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html#acb7f3c6ed90ef25a6e915bd05593e9e0">operator[]</a>(int pos) const</td><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html#a525c71653a5b38c5ca05bb8589e6ff15">operator[]</a>(const std::string &amp;name) const</td><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>parse</b>() (defined in <a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a>)</td><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>ParseArgs</b>()=delete (defined in <a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a>)</td><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>ParseArgs</b>(const ParseArgs &amp;other)=delete (defined in <a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a>)</td><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html#ad11f5d72072df4c52c728f2795b14500">ParseArgs</a>(const std::vector&lt; std::string &gt; &amp;args)</td><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html#a83a11e32f19220cb7d8ad71abb58662c">ParseArgs</a>(const char *args[], size_t len)</td><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>parsed_options</b>() const (defined in <a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a>)</td><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>positional_args</b>() const (defined in <a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a>)</td><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html#aa7045df29764a0b3dd6b5501319524b2">args_</a></td><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html#a7af74ca9fa73611d7a5f05d4514c644c">at</a>(int pos) const</td><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html#a67742351012b97ed14baa9fc1913ec9f">enabled</a>(const std::string &amp;name, bool ifAbsentValue=false)</td><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html#a6b20f782c3f7c3ae39824f1ddca65b6e">get</a>(const std::string &amp;name, std::string defaultValue=&quot;&quot;) const</td><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html#ac0b61e628d39f17928bfd98cd37bffcf">getInt</a>(const std::string &amp;name, int defaultInt=0)</td><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html#a01acbfadf18c09adc82261e1f5886c13">getNames</a>()</td><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html#a4553dc2716a857aa5c804dfb77ed10e2">has</a>(const std::string &amp;name)</td><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html#acb7f3c6ed90ef25a6e915bd05593e9e0">operator[]</a>(int pos) const</td><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html#a525c71653a5b38c5ca05bb8589e6ff15">operator[]</a>(const std::string &amp;name) const</td><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html#a5856651872515788ce26a69f40bd1cea">parse</a>()</td><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html#a4eb0b185ed7abbd12cd0d1abc403ec51">ParseArgs</a>()=delete</td><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html#a3cf22469b70b6aa4b1ca15c37376db22">ParseArgs</a>(const ParseArgs &amp;other)=delete</td><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html#ad11f5d72072df4c52c728f2795b14500">ParseArgs</a>(const std::vector&lt; std::string &gt; &amp;args)</td><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html#a83a11e32f19220cb7d8ad71abb58662c">ParseArgs</a>(const char *args[], size_t len)</td><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html#a705264ce9a4d231d7c7a9a06f611552c">parsed_</a></td><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html#a54c234c07b0263572d55ba9627ad6592">parsed_options</a>() const</td><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html#aab55e8366a8feaf6cc0fef329c3ed1ee">parsed_options_</a></td><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html#a103a13e9c812a8c6967382494dfe1e5d">positional_args</a>() const</td><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html#af266e9267af2f82d0b026caf2b25e6c0">positional_args_</a></td><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html#ad5f4fdc88527cfe4d25fc53afac07223">progname</a>() const</td><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html#af8f4f36553b17de8481440ba4943dd3e">size</a>() const</td><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html#a0e9bc3bbf8c3adab1a65b722c05dd9a4">progname_</a></td><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html#af8f4f36553b17de8481440ba4943dd3e">size</a>() const</td><td class="entry"><a class="el" href="classutils_1_1ParseArgs.html">utils::ParseArgs</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

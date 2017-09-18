@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +52,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classswim_1_1SwimClient.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,14 +81,12 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><b>swim</b></li><li class="navelem"><a class="el" href="classswim_1_1SwimClient.html">SwimClient</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classswim_1_1SwimClient-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">swim::SwimClient Class Reference</div>  </div>
@@ -77,8 +97,10 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2d52b2d600f71154cb6f66803da20dfc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimClient.html#a2d52b2d600f71154cb6f66803da20dfc">SwimClient</a> (const Server &amp;dest, int self_port=0, unsigned long timeout=DEFAULT_TIMEOUT_MSEC)</td></tr>
+<tr class="memitem:a2d52b2d600f71154cb6f66803da20dfc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimClient.html#a2d52b2d600f71154cb6f66803da20dfc">SwimClient</a> (const Server &amp;dest, int self_port=0, unsigned long <a class="el" href="classswim_1_1SwimClient.html#ae5f42c0b3236e6f033f27250b2499791">timeout</a>=<a class="el" href="classswim_1_1SwimClient.html#a7bf3038f70da8484dc5e1405a57b1b17">DEFAULT_TIMEOUT_MSEC</a>)</td></tr>
 <tr class="separator:a2d52b2d600f71154cb6f66803da20dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76ed81af7ede50f34e28b2dca51d45a8"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimClient.html#a76ed81af7ede50f34e28b2dca51d45a8">~SwimClient</a> ()</td></tr>
+<tr class="separator:a76ed81af7ede50f34e28b2dca51d45a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87c000ef79101d1750935d7e83c69e5d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimClient.html#a87c000ef79101d1750935d7e83c69e5d">Ping</a> () const</td></tr>
 <tr class="separator:a87c000ef79101d1750935d7e83c69e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64b54ae728928e8dfecf7f6c5d1bb0fa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimClient.html#a64b54ae728928e8dfecf7f6c5d1bb0fa">Send</a> (const SwimReport &amp;report) const</td></tr>
@@ -87,21 +109,41 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4c6e5cd54e6477c7a62fe40bc41ade26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d8e3f7e095537cf64a8bc6b23cf37ef"><td class="memItemLeft" align="right" valign="top">const Server &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimClient.html#a5d8e3f7e095537cf64a8bc6b23cf37ef">self</a> () const</td></tr>
 <tr class="separator:a5d8e3f7e095537cf64a8bc6b23cf37ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5f42c0b3236e6f033f27250b2499791"><td class="memItemLeft" align="right" valign="top"><a id="ae5f42c0b3236e6f033f27250b2499791"></a>
-unsigned long&#160;</td><td class="memItemRight" valign="bottom"><b>timeout</b> () const</td></tr>
+<tr class="memitem:ae5f42c0b3236e6f033f27250b2499791"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimClient.html#ae5f42c0b3236e6f033f27250b2499791">timeout</a> () const</td></tr>
 <tr class="separator:ae5f42c0b3236e6f033f27250b2499791"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b7f79296da38a7242b07b10686899d4"><td class="memItemLeft" align="right" valign="top"><a id="a7b7f79296da38a7242b07b10686899d4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_timeout</b> (unsigned long timeout)</td></tr>
+<tr class="memitem:a7b7f79296da38a7242b07b10686899d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimClient.html#a7b7f79296da38a7242b07b10686899d4">set_timeout</a> (unsigned long <a class="el" href="classswim_1_1SwimClient.html#ae5f42c0b3236e6f033f27250b2499791">timeout</a>)</td></tr>
 <tr class="separator:a7b7f79296da38a7242b07b10686899d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2841a0a5fa9bdc3217084b779160002"><td class="memItemLeft" align="right" valign="top"><a id="aa2841a0a5fa9bdc3217084b779160002"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>max_allowed_reports</b> () const</td></tr>
+<tr class="memitem:aa2841a0a5fa9bdc3217084b779160002"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimClient.html#aa2841a0a5fa9bdc3217084b779160002">max_allowed_reports</a> () const</td></tr>
 <tr class="separator:aa2841a0a5fa9bdc3217084b779160002"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afffcd08b9cf30611cd2bc9309e98f39d"><td class="memItemLeft" align="right" valign="top"><a id="afffcd08b9cf30611cd2bc9309e98f39d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_max_allowed_reports</b> (unsigned int max_allowed_reports_)</td></tr>
+<tr class="memitem:afffcd08b9cf30611cd2bc9309e98f39d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimClient.html#afffcd08b9cf30611cd2bc9309e98f39d">set_max_allowed_reports</a> (unsigned int <a class="el" href="classswim_1_1SwimClient.html#aa325e680df9e784353651bb36f4d8250">max_allowed_reports_</a>)</td></tr>
 <tr class="separator:afffcd08b9cf30611cd2bc9309e98f39d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ebb7c7e9c9d66b9a76b1895d4587c43"><td class="memItemLeft" align="right" valign="top"><a id="a7ebb7c7e9c9d66b9a76b1895d4587c43"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setSelf</b> (const Server &amp;other)</td></tr>
+<tr class="memitem:a7ebb7c7e9c9d66b9a76b1895d4587c43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimClient.html#a7ebb7c7e9c9d66b9a76b1895d4587c43">setSelf</a> (const Server &amp;other)</td></tr>
 <tr class="separator:a7ebb7c7e9c9d66b9a76b1895d4587c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:aadce8af4591de69ef909f18ce82c4e1c"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimClient.html#aadce8af4591de69ef909f18ce82c4e1c">destinationUri</a> () const</td></tr>
+<tr class="separator:aadce8af4591de69ef909f18ce82c4e1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79dab0f6c4b597dd7107c16fd5813c32"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimClient.html#a79dab0f6c4b597dd7107c16fd5813c32">postMessage</a> (SwimEnvelope *envelope) const</td></tr>
+<tr class="separator:a79dab0f6c4b597dd7107c16fd5813c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:acdb8aee4654799d864042251c7eb877f"><td class="memItemLeft" align="right" valign="top">Server&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimClient.html#acdb8aee4654799d864042251c7eb877f">dest_</a></td></tr>
+<tr class="separator:acdb8aee4654799d864042251c7eb877f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa56f0f9255add9489dbceb916cde3044"><td class="memItemLeft" align="right" valign="top">Server&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimClient.html#aa56f0f9255add9489dbceb916cde3044">self_</a></td></tr>
+<tr class="separator:aa56f0f9255add9489dbceb916cde3044"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab46aa924be7cb0cb65fa9032321cf934"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimClient.html#ab46aa924be7cb0cb65fa9032321cf934">timeout_</a></td></tr>
+<tr class="separator:ab46aa924be7cb0cb65fa9032321cf934"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa325e680df9e784353651bb36f4d8250"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimClient.html#aa325e680df9e784353651bb36f4d8250">max_allowed_reports_</a> = <a class="el" href="SwimClient_8hpp.html#a83448cfb7cac902aeb69bc6c23b30691">MAX_ALLOWED_DEFAULT</a></td></tr>
+<tr class="separator:aa325e680df9e784353651bb36f4d8250"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a7bf3038f70da8484dc5e1405a57b1b17"><td class="memItemLeft" align="right" valign="top">static const unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimClient.html#a7bf3038f70da8484dc5e1405a57b1b17">DEFAULT_TIMEOUT_MSEC</a> = 25</td></tr>
+<tr class="separator:a7bf3038f70da8484dc5e1405a57b1b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af254fd676ed704810c2aed7f5aad0602"><td class="memItemLeft" align="right" valign="top">static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimClient.html#af254fd676ed704810c2aed7f5aad0602">DEFAULT_SOCKET_LINGER_MSEC</a> = 0</td></tr>
+<tr class="separator:af254fd676ed704810c2aed7f5aad0602"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Client that is used to connect to a <a class="el" href="classswim_1_1SwimServer.html">SwimServer</a> and exchange messages.</p>
@@ -129,7 +171,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setSelf</b> (const Se
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned long&#160;</td>
-          <td class="paramname"><em>timeout</em> = <code>DEFAULT_TIMEOUT_MSEC</code>&#160;</td>
+          <td class="paramname"><em>timeout</em> = <code><a class="el" href="classswim_1_1SwimClient.html#a7bf3038f70da8484dc5e1405a57b1b17">DEFAULT_TIMEOUT_MSEC</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -150,7 +192,76 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setSelf</b> (const Se
 
 </div>
 </div>
+<a id="a76ed81af7ede50f34e28b2dca51d45a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76ed81af7ede50f34e28b2dca51d45a8">&#9670;&nbsp;</a></span>~SwimClient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual swim::SwimClient::~SwimClient </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aadce8af4591de69ef909f18ce82c4e1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadce8af4591de69ef909f18ce82c4e1c">&#9670;&nbsp;</a></span>destinationUri()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string swim::SwimClient::destinationUri </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Builds the URI for the <code>dest</code> server, using the hostname and port.</p>
+<dl class="section return"><dt>Returns</dt><dd>a string of the form <code>tcp://hostname:port</code> </dd></dl>
+
+</div>
+</div>
+<a id="aa2841a0a5fa9bdc3217084b779160002"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2841a0a5fa9bdc3217084b779160002">&#9670;&nbsp;</a></span>max_allowed_reports()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int swim::SwimClient::max_allowed_reports </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a87c000ef79101d1750935d7e83c69e5d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a87c000ef79101d1750935d7e83c69e5d">&#9670;&nbsp;</a></span>Ping()</h2>
 
@@ -168,6 +279,40 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setSelf</b> (const Se
 <p>Sends a <code>ping</code> request to a remote server; if it receives a response within the given <code>timeout_</code> it will mark the server as "healthy" (and, at the same time, the receiving <code>server_</code> can mark this sender (<code>self_</code>) as "healthy" too).</p>
 <p>This can also be proactively used by <code>self_</code> if it discovers that some servers "suspect" it to be in an "unhealthy" state (and must do so before the "grace period" expires).</p>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if the server returned an <code>OK</code>. </dd></dl>
+
+</div>
+</div>
+<a id="a79dab0f6c4b597dd7107c16fd5813c32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79dab0f6c4b597dd7107c16fd5813c32">&#9670;&nbsp;</a></span>postMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool swim::SwimClient::postMessage </td>
+          <td>(</td>
+          <td class="paramtype">SwimEnvelope *&#160;</td>
+          <td class="paramname"><em>envelope</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Common functionality to send an envelop to the destination server; adds this host (<code>self_</code>) coordinates and a timestamp.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">envelope</td><td>the message to be sent to the destination (<code>dest_</code>) server. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the response from the server, is successful; <code>nullptr</code> otherwise. </dd></dl>
 
 </div>
 </div>
@@ -251,16 +396,232 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setSelf</b> (const Se
 
 </div>
 </div>
+<a id="afffcd08b9cf30611cd2bc9309e98f39d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afffcd08b9cf30611cd2bc9309e98f39d">&#9670;&nbsp;</a></span>set_max_allowed_reports()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void swim::SwimClient::set_max_allowed_reports </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>max_allowed_reports_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7b7f79296da38a7242b07b10686899d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b7f79296da38a7242b07b10686899d4">&#9670;&nbsp;</a></span>set_timeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void swim::SwimClient::set_timeout </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>timeout</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7ebb7c7e9c9d66b9a76b1895d4587c43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ebb7c7e9c9d66b9a76b1895d4587c43">&#9670;&nbsp;</a></span>setSelf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void swim::SwimClient::setSelf </td>
+          <td>(</td>
+          <td class="paramtype">const Server &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae5f42c0b3236e6f033f27250b2499791"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5f42c0b3236e6f033f27250b2499791">&#9670;&nbsp;</a></span>timeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long swim::SwimClient::timeout </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="af254fd676ed704810c2aed7f5aad0602"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af254fd676ed704810c2aed7f5aad0602">&#9670;&nbsp;</a></span>DEFAULT_SOCKET_LINGER_MSEC</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int swim::SwimClient::DEFAULT_SOCKET_LINGER_MSEC = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7bf3038f70da8484dc5e1405a57b1b17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bf3038f70da8484dc5e1405a57b1b17">&#9670;&nbsp;</a></span>DEFAULT_TIMEOUT_MSEC</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned long swim::SwimClient::DEFAULT_TIMEOUT_MSEC = 25</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acdb8aee4654799d864042251c7eb877f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdb8aee4654799d864042251c7eb877f">&#9670;&nbsp;</a></span>dest_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Server swim::SwimClient::dest_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa325e680df9e784353651bb36f4d8250"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa325e680df9e784353651bb36f4d8250">&#9670;&nbsp;</a></span>max_allowed_reports_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int swim::SwimClient::max_allowed_reports_ = <a class="el" href="SwimClient_8hpp.html#a83448cfb7cac902aeb69bc6c23b30691">MAX_ALLOWED_DEFAULT</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa56f0f9255add9489dbceb916cde3044"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa56f0f9255add9489dbceb916cde3044">&#9670;&nbsp;</a></span>self_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Server swim::SwimClient::self_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab46aa924be7cb0cb65fa9032321cf934"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab46aa924be7cb0cb65fa9032321cf934">&#9670;&nbsp;</a></span>timeout_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long swim::SwimClient::timeout_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/swim/<a class="el" href="SwimClient_8hpp_source.html">SwimClient.hpp</a></li>
-<li>src/swim/SwimClient.cpp</li>
+<li>src/swim/<a class="el" href="SwimClient_8cpp.html">SwimClient.cpp</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceswim.html">swim</a></li><li class="navelem"><a class="el" href="classswim_1_1SwimClient.html">SwimClient</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +52,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classBucket.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,7 +81,6 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">Bucket Member List</div>  </div>
@@ -68,21 +89,27 @@ $(function() {
 
 <p>This is the complete list of members for <a class="el" href="classBucket.html">Bucket</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Bucket</b>(const std::string &amp;name, unsigned int replicas) (defined in <a class="el" href="classBucket.html">Bucket</a>)</td><td class="entry"><a class="el" href="classBucket.html">Bucket</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>Bucket</b>(const Bucket &amp;)=delete (defined in <a class="el" href="classBucket.html">Bucket</a>)</td><td class="entry"><a class="el" href="classBucket.html">Bucket</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>name</b>() const (defined in <a class="el" href="classBucket.html">Bucket</a>)</td><td class="entry"><a class="el" href="classBucket.html">Bucket</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classBucket.html#a6678a7751e0bcf473e89d791a59315d3">Bucket</a>(const std::string &amp;name, unsigned int replicas)</td><td class="entry"><a class="el" href="classBucket.html">Bucket</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classBucket.html#a7bce2336f371a0fd1273cfec7ceb8869">Bucket</a>(const Bucket &amp;)=delete</td><td class="entry"><a class="el" href="classBucket.html">Bucket</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classBucket.html#a4c1ca502797aba1c23eadc0127d6f274">hash_points_</a></td><td class="entry"><a class="el" href="classBucket.html">Bucket</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classBucket.html#a67bed83edf088821410bb418c6012e36">name</a>() const</td><td class="entry"><a class="el" href="classBucket.html">Bucket</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classBucket.html#ae312331c291010539cfe483643fc710d">name_</a></td><td class="entry"><a class="el" href="classBucket.html">Bucket</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr><td class="entry"><a class="el" href="classBucket.html#a3d7c480b5f347b98b2533f0f2a9516f8">nearest_partition_point</a>(float x) const</td><td class="entry"><a class="el" href="classBucket.html">Bucket</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>operator=</b>(const Bucket &amp;)=delete (defined in <a class="el" href="classBucket.html">Bucket</a>)</td><td class="entry"><a class="el" href="classBucket.html">Bucket</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>partition_point</b>(int i) const (defined in <a class="el" href="classBucket.html">Bucket</a>)</td><td class="entry"><a class="el" href="classBucket.html">Bucket</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classBucket.html#a2c33e7d8d6cd091b9366c1d4adfbbd1c">partition_points</a>() const</td><td class="entry"><a class="el" href="classBucket.html">Bucket</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>partitions</b>() const (defined in <a class="el" href="classBucket.html">Bucket</a>)</td><td class="entry"><a class="el" href="classBucket.html">Bucket</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~Bucket</b>() (defined in <a class="el" href="classBucket.html">Bucket</a>)</td><td class="entry"><a class="el" href="classBucket.html">Bucket</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classBucket.html#aea0ce6a99fd62845537b656e5b098947">operator=</a>(const Bucket &amp;)=delete</td><td class="entry"><a class="el" href="classBucket.html">Bucket</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classBucket.html#a733b29890cfaa4e9769f25cfb970089e">partition_point</a>(int i) const</td><td class="entry"><a class="el" href="classBucket.html">Bucket</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classBucket.html#a09d1c2af4912cc20c1e0a141dea35719">partition_points</a>() const</td><td class="entry"><a class="el" href="classBucket.html">Bucket</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classBucket.html#ab9b421ae7c95fe525c6b79d597bb9ada">partitions</a>() const</td><td class="entry"><a class="el" href="classBucket.html">Bucket</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classBucket.html#a2581a72f6ad7237c3505f991b272b646">partitions_</a></td><td class="entry"><a class="el" href="classBucket.html">Bucket</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classBucket.html#aa729679ff3b7b6145af16cc8de52c58e">~Bucket</a>()</td><td class="entry"><a class="el" href="classBucket.html">Bucket</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

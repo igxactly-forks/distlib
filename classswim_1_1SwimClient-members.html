@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +52,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classswim_1_1SwimClient.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,11 +81,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><b>swim</b></li><li class="navelem"><a class="el" href="classswim_1_1SwimClient.html">SwimClient</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">swim::SwimClient Member List</div>  </div>
@@ -72,23 +89,34 @@ $(function() {
 
 <p>This is the complete list of members for <a class="el" href="classswim_1_1SwimClient.html">swim::SwimClient</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>max_allowed_reports</b>() const (defined in <a class="el" href="classswim_1_1SwimClient.html">swim::SwimClient</a>)</td><td class="entry"><a class="el" href="classswim_1_1SwimClient.html">swim::SwimClient</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classswim_1_1SwimClient.html#a87c000ef79101d1750935d7e83c69e5d">Ping</a>() const</td><td class="entry"><a class="el" href="classswim_1_1SwimClient.html">swim::SwimClient</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classswim_1_1SwimClient.html#af254fd676ed704810c2aed7f5aad0602">DEFAULT_SOCKET_LINGER_MSEC</a></td><td class="entry"><a class="el" href="classswim_1_1SwimClient.html">swim::SwimClient</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classswim_1_1SwimClient.html#a7bf3038f70da8484dc5e1405a57b1b17">DEFAULT_TIMEOUT_MSEC</a></td><td class="entry"><a class="el" href="classswim_1_1SwimClient.html">swim::SwimClient</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classswim_1_1SwimClient.html#acdb8aee4654799d864042251c7eb877f">dest_</a></td><td class="entry"><a class="el" href="classswim_1_1SwimClient.html">swim::SwimClient</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classswim_1_1SwimClient.html#aadce8af4591de69ef909f18ce82c4e1c">destinationUri</a>() const</td><td class="entry"><a class="el" href="classswim_1_1SwimClient.html">swim::SwimClient</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classswim_1_1SwimClient.html#aa2841a0a5fa9bdc3217084b779160002">max_allowed_reports</a>() const</td><td class="entry"><a class="el" href="classswim_1_1SwimClient.html">swim::SwimClient</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classswim_1_1SwimClient.html#aa325e680df9e784353651bb36f4d8250">max_allowed_reports_</a></td><td class="entry"><a class="el" href="classswim_1_1SwimClient.html">swim::SwimClient</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classswim_1_1SwimClient.html#a87c000ef79101d1750935d7e83c69e5d">Ping</a>() const</td><td class="entry"><a class="el" href="classswim_1_1SwimClient.html">swim::SwimClient</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classswim_1_1SwimClient.html#a79dab0f6c4b597dd7107c16fd5813c32">postMessage</a>(SwimEnvelope *envelope) const</td><td class="entry"><a class="el" href="classswim_1_1SwimClient.html">swim::SwimClient</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classswim_1_1SwimClient.html#a4c6e5cd54e6477c7a62fe40bc41ade26">RequestPing</a>(const Server *other) const</td><td class="entry"><a class="el" href="classswim_1_1SwimClient.html">swim::SwimClient</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classswim_1_1SwimClient.html#a5d8e3f7e095537cf64a8bc6b23cf37ef">self</a>() const</td><td class="entry"><a class="el" href="classswim_1_1SwimClient.html">swim::SwimClient</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classswim_1_1SwimClient.html#a64b54ae728928e8dfecf7f6c5d1bb0fa">Send</a>(const SwimReport &amp;report) const</td><td class="entry"><a class="el" href="classswim_1_1SwimClient.html">swim::SwimClient</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>set_max_allowed_reports</b>(unsigned int max_allowed_reports_) (defined in <a class="el" href="classswim_1_1SwimClient.html">swim::SwimClient</a>)</td><td class="entry"><a class="el" href="classswim_1_1SwimClient.html">swim::SwimClient</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>set_timeout</b>(unsigned long timeout) (defined in <a class="el" href="classswim_1_1SwimClient.html">swim::SwimClient</a>)</td><td class="entry"><a class="el" href="classswim_1_1SwimClient.html">swim::SwimClient</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>setSelf</b>(const Server &amp;other) (defined in <a class="el" href="classswim_1_1SwimClient.html">swim::SwimClient</a>)</td><td class="entry"><a class="el" href="classswim_1_1SwimClient.html">swim::SwimClient</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classswim_1_1SwimClient.html#a2d52b2d600f71154cb6f66803da20dfc">SwimClient</a>(const Server &amp;dest, int self_port=0, unsigned long timeout=DEFAULT_TIMEOUT_MSEC)</td><td class="entry"><a class="el" href="classswim_1_1SwimClient.html">swim::SwimClient</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>timeout</b>() const (defined in <a class="el" href="classswim_1_1SwimClient.html">swim::SwimClient</a>)</td><td class="entry"><a class="el" href="classswim_1_1SwimClient.html">swim::SwimClient</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~SwimClient</b>() (defined in <a class="el" href="classswim_1_1SwimClient.html">swim::SwimClient</a>)</td><td class="entry"><a class="el" href="classswim_1_1SwimClient.html">swim::SwimClient</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classswim_1_1SwimClient.html#aa56f0f9255add9489dbceb916cde3044">self_</a></td><td class="entry"><a class="el" href="classswim_1_1SwimClient.html">swim::SwimClient</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classswim_1_1SwimClient.html#a64b54ae728928e8dfecf7f6c5d1bb0fa">Send</a>(const SwimReport &amp;report) const</td><td class="entry"><a class="el" href="classswim_1_1SwimClient.html">swim::SwimClient</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classswim_1_1SwimClient.html#afffcd08b9cf30611cd2bc9309e98f39d">set_max_allowed_reports</a>(unsigned int max_allowed_reports_)</td><td class="entry"><a class="el" href="classswim_1_1SwimClient.html">swim::SwimClient</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classswim_1_1SwimClient.html#a7b7f79296da38a7242b07b10686899d4">set_timeout</a>(unsigned long timeout)</td><td class="entry"><a class="el" href="classswim_1_1SwimClient.html">swim::SwimClient</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classswim_1_1SwimClient.html#a7ebb7c7e9c9d66b9a76b1895d4587c43">setSelf</a>(const Server &amp;other)</td><td class="entry"><a class="el" href="classswim_1_1SwimClient.html">swim::SwimClient</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classswim_1_1SwimClient.html#a2d52b2d600f71154cb6f66803da20dfc">SwimClient</a>(const Server &amp;dest, int self_port=0, unsigned long timeout=DEFAULT_TIMEOUT_MSEC)</td><td class="entry"><a class="el" href="classswim_1_1SwimClient.html">swim::SwimClient</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classswim_1_1SwimClient.html#ae5f42c0b3236e6f033f27250b2499791">timeout</a>() const</td><td class="entry"><a class="el" href="classswim_1_1SwimClient.html">swim::SwimClient</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classswim_1_1SwimClient.html#ab46aa924be7cb0cb65fa9032321cf934">timeout_</a></td><td class="entry"><a class="el" href="classswim_1_1SwimClient.html">swim::SwimClient</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classswim_1_1SwimClient.html#a76ed81af7ede50f34e28b2dca51d45a8">~SwimClient</a>()</td><td class="entry"><a class="el" href="classswim_1_1SwimClient.html">swim::SwimClient</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

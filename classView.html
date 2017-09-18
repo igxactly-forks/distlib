@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +52,21 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classView.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,10 +81,10 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classView-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -74,6 +96,10 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a44ad60a768422d3fa8fbd7576950080a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classView.html#a44ad60a768422d3fa8fbd7576950080a">View</a> ()</td></tr>
+<tr class="separator:a44ad60a768422d3fa8fbd7576950080a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa02a820358e1a7bf7e34d205212ae8f3"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classView.html#aa02a820358e1a7bf7e34d205212ae8f3">~View</a> ()</td></tr>
+<tr class="separator:aa02a820358e1a7bf7e34d205212ae8f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a917b0b23d9544d539c160ecb463c3c2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classView.html#a917b0b23d9544d539c160ecb463c3c2e">add</a> (const <a class="el" href="classBucket.html">Bucket</a> *<a class="el" href="classView.html#aa1e88c1bd6b1019f21636aad78526797">bucket</a>)</td></tr>
 <tr class="separator:a917b0b23d9544d539c160ecb463c3c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5757802ba0a06729869de6807bf185dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classView.html#a5757802ba0a06729869de6807bf185dc">remove</a> (const <a class="el" href="classBucket.html">Bucket</a> *<a class="el" href="classView.html#aa1e88c1bd6b1019f21636aad78526797">bucket</a>)</td></tr>
@@ -82,9 +108,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac74b1d359fe00f7c33c075797dcc931f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1e88c1bd6b1019f21636aad78526797"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classBucket.html">Bucket</a> *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classView.html#aa1e88c1bd6b1019f21636aad78526797">bucket</a> (const std::string &amp;key)</td></tr>
 <tr class="separator:aa1e88c1bd6b1019f21636aad78526797"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae30eec0a4d472ca1cb17f3b7e7c15bd3"><td class="memItemLeft" align="right" valign="top"><a id="ae30eec0a4d472ca1cb17f3b7e7c15bd3"></a>
-std::set&lt; const <a class="el" href="classBucket.html">Bucket</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>buckets</b> () const</td></tr>
+<tr class="memitem:ae30eec0a4d472ca1cb17f3b7e7c15bd3"><td class="memItemLeft" align="right" valign="top">std::set&lt; const <a class="el" href="classBucket.html">Bucket</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classView.html#ae30eec0a4d472ca1cb17f3b7e7c15bd3">buckets</a> () const</td></tr>
 <tr class="separator:ae30eec0a4d472ca1cb17f3b7e7c15bd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ae2d17b8950965b24b5f5bf12c0975550"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classView.html#ae2d17b8950965b24b5f5bf12c0975550">num_buckets_</a></td></tr>
+<tr class="separator:ae2d17b8950965b24b5f5bf12c0975550"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea63a3dffaa069fd87c253671031bc77"><td class="memItemLeft" align="right" valign="top">std::map&lt; float, const <a class="el" href="classBucket.html">Bucket</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classView.html#aea63a3dffaa069fd87c253671031bc77">partition_to_bucket_</a></td></tr>
+<tr class="separator:aea63a3dffaa069fd87c253671031bc77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -96,8 +128,59 @@ Friends</h2></td></tr>
 <p>The purpose of a <code><a class="el" href="classView.html">View</a></code> is to retrieve the <code><a class="el" href="classBucket.html">Bucket</a></code> which is closest to the given item's hash: we do this in an efficient way by splitting the unity interval into a set of equal-sized N intervals, where N is the smallest 2^x such that N &gt; C log(C) and C is the number of expected caches.</p>
 <p>To each <code>interval</code> we assign the buckets where at least one of their <code>hash_points</code> falls into the interval: when finding the closest (ascending) bucket we only need to look into this smaller subset of buckets (see the <a class="el" href="classView.html#aa1e88c1bd6b1019f21636aad78526797">bucket(const std::string&amp;)</a> method).</p>
 <p>If no buckets have been allocated yet to that interval, we continue navigating the unit circle until we find one.</p>
-<p>For more details, see the paper on Consistent Hashing, referred to in the documentation for the <code>consistent_hash()</code> method. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<p>For more details, see the paper on Consistent Hashing, referred to in the documentation for the <code><a class="el" href="ConsistentHash_8cpp.html#a393cbe5a2176cbb0aec10aa62431ad1f">consistent_hash()</a></code> method. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a44ad60a768422d3fa8fbd7576950080a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44ad60a768422d3fa8fbd7576950080a">&#9670;&nbsp;</a></span>View()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">View::View </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa02a820358e1a7bf7e34d205212ae8f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa02a820358e1a7bf7e34d205212ae8f3">&#9670;&nbsp;</a></span>~View()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual View::~View </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a917b0b23d9544d539c160ecb463c3c2e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a917b0b23d9544d539c160ecb463c3c2e">&#9670;&nbsp;</a></span>add()</h2>
 
@@ -135,6 +218,23 @@ Friends</h2></td></tr>
 <p>Retrieves the <code><a class="el" href="classBucket.html">Bucket</a></code> which is the nearest match for the given <code>key</code>.</p>
 <p>The <code>key</code> will be hashed and reduced to the [0, 1] interval (consistent hashing) and then the <code><a class="el" href="classBucket.html">Bucket</a></code> whose hash-point is the smallest partition point larger than the hash will be found and returned.</p>
 <p>See the "Consistent Hash" paper for a summary of why this operation is a O(1) and for implementation details. </p>
+
+</div>
+</div>
+<a id="ae30eec0a4d472ca1cb17f3b7e7c15bd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae30eec0a4d472ca1cb17f3b7e7c15bd3">&#9670;&nbsp;</a></span>buckets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt; const <a class="el" href="classBucket.html">Bucket</a> * &gt; View::buckets </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -221,16 +321,65 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ae2d17b8950965b24b5f5bf12c0975550"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2d17b8950965b24b5f5bf12c0975550">&#9670;&nbsp;</a></span>num_buckets_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int View::num_buckets_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aea63a3dffaa069fd87c253671031bc77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea63a3dffaa069fd87c253671031bc77">&#9670;&nbsp;</a></span>partition_to_bucket_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;float, const <a class="el" href="classBucket.html">Bucket</a>*&gt; View::partition_to_bucket_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/<a class="el" href="View_8hpp_source.html">View.hpp</a></li>
-<li>src/View.cpp</li>
+<li>src/<a class="el" href="View_8cpp.html">View.cpp</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classView.html">View</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

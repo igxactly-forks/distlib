@@ -1,12 +1,9 @@
 var searchData=
 [
-  ['self',['self',['../classswim_1_1SwimClient.html#a5d8e3f7e095537cf64a8bc6b23cf37ef',1,'swim::SwimClient::self()'],['../classswim_1_1SwimServer.html#a49b15dff35afbf6609aefb467ca3724e',1,'swim::SwimServer::self()']]],
-  ['send',['Send',['../classswim_1_1SwimClient.html#a64b54ae728928e8dfecf7f6c5d1bb0fa',1,'swim::SwimClient']]],
-  ['sendreport',['SendReport',['../classswim_1_1GossipFailureDetector.html#a7ad4f0a92fb6e5b0d775645f76711122',1,'swim::GossipFailureDetector']]],
-  ['size',['size',['../classutils_1_1ParseArgs.html#af8f4f36553b17de8481440ba4943dd3e',1,'utils::ParseArgs']]],
-  ['start',['start',['../classswim_1_1SwimServer.html#ac8b9fb31375db9e48d2b5f3af3cb93cf',1,'swim::SwimServer']]],
-  ['stopallbackgroundthreads',['StopAllBackgroundThreads',['../classswim_1_1GossipFailureDetector.html#a739d790db4a7540515ae627ae6011e24',1,'swim::GossipFailureDetector']]],
-  ['suspected_5fempty',['suspected_empty',['../classswim_1_1SwimServer.html#ad59d216ff8947889a9a74b827065ce0d',1,'swim::SwimServer']]],
-  ['suspected_5fsize',['suspected_size',['../classswim_1_1SwimServer.html#adebc081296492be96e50e8f7941f3f2f',1,'swim::SwimServer']]],
-  ['swimclient',['SwimClient',['../classswim_1_1SwimClient.html#a2d52b2d600f71154cb6f66803da20dfc',1,'swim::SwimClient']]]
+  ['remove',['remove',['../classView.html#a5757802ba0a06729869de6807bf185dc',1,'View']]],
+  ['removesuspected',['RemoveSuspected',['../classswim_1_1SwimServer.html#a692d1b4be29d381d78185dc883bb5284',1,'swim::SwimServer']]],
+  ['reportsuspect',['ReportSuspect',['../classswim_1_1SwimServer.html#aea5d1125f456302f738dc884b68d4fa7',1,'swim::SwimServer']]],
+  ['requestping',['RequestPing',['../classswim_1_1SwimClient.html#a4c6e5cd54e6477c7a62fe40bc41ade26',1,'swim::SwimClient']]],
+  ['right',['right',['../classMerkleNode.html#a093e772c6bffa7e1a8380bb85ad2743c',1,'MerkleNode']]],
+  ['runclient',['runClient',['../server__demo_8cpp.html#a51f90f1b8046ae31d3fd878462e199a1',1,'server_demo.cpp']]]
 ];
