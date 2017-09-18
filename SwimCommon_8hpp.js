@@ -2,6 +2,7 @@ var SwimCommon_8hpp =
 [
     [ "empty_set", "structswim_1_1empty__set.html", "structswim_1_1empty__set" ],
     [ "ServerRecordPtrLess", "structswim_1_1ServerRecordPtrLess.html", "structswim_1_1ServerRecordPtrLess" ],
+    [ "mutex_guard", "SwimCommon_8hpp.html#a2bb7adc7f2884ba5485f7d46d06993a5", null ],
     [ "ServerRecordsSet", "SwimCommon_8hpp.html#a17086daba511450e4936c3be404583cb", null ],
     [ "Timestamp", "SwimCommon_8hpp.html#ad6fec29c8d4802159a9c2f975047f4d2", null ],
     [ "MakeRecord", "SwimCommon_8hpp.html#a71d206032cf982058af39f3ce72e892e", null ],

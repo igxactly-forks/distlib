@@ -93,6 +93,7 @@ $(document).ready(function(){initNavTree('SwimCommon_8hpp.html','');});
 <div class="contents">
 <div class="textblock"><code>#include &lt;chrono&gt;</code><br />
 <code>#include &lt;iomanip&gt;</code><br />
+<code>#include &lt;mutex&gt;</code><br />
 <code>#include &lt;set&gt;</code><br />
 <code>#include &quot;swim.pb.h&quot;</code><br />
 </div>
@@ -114,6 +115,8 @@ Namespaces</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:ad6fec29c8d4802159a9c2f975047f4d2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SwimCommon_8hpp.html#ad6fec29c8d4802159a9c2f975047f4d2">Timestamp</a> = system_clock::time_point</td></tr>
 <tr class="separator:ad6fec29c8d4802159a9c2f975047f4d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bb7adc7f2884ba5485f7d46d06993a5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim.html#a2bb7adc7f2884ba5485f7d46d06993a5">swim::mutex_guard</a> = std::lock_guard&lt; std::mutex &gt;</td></tr>
+<tr class="separator:a2bb7adc7f2884ba5485f7d46d06993a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17086daba511450e4936c3be404583cb"><td class="memItemLeft" align="right" valign="top">typedef set&lt; std::shared_ptr&lt; ServerRecord &gt;, ServerRecordPtrLess &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim.html#a17086daba511450e4936c3be404583cb">swim::ServerRecordsSet</a></td></tr>
 <tr class="separator:a17086daba511450e4936c3be404583cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">

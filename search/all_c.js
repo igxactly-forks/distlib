@@ -1,8 +1,8 @@
 var searchData=
 [
   ['onpingrequest',['onPingRequest',['../classswim_1_1SwimServer.html#a101a4cfc5f907a8ed75e41fd35054f04',1,'swim::SwimServer']]],
-  ['onreport',['onReport',['../classswim_1_1SwimServer.html#a9884133fa20a346be034058bc4d2888b',1,'swim::SwimServer']]],
-  ['onupdate',['onUpdate',['../classswim_1_1SwimServer.html#a17c15beda19336b9409fcbc74bc5735c',1,'swim::SwimServer']]],
+  ['onreport',['onReport',['../classswim_1_1SwimServer.html#a96c0a24f12e07503ad8a1150f1ca910e',1,'swim::SwimServer']]],
+  ['onupdate',['onUpdate',['../classswim_1_1SwimServer.html#a5ce4b1cb3e9798fc149e7bccd219ba4d',1,'swim::SwimServer']]],
   ['operator_21_3d',['operator!=',['../MerkleNode_8hpp.html#a25f30fa05ed77eb1a6e32dd81cfbddf0',1,'MerkleNode.hpp']]],
   ['operator_28_29',['operator()',['../structswim_1_1ServerRecordPtrLess.html#a2dd81352822c76483d02e1254b39e5b9',1,'swim::ServerRecordPtrLess']]],
   ['operator_3c',['operator&lt;',['../namespaceswim.html#a1b8acda1e853f81e48baf71153775fc1',1,'swim']]],

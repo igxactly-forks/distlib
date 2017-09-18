@@ -18,6 +18,6 @@ var searchData=
   ['positional_5fargs',['positional_args',['../classutils_1_1ParseArgs.html#a103a13e9c812a8c6967382494dfe1e5d',1,'utils::ParseArgs']]],
   ['postmessage',['postMessage',['../classswim_1_1SwimClient.html#a79dab0f6c4b597dd7107c16fd5813c32',1,'swim::SwimClient']]],
   ['preparereport',['PrepareReport',['../classswim_1_1SwimServer.html#af1d032e23c16e72e630edfeb50f0f23b',1,'swim::SwimServer']]],
-  ['printversion',['printVersion',['../namespaceutils.html#a2786b24072b0f06eaef18926875bda5f',1,'utils']]],
+  ['printversion',['PrintVersion',['../namespaceutils.html#a2169d710a93da9138fbaa5122fb65e92',1,'utils']]],
   ['progname',['progname',['../classutils_1_1ParseArgs.html#ad5f4fdc88527cfe4d25fc53afac07223',1,'utils::ParseArgs']]]
 ];

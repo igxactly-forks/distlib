@@ -141,10 +141,10 @@ Static Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a17c15beda19336b9409fcbc74bc5735c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimServer.html#a17c15beda19336b9409fcbc74bc5735c">onUpdate</a> (Server *client)</td></tr>
-<tr class="separator:a17c15beda19336b9409fcbc74bc5735c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9884133fa20a346be034058bc4d2888b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimServer.html#a9884133fa20a346be034058bc4d2888b">onReport</a> (Server *sender, SwimReport *report)</td></tr>
-<tr class="separator:a9884133fa20a346be034058bc4d2888b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ce4b1cb3e9798fc149e7bccd219ba4d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimServer.html#a5ce4b1cb3e9798fc149e7bccd219ba4d">onUpdate</a> (Server *client)</td></tr>
+<tr class="separator:a5ce4b1cb3e9798fc149e7bccd219ba4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96c0a24f12e07503ad8a1150f1ca910e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimServer.html#a96c0a24f12e07503ad8a1150f1ca910e">onReport</a> (Server *sender, SwimReport *report)</td></tr>
+<tr class="separator:a96c0a24f12e07503ad8a1150f1ca910e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a101a4cfc5f907a8ed75e41fd35054f04"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimServer.html#a101a4cfc5f907a8ed75e41fd35054f04">onPingRequest</a> (Server *sender, Server *destination)</td></tr>
 <tr class="separator:a101a4cfc5f907a8ed75e41fd35054f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -400,7 +400,6 @@ Private Attributes</h2></td></tr>
 <p>This is essentially a callback method that will be invoked by the server's loop, in its own thread.</p>
 <p>This message requests this server to send a ping on behalf of the <code>sender</code>, to the <code>destination</code> server; if the latter responds within the given timeout, this server will send back a report to notify that it is alive.</p>
 <p>If the <code>destination</code> does not respond, no action is taken, beyond marking it as a <code>suspected</code> crashed server.</p>
-<p><b>Note</b> that this server class is currently <b>NOT</b> thread-safe and that none of its members (apart from the <code>atomic&lt;bool&gt;</code> stopped_) should be modified while processing this call.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sender</td><td>the server that just sent the message; the callee obtains ownership of the pointer and is responsible for freeing the memory. </td></tr>
@@ -411,8 +410,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a9884133fa20a346be034058bc4d2888b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9884133fa20a346be034058bc4d2888b">&#9670;&nbsp;</a></span>onReport()</h2>
+<a id="a96c0a24f12e07503ad8a1150f1ca910e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96c0a24f12e07503ad8a1150f1ca910e">&#9670;&nbsp;</a></span>onReport()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -421,7 +420,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void swim::SwimServer::onReport </td>
+          <td class="memname">void swim::SwimServer::onReport </td>
           <td>(</td>
           <td class="paramtype">Server *&#160;</td>
           <td class="paramname"><em>sender</em>, </td>
@@ -440,13 +439,12 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 <p>Invoked when the <code>client</code> sends a <code>SwimEnvelope::Type::STATUS_REPORT</code> message to this server.</p>
 <p>This is a callback method that will be invoked by the server's loop, in its own thread.</p>
-<p><b>Note</b> that this server class is currently <b>NOT</b> thread-safe and that none of its members (apart from the <code>atomic&lt;bool&gt;</code> stopped_) should be modified while processing this call.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sender</td><td>the server that just sent the message; the callee obtains ownership of the pointer and is responsible for freeing the memory. </td></tr>
@@ -457,8 +455,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a17c15beda19336b9409fcbc74bc5735c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17c15beda19336b9409fcbc74bc5735c">&#9670;&nbsp;</a></span>onUpdate()</h2>
+<a id="a5ce4b1cb3e9798fc149e7bccd219ba4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ce4b1cb3e9798fc149e7bccd219ba4d">&#9670;&nbsp;</a></span>onUpdate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -467,7 +465,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void swim::SwimServer::onUpdate </td>
+          <td class="memname">void swim::SwimServer::onUpdate </td>
           <td>(</td>
           <td class="paramtype">Server *&#160;</td>
           <td class="paramname"><em>client</em></td><td>)</td>
@@ -476,13 +474,12 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 <p>Invoked when the <code>client</code> sends a <code>SwimEnvelope::Type::STATUS_UPDATE</code> message to this server.</p>
 <p>This is a callback method that will be invoked by the server's loop, in its own thread.</p>
-<p><b>Note</b> that this server class is currently <b>NOT</b> thread-safe and that none of its members (apart from the <code>atomic&lt;bool&gt;</code> stopped_) should be modified while processing this call.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">client</td><td>the server that just sent the message; the callee obtains ownership of the pointer and is responsible for freeing the memory. </td></tr>
@@ -761,6 +758,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Access to the collection of "alive" servers must be thread-safe; use a std::lock_guard to protect access.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>std::mutex is not re-entrant: use a std::unique_lock instead. </dd></dl>
 
 </div>
 </div>
@@ -964,6 +963,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Access to the collection of "suspected" servers must be thread-safe; use a std::lock_guard to protect access.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>std::mutex is not re-entrant: use a std::unique_lock instead. </dd></dl>
 
 </div>
 </div>

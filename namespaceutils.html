@@ -93,6 +93,8 @@ $(document).ready(function(){initNavTree('namespaceutils.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutils_1_1not__implemented.html">not_implemented</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutils_1_1parse__error.html">parse_error</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutils_1_1ParseArgs.html">ParseArgs</a></td></tr>
@@ -100,8 +102,8 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a2786b24072b0f06eaef18926875bda5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutils.html#a2786b24072b0f06eaef18926875bda5f">printVersion</a> ()</td></tr>
-<tr class="separator:a2786b24072b0f06eaef18926875bda5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2169d710a93da9138fbaa5122fb65e92"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutils.html#a2169d710a93da9138fbaa5122fb65e92">PrintVersion</a> (std::ostream &amp;out)</td></tr>
+<tr class="separator:a2169d710a93da9138fbaa5122fb65e92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2c29b86a495aeff46f374cb1b6c381a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutils.html#af2c29b86a495aeff46f374cb1b6c381a">InetAddress</a> (const std::string &amp;host)</td></tr>
 <tr class="separator:af2c29b86a495aeff46f374cb1b6c381a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a0e8a73d1cc84728c4658371d7c9354"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutils.html#a9a0e8a73d1cc84728c4658371d7c9354">SocketAddress</a> (unsigned int port)</td></tr>
@@ -120,6 +122,9 @@ Functions</h2></td></tr>
 <tr class="separator:ad706342eabf30146d6c5bb75c31d4a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59f6164332725176e2045deb2a54565b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutils.html#a59f6164332725176e2045deb2a54565b">split</a> (const std::string &amp;values, const std::string &amp;sep=&quot;,&quot;, bool trim_spaces=true, bool preserve_empty=true)</td></tr>
 <tr class="separator:a59f6164332725176e2045deb2a54565b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09dbd93debd935fd11b4ce8c89f4a8dd"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a09dbd93debd935fd11b4ce8c89f4a8dd"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutils.html#a09dbd93debd935fd11b4ce8c89f4a8dd">Vec2Str</a> (const std::vector&lt; T &gt; &amp;vec, const std::string &amp;sep=&quot;\)</td></tr>
+<tr class="separator:a09dbd93debd935fd11b4ce8c89f4a8dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -287,21 +292,29 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a2786b24072b0f06eaef18926875bda5f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2786b24072b0f06eaef18926875bda5f">&#9670;&nbsp;</a></span>printVersion()</h2>
+<a id="a2169d710a93da9138fbaa5122fb65e92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2169d710a93da9138fbaa5122fb65e92">&#9670;&nbsp;</a></span>PrintVersion()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void utils::printVersion </td>
+          <td class="memname">std::ostream &amp; utils::PrintVersion </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>out</em> = <code>std::cout</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Prints this library's (and supporting third-party libraries') version. </p>
+<p>Prints the current project's version, along with those of supporting frameworks (ZMQ and Protobuf).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">out</td><td>the stream to write out the version information </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the same stream that was passed in, for ease of chaining </dd></dl>
 
 </div>
 </div>
@@ -408,6 +421,51 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the <code>str</code> without leading and trailing spaces, if any </dd></dl>
+
+</div>
+</div>
+<a id="a09dbd93debd935fd11b4ce8c89f4a8dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09dbd93debd935fd11b4ce8c89f4a8dd">&#9670;&nbsp;</a></span>Vec2Str()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string utils::Vec2Str </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>sep</em> = <code>&quot;\n&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Converts a vector to a string, the concatenation of its element, separated by <code>sep</code>. Only really useful for debugging purposes.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>the type of the elements, MUST support emitting to an <code>ostream</code> via the <code>&lt;&lt;</code> operator </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vec</td><td>the vector whose element we are emitting </td></tr>
+    <tr><td class="paramname">sep</td><td>a separator string, by default a newline </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the string resulting from the concatenation of all elements </dd></dl>
 
 </div>
 </div>

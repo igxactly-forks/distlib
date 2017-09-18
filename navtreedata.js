@@ -2,6 +2,7 @@ var NAVTREE =
 [
   [ "distlib", "index.html", [
     [ "libdist - C++ utilities for Distributed Computing", "index.html", null ],
+    [ "Todo List", "todo.html", null ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -40,7 +41,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "Bucket_8cpp.html",
-"namespacemembers.html"
+"index.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
