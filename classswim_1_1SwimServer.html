@@ -398,12 +398,12 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Invoked when the <code>client</code> sends a <code>SwimEnvelope::Type::STATUS_REQUEST</code> message to this server.</p>
 <p>This is essentially a callback method that will be invoked by the server's loop, in its own thread.</p>
-<p>This message requests this server to send a ping on behalf of the <code>sender</code>, to the <code>destination</code> server; if the latter responds within the given timeout, this server will send back a report to notify that it is alive.</p>
-<p>If the <code>destination</code> does not respond, no action is taken, beyond marking it as a <code>suspected</code> crashed server.</p>
+<p>This message requests this server to send a report on behalf of the <code>sender</code>, to the <code>destination</code> server; the latter, if indeed alive, will then contact back the original <code>sender</code> to update its status.</p>
+<p>If the <code>destination</code> does not respond, no action is taken, beyond marking it as a <code>suspected</code> server.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sender</td><td>the server that just sent the message; the callee obtains ownership of the pointer and is responsible for freeing the memory. </td></tr>
-    <tr><td class="paramname">destination</td><td>the other server that the requestor (<code>client</code>) is asksing this server to ping and report status back. </td></tr>
+    <tr><td class="paramname">destination</td><td>the that the requestor (<code>sender</code>) is asksing this server to try and reach. This method is responsible for freeing the memory. </td></tr>
   </table>
   </dd>
 </dl>
