@@ -2,7 +2,8 @@ var classswim_1_1SwimServer =
 [
     [ "SwimServer", "classswim_1_1SwimServer.html#a0a1d97de728da23900e74e1015bd591f", null ],
     [ "~SwimServer", "classswim_1_1SwimServer.html#aced242427b803102067ca469388a0467", null ],
-    [ "AddAlive", "classswim_1_1SwimServer.html#a36c42ee8a0e0a3573add6be573bcb9bd", null ],
+    [ "AddAlive", "classswim_1_1SwimServer.html#a614b3875455c38b8af9560a77af16519", null ],
+    [ "addRecordsToBudget", "classswim_1_1SwimServer.html#ac4f69a718ed38fc79926025f868bfa61", null ],
     [ "alive_empty", "classswim_1_1SwimServer.html#a9458f7ffee2cc9d4e62695466e0f93f4", null ],
     [ "alive_size", "classswim_1_1SwimServer.html#a167fe932b8650b7b0d2f6e9ae4938fe6", null ],
     [ "GetRandomNeighbor", "classswim_1_1SwimServer.html#aaea7385ad987bd094f47953a0994c7f2", null ],
@@ -13,7 +14,7 @@ var classswim_1_1SwimServer =
     [ "port", "classswim_1_1SwimServer.html#a4640bf38b341a632da28133924272e9c", null ],
     [ "PrepareReport", "classswim_1_1SwimServer.html#af1d032e23c16e72e630edfeb50f0f23b", null ],
     [ "RemoveSuspected", "classswim_1_1SwimServer.html#a692d1b4be29d381d78185dc883bb5284", null ],
-    [ "ReportSuspect", "classswim_1_1SwimServer.html#aea5d1125f456302f738dc884b68d4fa7", null ],
+    [ "ReportSuspected", "classswim_1_1SwimServer.html#a6f60a0f5ef59546e2843454e3acaf983", null ],
     [ "self", "classswim_1_1SwimServer.html#a49b15dff35afbf6609aefb467ca3724e", null ],
     [ "start", "classswim_1_1SwimServer.html#ac8b9fb31375db9e48d2b5f3af3cb93cf", null ],
     [ "stop", "classswim_1_1SwimServer.html#a4086039ab0277341aa4f33f45466a5cf", null ],

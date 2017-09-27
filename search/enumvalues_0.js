@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['left',['LEFT',['../classMerkleNode.html#a3b3409b820a2e9278f86939fc537909aa14770ca7ddbeca0d0ba2f70adef5f737',1,'MerkleNode']]]
+  ['kalive',['kAlive',['../namespaceswim.html#abd032c4c089bbddcdaf9e169a94be349aff44ad297bab15e74c31a9e237d2cceb',1,'swim']]],
+  ['ksuspected',['kSuspected',['../namespaceswim.html#abd032c4c089bbddcdaf9e169a94be349ad8e94244192ffaee33a6b0da27001ffb',1,'swim']]]
 ];

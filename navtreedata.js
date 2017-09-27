@@ -9,7 +9,9 @@ var NAVTREE =
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ],
         [ "Variables", "namespacemembers_vars.html", null ],
-        [ "Typedefs", "namespacemembers_type.html", null ]
+        [ "Typedefs", "namespacemembers_type.html", null ],
+        [ "Enumerations", "namespacemembers_enum.html", null ],
+        [ "Enumerator", "namespacemembers_eval.html", null ]
       ] ]
     ] ],
     [ "Classes", "annotated.html", [
@@ -41,7 +43,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "Bucket_8cpp.html",
-"index.html"
+"globals_type.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

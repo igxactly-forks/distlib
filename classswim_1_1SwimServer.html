@@ -86,6 +86,7 @@ $(document).ready(function(){initNavTree('classswim_1_1SwimServer.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classswim_1_1SwimServer-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -123,10 +124,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af1d032e23c16e72e630edfeb50f0f23b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaea7385ad987bd094f47953a0994c7f2"><td class="memItemLeft" align="right" valign="top">Server&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimServer.html#aaea7385ad987bd094f47953a0994c7f2">GetRandomNeighbor</a> () const</td></tr>
 <tr class="separator:aaea7385ad987bd094f47953a0994c7f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea5d1125f456302f738dc884b68d4fa7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimServer.html#aea5d1125f456302f738dc884b68d4fa7">ReportSuspect</a> (const Server &amp;)</td></tr>
-<tr class="separator:aea5d1125f456302f738dc884b68d4fa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36c42ee8a0e0a3573add6be573bcb9bd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimServer.html#a36c42ee8a0e0a3573add6be573bcb9bd">AddAlive</a> (const Server &amp;)</td></tr>
-<tr class="separator:a36c42ee8a0e0a3573add6be573bcb9bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f60a0f5ef59546e2843454e3acaf983"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimServer.html#a6f60a0f5ef59546e2843454e3acaf983">ReportSuspected</a> (const Server &amp;server, google::uint64 timestamp=::<a class="el" href="namespaceutils.html#a1bbb531a49033bcf276fdc31195fb5a7">utils::CurrentTime</a>())</td></tr>
+<tr class="separator:a6f60a0f5ef59546e2843454e3acaf983"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a614b3875455c38b8af9560a77af16519"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimServer.html#a614b3875455c38b8af9560a77af16519">AddAlive</a> (const Server &amp;server, google::uint64 timestamp=::<a class="el" href="namespaceutils.html#a1bbb531a49033bcf276fdc31195fb5a7">utils::CurrentTime</a>())</td></tr>
+<tr class="separator:a614b3875455c38b8af9560a77af16519"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a692d1b4be29d381d78185dc883bb5284"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimServer.html#a692d1b4be29d381d78185dc883bb5284">RemoveSuspected</a> (const Server &amp;)</td></tr>
 <tr class="separator:a692d1b4be29d381d78185dc883bb5284"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -147,6 +148,11 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a96c0a24f12e07503ad8a1150f1ca910e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a101a4cfc5f907a8ed75e41fd35054f04"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimServer.html#a101a4cfc5f907a8ed75e41fd35054f04">onPingRequest</a> (Server *sender, Server *destination)</td></tr>
 <tr class="separator:a101a4cfc5f907a8ed75e41fd35054f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ac4f69a718ed38fc79926025f868bfa61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimServer.html#ac4f69a718ed38fc79926025f868bfa61">addRecordsToBudget</a> (SwimReport &amp;report, std::vector&lt; ServerRecord &gt; &amp;records, const <a class="el" href="namespaceswim.html#abd032c4c089bbddcdaf9e169a94be349">ReportSelector</a> &amp;which=<a class="el" href="namespaceswim.html#abd032c4c089bbddcdaf9e169a94be349aff44ad297bab15e74c31a9e237d2cceb">kAlive</a>) const</td></tr>
+<tr class="separator:ac4f69a718ed38fc79926025f868bfa61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -236,8 +242,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a36c42ee8a0e0a3573add6be573bcb9bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36c42ee8a0e0a3573add6be573bcb9bd">&#9670;&nbsp;</a></span>AddAlive()</h2>
+<a id="a614b3875455c38b8af9560a77af16519"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a614b3875455c38b8af9560a77af16519">&#9670;&nbsp;</a></span>AddAlive()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -246,8 +252,18 @@ Private Attributes</h2></td></tr>
           <td class="memname">bool swim::SwimServer::AddAlive </td>
           <td>(</td>
           <td class="paramtype">const Server &amp;&#160;</td>
-          <td class="paramname"><em>server</em></td><td>)</td>
+          <td class="paramname"><em>server</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">google::uint64&#160;</td>
+          <td class="paramname"><em>timestamp</em> = <code>::<a class="el" href="namespaceutils.html#a1bbb531a49033bcf276fdc31195fb5a7">utils::CurrentTime</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -259,6 +275,57 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>whether adding <code>server</code> to <code>alive_</code> set was successful </dd></dl>
+
+</div>
+</div>
+<a id="ac4f69a718ed38fc79926025f868bfa61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4f69a718ed38fc79926025f868bfa61">&#9670;&nbsp;</a></span>addRecordsToBudget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void swim::SwimServer::addRecordsToBudget </td>
+          <td>(</td>
+          <td class="paramtype">SwimReport &amp;&#160;</td>
+          <td class="paramname"><em>report</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; ServerRecord &gt; &amp;&#160;</td>
+          <td class="paramname"><em>records</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceswim.html#abd032c4c089bbddcdaf9e169a94be349">ReportSelector</a> &amp;&#160;</td>
+          <td class="paramname"><em>which</em> = <code><a class="el" href="namespaceswim.html#abd032c4c089bbddcdaf9e169a94be349aff44ad297bab15e74c31a9e237d2cceb">kAlive</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Using the <code><a class="el" href="namespaceswim.html#a6821b7f40dfdfdcb372746d5c267b92c">utils::cost()</a></code> function, adds to the <code>report</code> as many records as the budget allows.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">report</td><td>to which we are adding records </td></tr>
+    <tr><td class="paramname">records</td><td>the records to add, which will be sorted according to their timestamp and added from the most recent backwards, until the budget is reached </td></tr>
+    <tr><td class="paramname">which</td><td>whether to add the records to the <code>alive</code> or <code>suspected</code> list </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -548,7 +615,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Removes the given server from the suspected set, thus marking it as terminally unreachable (unless subsequently added back using <code><a class="el" href="classswim_1_1SwimServer.html#a36c42ee8a0e0a3573add6be573bcb9bd">AddAlive(const Server&amp;)</a></code>).</p>
+<p>Removes the given server from the suspected set, thus marking it as terminally unreachable (unless subsequently added back using <code>AddAlive(const Server&amp;)</code>).</p>
 <p>Typically used when the <code>grace_period()</code> expires and the <code>server</code> has not been successfully contacted, by either this <code><a class="el" href="classswim_1_1SwimServer.html">SwimServer</a></code> or other "forwarders."</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -559,18 +626,28 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aea5d1125f456302f738dc884b68d4fa7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea5d1125f456302f738dc884b68d4fa7">&#9670;&nbsp;</a></span>ReportSuspect()</h2>
+<a id="a6f60a0f5ef59546e2843454e3acaf983"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f60a0f5ef59546e2843454e3acaf983">&#9670;&nbsp;</a></span>ReportSuspected()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool swim::SwimServer::ReportSuspect </td>
+          <td class="memname">bool swim::SwimServer::ReportSuspected </td>
           <td>(</td>
           <td class="paramtype">const Server &amp;&#160;</td>
-          <td class="paramname"><em>server</em></td><td>)</td>
+          <td class="paramname"><em>server</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">google::uint64&#160;</td>
+          <td class="paramname"><em>timestamp</em> = <code>::<a class="el" href="namespaceutils.html#a1bbb531a49033bcf276fdc31195fb5a7">utils::CurrentTime</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -759,7 +836,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Access to the collection of "alive" servers must be thread-safe; use a std::lock_guard to protect access.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>std::mutex is not re-entrant: use a std::unique_lock instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>std::mutex is not re-entrant: use a std::unique_lock instead. </dd></dl>
 
 </div>
 </div>
@@ -964,7 +1041,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Access to the collection of "suspected" servers must be thread-safe; use a std::lock_guard to protect access.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>std::mutex is not re-entrant: use a std::unique_lock instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>std::mutex is not re-entrant: use a std::unique_lock instead. </dd></dl>
 
 </div>
 </div>

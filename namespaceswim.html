@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('namespaceswim.html','');});
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -112,6 +113,13 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a17086daba511450e4936c3be404583cb"><td class="memItemLeft" align="right" valign="top">typedef set&lt; std::shared_ptr&lt; ServerRecord &gt;, <a class="el" href="structswim_1_1ServerRecordPtrLess.html">ServerRecordPtrLess</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim.html#a17086daba511450e4936c3be404583cb">ServerRecordsSet</a></td></tr>
 <tr class="separator:a17086daba511450e4936c3be404583cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:abd032c4c089bbddcdaf9e169a94be349"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim.html#abd032c4c089bbddcdaf9e169a94be349">ReportSelector</a> { <a class="el" href="namespaceswim.html#abd032c4c089bbddcdaf9e169a94be349aff44ad297bab15e74c31a9e237d2cceb">kAlive</a>, 
+<a class="el" href="namespaceswim.html#abd032c4c089bbddcdaf9e169a94be349ad8e94244192ffaee33a6b0da27001ffb">kSuspected</a>
+ }</td></tr>
+<tr class="separator:abd032c4c089bbddcdaf9e169a94be349"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a1b8acda1e853f81e48baf71153775fc1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim.html#a1b8acda1e853f81e48baf71153775fc1">operator&lt;</a> (const ServerRecord &amp;lhs, const ServerRecord &amp;rhs)</td></tr>
@@ -134,6 +142,8 @@ Functions</h2></td></tr>
 <tr class="separator:ad599b94477c6ab40b151ca6d91fb5037"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6a32ecc2317a7df5a359bb4883a49ff"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim.html#aa6a32ecc2317a7df5a359bb4883a49ff">operator&lt;&lt;</a> (std::ostream &amp;out, const SwimReport &amp;report)</td></tr>
 <tr class="separator:aa6a32ecc2317a7df5a359bb4883a49ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6821b7f40dfdfdcb372746d5c267b92c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim.html#a6821b7f40dfdfdcb372746d5c267b92c">cost</a> (long t)</td></tr>
+<tr class="separator:a6821b7f40dfdfdcb372746d5c267b92c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1844a3d58b5d749ad95768263c6d5d9a"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classswim_1_1SwimServer.html">SwimServer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim.html#a1844a3d58b5d749ad95768263c6d5d9a">CreateServer</a> (unsigned short port)</td></tr>
 <tr class="separator:a1844a3d58b5d749ad95768263c6d5d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -172,7 +182,63 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="abd032c4c089bbddcdaf9e169a94be349"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd032c4c089bbddcdaf9e169a94be349">&#9670;&nbsp;</a></span>ReportSelector</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespaceswim.html#abd032c4c089bbddcdaf9e169a94be349">swim::ReportSelector</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Used in <code>SwimServer::AddRecordsToBudget()</code> to choose which part of the report to add the list of records. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abd032c4c089bbddcdaf9e169a94be349aff44ad297bab15e74c31a9e237d2cceb"></a>kAlive&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abd032c4c089bbddcdaf9e169a94be349ad8e94244192ffaee33a6b0da27001ffb"></a>kSuspected&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a6821b7f40dfdfdcb372746d5c267b92c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6821b7f40dfdfdcb372746d5c267b92c">&#9670;&nbsp;</a></span>cost()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double swim::cost </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Time "cost function" computes the cost of adding a record to a report, once the record has age <code>t</code> seconds.</p>
+<p>It uses a quadratic function, scaled by a constant <code>kTimeDecayConstant</code>. We will continue to add records to our report, until the total "cost" of doing so exceeds a given budget, given by <code>kTimeDecayBudget</code>.</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>we may eventually decide to make both paramets configurable in a later release.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>time, in seconds, since the record was last updated </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the associated "cost" of adding the record to the report </dd></dl>
+
+</div>
+</div>
 <a id="a1844a3d58b5d749ad95768263c6d5d9a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1844a3d58b5d749ad95768263c6d5d9a">&#9670;&nbsp;</a></span>CreateServer()</h2>
 
