@@ -271,6 +271,7 @@ Private Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">server</td><td>that will be added to the <code>alive_</code> set (and, if necessary, removed from the <code>suspected_</code> one). </td></tr>
+    <tr><td class="paramname">timestamp</td><td>an optional timestamp for when this server was reported as suspected; defaults to <code>now()</code> </td></tr>
   </table>
   </dd>
 </dl>
@@ -655,10 +656,11 @@ Private Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">server</td><td>that failed to respond to a ping request and thus is suspected of being in a failed state </td></tr>
+    <tr><td class="paramname">timestamp</td><td>an optional timestamp for when this server was reported as suspected; defaults to <code>now()</code> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>whethet adding <code>server</code> to the <code>suspected_</code> set was successful </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>whether adding <code>server</code> to the <code>suspected_</code> set was successful </dd></dl>
 
 </div>
 </div>
