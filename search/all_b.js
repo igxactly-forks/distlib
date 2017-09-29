@@ -8,6 +8,7 @@ var searchData=
   ['not_5fimplemented',['not_implemented',['../classutils_1_1not__implemented.html',1,'utils::not_implemented'],['../classutils_1_1not__implemented.html#a378f8272abff9488485d05e6e9baecaa',1,'utils::not_implemented::not_implemented()']]],
   ['num_5fbuckets',['num_buckets',['../classView.html#ac74b1d359fe00f7c33c075797dcc931f',1,'View']]],
   ['num_5fbuckets_5f',['num_buckets_',['../classView.html#ae2d17b8950965b24b5f5bf12c0975550',1,'View']]],
-  ['num_5fthreads',['NUM_THREADS',['../classswim_1_1SwimServer.html#a582914df4f8bbfcb0d243a120e30aca4',1,'swim::SwimServer']]],
+  ['num_5freports',['num_reports',['../classswim_1_1GossipFailureDetector.html#a285bc125bb07acb1bbb3b646036fdd86',1,'swim::GossipFailureDetector']]],
+  ['num_5freports_5f',['num_reports_',['../classswim_1_1GossipFailureDetector.html#ad96fb04e25b2e5150006fd247afd39a7',1,'swim::GossipFailureDetector']]],
   ['num_5fthreads_5f',['num_threads_',['../classswim_1_1SwimServer.html#a407c684fcef528edbf470452eb4aa8f6',1,'swim::SwimServer']]]
 ];

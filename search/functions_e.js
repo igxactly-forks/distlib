@@ -5,7 +5,7 @@ var searchData=
   ['sendreport',['SendReport',['../classswim_1_1GossipFailureDetector.html#a7ad4f0a92fb6e5b0d775645f76711122',1,'swim::GossipFailureDetector']]],
   ['set_5fgrace_5fperiod',['set_grace_period',['../classswim_1_1GossipFailureDetector.html#ae596781949ae4c804a570ff57eb57afd',1,'swim::GossipFailureDetector']]],
   ['set_5fmax_5fallowed_5freports',['set_max_allowed_reports',['../classswim_1_1SwimClient.html#afffcd08b9cf30611cd2bc9309e98f39d',1,'swim::SwimClient']]],
-  ['set_5fping_5finterval',['set_ping_interval',['../classswim_1_1GossipFailureDetector.html#ae0866a90a94225b2bf0ee68f44c19085',1,'swim::GossipFailureDetector']]],
+  ['set_5fnum_5freports',['set_num_reports',['../classswim_1_1GossipFailureDetector.html#a1763cd4fb4608178d4a7f9a1ff026dec',1,'swim::GossipFailureDetector']]],
   ['set_5fping_5ftimeout',['set_ping_timeout',['../classswim_1_1GossipFailureDetector.html#af81a45134eca153f2bb933b41cea9811',1,'swim::GossipFailureDetector']]],
   ['set_5ftimeout',['set_timeout',['../classswim_1_1SwimClient.html#a7b7f79296da38a7242b07b10686899d4',1,'swim::SwimClient']]],
   ['set_5fupdate_5fround_5finterval',['set_update_round_interval',['../classswim_1_1GossipFailureDetector.html#a9361737a7d7016dc71eacac33b27aae2',1,'swim::GossipFailureDetector']]],
@@ -20,6 +20,6 @@ var searchData=
   ['stopallbackgroundthreads',['StopAllBackgroundThreads',['../classswim_1_1GossipFailureDetector.html#a739d790db4a7540515ae627ae6011e24',1,'swim::GossipFailureDetector']]],
   ['suspected_5fempty',['suspected_empty',['../classswim_1_1SwimServer.html#ad59d216ff8947889a9a74b827065ce0d',1,'swim::SwimServer']]],
   ['suspected_5fsize',['suspected_size',['../classswim_1_1SwimServer.html#adebc081296492be96e50e8f7941f3f2f',1,'swim::SwimServer']]],
-  ['swimclient',['SwimClient',['../classswim_1_1SwimClient.html#a2d52b2d600f71154cb6f66803da20dfc',1,'swim::SwimClient']]],
-  ['swimserver',['SwimServer',['../classswim_1_1SwimServer.html#a0a1d97de728da23900e74e1015bd591f',1,'swim::SwimServer']]]
+  ['swimclient',['SwimClient',['../classswim_1_1SwimClient.html#a582b3dde774d4a19f9d44a6cd0f60bc0',1,'swim::SwimClient']]],
+  ['swimserver',['SwimServer',['../classswim_1_1SwimServer.html#af82b4c25576dc3bacdc0cab51708dee8',1,'swim::SwimServer']]]
 ];

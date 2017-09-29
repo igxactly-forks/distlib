@@ -1,6 +1,6 @@
 var classswim_1_1SwimClient =
 [
-    [ "SwimClient", "classswim_1_1SwimClient.html#a2d52b2d600f71154cb6f66803da20dfc", null ],
+    [ "SwimClient", "classswim_1_1SwimClient.html#a582b3dde774d4a19f9d44a6cd0f60bc0", null ],
     [ "~SwimClient", "classswim_1_1SwimClient.html#a76ed81af7ede50f34e28b2dca51d45a8", null ],
     [ "destinationUri", "classswim_1_1SwimClient.html#aadce8af4591de69ef909f18ce82c4e1c", null ],
     [ "max_allowed_reports", "classswim_1_1SwimClient.html#aa2841a0a5fa9bdc3217084b779160002", null ],

@@ -86,7 +86,6 @@ $(document).ready(function(){initNavTree('classswim_1_1SwimClient.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
-<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classswim_1_1SwimClient-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">swim::SwimClient Class Reference</div>  </div>
@@ -97,8 +96,8 @@ $(document).ready(function(){initNavTree('classswim_1_1SwimClient.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2d52b2d600f71154cb6f66803da20dfc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimClient.html#a2d52b2d600f71154cb6f66803da20dfc">SwimClient</a> (const Server &amp;dest, int self_port=0, unsigned long <a class="el" href="classswim_1_1SwimClient.html#ae5f42c0b3236e6f033f27250b2499791">timeout</a>=<a class="el" href="classswim_1_1SwimClient.html#a7bf3038f70da8484dc5e1405a57b1b17">DEFAULT_TIMEOUT_MSEC</a>)</td></tr>
-<tr class="separator:a2d52b2d600f71154cb6f66803da20dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a582b3dde774d4a19f9d44a6cd0f60bc0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimClient.html#a582b3dde774d4a19f9d44a6cd0f60bc0">SwimClient</a> (const Server &amp;dest, int self_port=0, unsigned long <a class="el" href="classswim_1_1SwimClient.html#ae5f42c0b3236e6f033f27250b2499791">timeout</a>=<a class="el" href="namespaceswim.html#a75c970583ca47afe28b39465e90f3e6c">swim::kDefaultTimeoutMsec</a>)</td></tr>
+<tr class="separator:a582b3dde774d4a19f9d44a6cd0f60bc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76ed81af7ede50f34e28b2dca51d45a8"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimClient.html#a76ed81af7ede50f34e28b2dca51d45a8">~SwimClient</a> ()</td></tr>
 <tr class="separator:a76ed81af7ede50f34e28b2dca51d45a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87c000ef79101d1750935d7e83c69e5d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimClient.html#a87c000ef79101d1750935d7e83c69e5d">Ping</a> () const</td></tr>
@@ -137,20 +136,13 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ab46aa924be7cb0cb65fa9032321cf934"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa325e680df9e784353651bb36f4d8250"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimClient.html#aa325e680df9e784353651bb36f4d8250">max_allowed_reports_</a> = <a class="el" href="SwimClient_8hpp.html#a83448cfb7cac902aeb69bc6c23b30691">MAX_ALLOWED_DEFAULT</a></td></tr>
 <tr class="separator:aa325e680df9e784353651bb36f4d8250"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
-Static Private Attributes</h2></td></tr>
-<tr class="memitem:a7bf3038f70da8484dc5e1405a57b1b17"><td class="memItemLeft" align="right" valign="top">static const unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimClient.html#a7bf3038f70da8484dc5e1405a57b1b17">DEFAULT_TIMEOUT_MSEC</a> = 25</td></tr>
-<tr class="separator:a7bf3038f70da8484dc5e1405a57b1b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af254fd676ed704810c2aed7f5aad0602"><td class="memItemLeft" align="right" valign="top">static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1SwimClient.html#af254fd676ed704810c2aed7f5aad0602">DEFAULT_SOCKET_LINGER_MSEC</a> = 0</td></tr>
-<tr class="separator:af254fd676ed704810c2aed7f5aad0602"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Client that is used to connect to a <a class="el" href="classswim_1_1SwimServer.html">SwimServer</a> and exchange messages.</p>
 <p>Clients solely initiate connections and query the server about status, or to send reports. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a2d52b2d600f71154cb6f66803da20dfc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d52b2d600f71154cb6f66803da20dfc">&#9670;&nbsp;</a></span>SwimClient()</h2>
+<a id="a582b3dde774d4a19f9d44a6cd0f60bc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a582b3dde774d4a19f9d44a6cd0f60bc0">&#9670;&nbsp;</a></span>SwimClient()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -171,7 +163,7 @@ Static Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned long&#160;</td>
-          <td class="paramname"><em>timeout</em> = <code><a class="el" href="classswim_1_1SwimClient.html#a7bf3038f70da8484dc5e1405a57b1b17">DEFAULT_TIMEOUT_MSEC</a></code>&#160;</td>
+          <td class="paramname"><em>timeout</em> = <code><a class="el" href="namespaceswim.html#a75c970583ca47afe28b39465e90f3e6c">swim::kDefaultTimeoutMsec</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -476,50 +468,6 @@ Static Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="af254fd676ed704810c2aed7f5aad0602"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af254fd676ed704810c2aed7f5aad0602">&#9670;&nbsp;</a></span>DEFAULT_SOCKET_LINGER_MSEC</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const unsigned int swim::SwimClient::DEFAULT_SOCKET_LINGER_MSEC = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7bf3038f70da8484dc5e1405a57b1b17"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7bf3038f70da8484dc5e1405a57b1b17">&#9670;&nbsp;</a></span>DEFAULT_TIMEOUT_MSEC</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const unsigned long swim::SwimClient::DEFAULT_TIMEOUT_MSEC = 25</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="acdb8aee4654799d864042251c7eb877f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acdb8aee4654799d864042251c7eb877f">&#9670;&nbsp;</a></span>dest_</h2>
 

@@ -124,6 +124,8 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a1b8acda1e853f81e48baf71153775fc1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim.html#a1b8acda1e853f81e48baf71153775fc1">operator&lt;</a> (const ServerRecord &amp;lhs, const ServerRecord &amp;rhs)</td></tr>
 <tr class="separator:a1b8acda1e853f81e48baf71153775fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71fd18e4c1d15cd25d0813c449f82357"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim.html#a71fd18e4c1d15cd25d0813c449f82357">operator&lt;</a> (const Server &amp;lhs, const Server &amp;rhs)</td></tr>
+<tr class="separator:a71fd18e4c1d15cd25d0813c449f82357"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c2aca82834314bb6399890165b4672b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim.html#a2c2aca82834314bb6399890165b4672b">operator==</a> (const Server &amp;lhs, const Server &amp;rhs)</td></tr>
 <tr class="separator:a2c2aca82834314bb6399890165b4672b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fcf36b7d51acd7a776a5a3e18a25fe0"><td class="memItemLeft" align="right" valign="top">inline ::google::protobuf::uint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim.html#a0fcf36b7d51acd7a776a5a3e18a25fe0">TimestampToFixed64</a> (const <a class="el" href="SwimCommon_8hpp.html#ad6fec29c8d4802159a9c2f975047f4d2">Timestamp</a> &amp;timestamp)</td></tr>
@@ -151,6 +153,12 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a920cf09060d411500b6dfb46aefc11c7"><td class="memItemLeft" align="right" valign="top">std::default_random_engine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim.html#a920cf09060d411500b6dfb46aefc11c7">random_engine</a> {}</td></tr>
 <tr class="separator:a920cf09060d411500b6dfb46aefc11c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75c970583ca47afe28b39465e90f3e6c"><td class="memItemLeft" align="right" valign="top">const unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim.html#a75c970583ca47afe28b39465e90f3e6c">kDefaultTimeoutMsec</a> = 25</td></tr>
+<tr class="separator:a75c970583ca47afe28b39465e90f3e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28fa7da48e331e6524b1e195ca5101d1"><td class="memItemLeft" align="right" valign="top">const unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim.html#a28fa7da48e331e6524b1e195ca5101d1">kDefaultPollingIntervalMsec</a> = 50</td></tr>
+<tr class="separator:a28fa7da48e331e6524b1e195ca5101d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adef856867083c989d1756eaba4ad990e"><td class="memItemLeft" align="right" valign="top">const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim.html#adef856867083c989d1756eaba4ad990e">kDefaultSocketLingerMsec</a> = 0</td></tr>
+<tr class="separator:adef856867083c989d1756eaba4ad990e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a2bb7adc7f2884ba5485f7d46d06993a5"></a>
@@ -356,7 +364,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="a1b8acda1e853f81e48baf71153775fc1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b8acda1e853f81e48baf71153775fc1">&#9670;&nbsp;</a></span>operator<()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b8acda1e853f81e48baf71153775fc1">&#9670;&nbsp;</a></span>operator<() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -390,6 +398,34 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>whether <code>lhs</code> is less than <code>rhs</code>, according to a lexicographic ordering of their respective <code>ServerRecord::server()</code> </dd></dl>
+
+</div>
+</div>
+<a id="a71fd18e4c1d15cd25d0813c449f82357"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71fd18e4c1d15cd25d0813c449f82357">&#9670;&nbsp;</a></span>operator<() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool swim::operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const Server &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Server &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -629,6 +665,51 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="a28fa7da48e331e6524b1e195ca5101d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28fa7da48e331e6524b1e195ca5101d1">&#9670;&nbsp;</a></span>kDefaultPollingIntervalMsec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned long swim::kDefaultPollingIntervalMsec = 50</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Default interval between polling, when waiting for incoming requests. </p>
+
+</div>
+</div>
+<a id="adef856867083c989d1756eaba4ad990e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adef856867083c989d1756eaba4ad990e">&#9670;&nbsp;</a></span>kDefaultSocketLingerMsec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int swim::kDefaultSocketLingerMsec = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Required to keep ZMQ happy and remove unnecessary sockets "lingering" after communication is closed. </p>
+
+</div>
+</div>
+<a id="a75c970583ca47afe28b39465e90f3e6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75c970583ca47afe28b39465e90f3e6c">&#9670;&nbsp;</a></span>kDefaultTimeoutMsec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned long swim::kDefaultTimeoutMsec = 25</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Default timeout for all clients connecting to servers </p>
+
+</div>
+</div>
 <a id="a920cf09060d411500b6dfb46aefc11c7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a920cf09060d411500b6dfb46aefc11c7">&#9670;&nbsp;</a></span>random_engine</h2>
 

@@ -86,7 +86,8 @@ $(document).ready(function(){initNavTree('SwimCommon_8hpp.html','');});
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">SwimCommon.hpp File Reference</div>  </div>
 </div><!--header-->
@@ -128,6 +129,8 @@ Functions</h2></td></tr>
 <tr class="separator:a338b56df2eeb18a3e88d9a1cd2bf00ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71d206032cf982058af39f3ce72e892e"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; ServerRecord &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim.html#a71d206032cf982058af39f3ce72e892e">swim::MakeRecord</a> (const Server &amp;server, const <a class="el" href="SwimCommon_8hpp.html#ad6fec29c8d4802159a9c2f975047f4d2">Timestamp</a> &amp;timestamp=std::chrono::system_clock::now())</td></tr>
 <tr class="separator:a71d206032cf982058af39f3ce72e892e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71fd18e4c1d15cd25d0813c449f82357"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim.html#a71fd18e4c1d15cd25d0813c449f82357">swim::operator&lt;</a> (const Server &amp;lhs, const Server &amp;rhs)</td></tr>
+<tr class="separator:a71fd18e4c1d15cd25d0813c449f82357"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b8acda1e853f81e48baf71153775fc1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim.html#a1b8acda1e853f81e48baf71153775fc1">swim::operator&lt;</a> (const ServerRecord &amp;lhs, const ServerRecord &amp;rhs)</td></tr>
 <tr class="separator:a1b8acda1e853f81e48baf71153775fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c2aca82834314bb6399890165b4672b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim.html#a2c2aca82834314bb6399890165b4672b">swim::operator==</a> (const Server &amp;lhs, const Server &amp;rhs)</td></tr>
@@ -142,6 +145,15 @@ Functions</h2></td></tr>
 <tr class="separator:ad599b94477c6ab40b151ca6d91fb5037"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6a32ecc2317a7df5a359bb4883a49ff"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim.html#aa6a32ecc2317a7df5a359bb4883a49ff">swim::operator&lt;&lt;</a> (std::ostream &amp;out, const SwimReport &amp;report)</td></tr>
 <tr class="separator:aa6a32ecc2317a7df5a359bb4883a49ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a75c970583ca47afe28b39465e90f3e6c"><td class="memItemLeft" align="right" valign="top">const unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim.html#a75c970583ca47afe28b39465e90f3e6c">swim::kDefaultTimeoutMsec</a> = 25</td></tr>
+<tr class="separator:a75c970583ca47afe28b39465e90f3e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28fa7da48e331e6524b1e195ca5101d1"><td class="memItemLeft" align="right" valign="top">const unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim.html#a28fa7da48e331e6524b1e195ca5101d1">swim::kDefaultPollingIntervalMsec</a> = 50</td></tr>
+<tr class="separator:a28fa7da48e331e6524b1e195ca5101d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adef856867083c989d1756eaba4ad990e"><td class="memItemLeft" align="right" valign="top">const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim.html#adef856867083c989d1756eaba4ad990e">swim::kDefaultSocketLingerMsec</a> = 0</td></tr>
+<tr class="separator:adef856867083c989d1756eaba4ad990e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ad6fec29c8d4802159a9c2f975047f4d2"></a>

@@ -8,11 +8,15 @@ var SwimCommon_8hpp =
     [ "MakeRecord", "SwimCommon_8hpp.html#a71d206032cf982058af39f3ce72e892e", null ],
     [ "MakeServer", "SwimCommon_8hpp.html#a338b56df2eeb18a3e88d9a1cd2bf00ac", null ],
     [ "operator<", "SwimCommon_8hpp.html#a1b8acda1e853f81e48baf71153775fc1", null ],
+    [ "operator<", "SwimCommon_8hpp.html#a71fd18e4c1d15cd25d0813c449f82357", null ],
     [ "operator<<", "SwimCommon_8hpp.html#a79a12b0d7cf1e5dfe7153d5901d6f54c", null ],
     [ "operator<<", "SwimCommon_8hpp.html#ae59611736d12560af78953235f3cc405", null ],
     [ "operator<<", "SwimCommon_8hpp.html#a8ef53cf3a814e39e2905fd0202f7cec1", null ],
     [ "operator<<", "SwimCommon_8hpp.html#ad599b94477c6ab40b151ca6d91fb5037", null ],
     [ "operator<<", "SwimCommon_8hpp.html#aa6a32ecc2317a7df5a359bb4883a49ff", null ],
     [ "operator==", "SwimCommon_8hpp.html#a2c2aca82834314bb6399890165b4672b", null ],
-    [ "TimestampToFixed64", "SwimCommon_8hpp.html#a0fcf36b7d51acd7a776a5a3e18a25fe0", null ]
+    [ "TimestampToFixed64", "SwimCommon_8hpp.html#a0fcf36b7d51acd7a776a5a3e18a25fe0", null ],
+    [ "kDefaultPollingIntervalMsec", "SwimCommon_8hpp.html#a28fa7da48e331e6524b1e195ca5101d1", null ],
+    [ "kDefaultSocketLingerMsec", "SwimCommon_8hpp.html#adef856867083c989d1756eaba4ad990e", null ],
+    [ "kDefaultTimeoutMsec", "SwimCommon_8hpp.html#a75c970583ca47afe28b39465e90f3e6c", null ]
 ];
