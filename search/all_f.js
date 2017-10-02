@@ -9,6 +9,7 @@ var searchData=
   ['serverrecordsset',['ServerRecordsSet',['../namespaceswim.html#a17086daba511450e4936c3be404583cb',1,'swim']]],
   ['set_5fgrace_5fperiod',['set_grace_period',['../classswim_1_1GossipFailureDetector.html#ae596781949ae4c804a570ff57eb57afd',1,'swim::GossipFailureDetector']]],
   ['set_5fmax_5fallowed_5freports',['set_max_allowed_reports',['../classswim_1_1SwimClient.html#afffcd08b9cf30611cd2bc9309e98f39d',1,'swim::SwimClient']]],
+  ['set_5fnum_5fforwards',['set_num_forwards',['../classswim_1_1GossipFailureDetector.html#a53ae955f1bf760d75259462dba741e86',1,'swim::GossipFailureDetector']]],
   ['set_5fnum_5freports',['set_num_reports',['../classswim_1_1GossipFailureDetector.html#a1763cd4fb4608178d4a7f9a1ff026dec',1,'swim::GossipFailureDetector']]],
   ['set_5fping_5ftimeout',['set_ping_timeout',['../classswim_1_1GossipFailureDetector.html#af81a45134eca153f2bb933b41cea9811',1,'swim::GossipFailureDetector']]],
   ['set_5ftimeout',['set_timeout',['../classswim_1_1SwimClient.html#a7b7f79296da38a7242b07b10686899d4',1,'swim::SwimClient']]],

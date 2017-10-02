@@ -43,7 +43,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "Bucket_8cpp.html",
-"functions_func.html"
+"files.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
