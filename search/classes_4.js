@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['not_5fimplemented',['not_implemented',['../classutils_1_1not__implemented.html',1,'utils']]]
+  ['httpcannotstarterror',['HttpCannotStartError',['../classswim_1_1rest_1_1HttpCannotStartError.html',1,'swim::rest']]]
 ];

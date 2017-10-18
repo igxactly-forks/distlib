@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">distlib
-   &#160;<span id="projectnumber">0.8.0</span>
+   &#160;<span id="projectnumber">0.9.0</span>
    </div>
    <div id="projectbrief">Library of C++ utilities for Distributed Systems.</div>
   </td>
@@ -114,6 +114,11 @@ $(document).ready(function(){initNavTree('index.html','');});
 <h3>Google Protocol Buffers</h3>
 <p>The <a href="#swim_gossip_and_consensus_algorithm">SWIM gossip protocol implementation</a> makes use of Protobuf as the serialization protocol to exchange status messages between servers.</p>
 <p>The code in this project has been tested using <a href="https://github.com/google/protobuf/releases/tag/v2.6.1">Protocol Buffers 2.6.1</a>, installed via the <a href="https://conan.io/source/Protobuf/2.6.1/memsharded/testing">Conan's memshared package</a>.</p>
+<h3>HTTP Server</h3>
+<p>To serve the REST API, we use <a href="https://www.gnu.org/software/libmicrohttpd/">libmicrohttpd</a>, "a small C library that is supposed to make it easy to run an HTTP server as part of another application."</p>
+<p>This can be either installed directly as a package under most Linux distributions (for example, on Ubuntu, <code>sudo apt-get install libmicrohttpd-dev</code> will do the needful), or can be built from source:</p>
+<div class="fragment"><div class="line">wget http://open-source-box.org/libmicrohttpd/libmicrohttpd-0.9.55.tar.gz</div><div class="line">tar xfz libmicrohttpd-0.9.55.tar.gz</div><div class="line">cd libmicrohttpd-0.9.55/</div><div class="line">./configure --prefix ${INSTALL}/libmicrohttpd</div><div class="line">make &amp;&amp; make install</div></div><!-- fragment --><p>The include file anhttps://www.gnu.org/software/libmicrohttpd/tutorial.htmld libraries will be, respectively, in <code>${INSTALL}/libmicrohttpd/include</code> and <code>lib</code> folders.</p>
+<p>See <a href="https://www.gnu.org/software/libmicrohttpd/tutorial.html">the tutorial</a> for more information about usage.</p>
 <h2>Build &amp; testing</h2>
 <p>To build the project, it is the usual <code>cmake</code> routine: </p><pre class="fragment">$ mkdir build &amp;&amp; cd build
 $ cmake -DINSTALL_DIR=${INSTALL_DIR} \

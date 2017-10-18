@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['rest',['rest',['../namespaceswim_1_1rest.html',1,'swim']]],
   ['self',['self',['../classswim_1_1SwimClient.html#a5d8e3f7e095537cf64a8bc6b23cf37ef',1,'swim::SwimClient::self()'],['../classswim_1_1SwimServer.html#a49b15dff35afbf6609aefb467ca3724e',1,'swim::SwimServer::self()']]],
   ['self_5f',['self_',['../classswim_1_1SwimClient.html#aa56f0f9255add9489dbceb916cde3044',1,'swim::SwimClient']]],
   ['send',['Send',['../classswim_1_1SwimClient.html#a64b54ae728928e8dfecf7f6c5d1bb0fa',1,'swim::SwimClient']]],
@@ -21,7 +22,7 @@ var searchData=
   ['split',['split',['../namespaceutils.html#a59f6164332725176e2045deb2a54565b',1,'utils']]],
   ['start',['start',['../classswim_1_1SwimServer.html#ac8b9fb31375db9e48d2b5f3af3cb93cf',1,'swim::SwimServer']]],
   ['start_5ftimer',['start_timer',['../server__demo_8cpp.html#a753aebc510fbf615ffbe8124b8fadd89',1,'server_demo.cpp']]],
-  ['stop',['stop',['../classswim_1_1SwimServer.html#a4086039ab0277341aa4f33f45466a5cf',1,'swim::SwimServer']]],
+  ['stop',['stop',['../classswim_1_1rest_1_1ApiServer.html#a79de92680d7cbe79a64f78e9df0d2516',1,'swim::rest::ApiServer::stop()'],['../classswim_1_1SwimServer.html#a4086039ab0277341aa4f33f45466a5cf',1,'swim::SwimServer::stop()']]],
   ['stopallbackgroundthreads',['StopAllBackgroundThreads',['../classswim_1_1GossipFailureDetector.html#a739d790db4a7540515ae627ae6011e24',1,'swim::GossipFailureDetector']]],
   ['stopped_5f',['stopped_',['../classswim_1_1SwimServer.html#a1ae66c6374018ed9bb9afb1bc6323a30',1,'swim::SwimServer']]],
   ['suspected_5f',['suspected_',['../classswim_1_1SwimServer.html#a28ade0f69bab2b21d6700a03b99253e9',1,'swim::SwimServer']]],

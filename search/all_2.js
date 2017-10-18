@@ -1,6 +1,7 @@
 var searchData=
 [
   ['computehash',['computeHash',['../classMerkleNode.html#a072f76a1e27364f69315d301bc33ad46',1,'MerkleNode::computeHash()'],['../classMD5StringMerkleNode.html#a26a4c4c48d529f0f88e7d319eb056cd0',1,'MD5StringMerkleNode::computeHash()']]],
+  ['connectcallback',['ConnectCallback',['../classswim_1_1rest_1_1ApiServer.html#a303eb9bc368c9fcca90aa94d4568920b',1,'swim::rest::ApiServer']]],
   ['consistent_5fhash',['consistent_hash',['../ConsistentHash_8cpp.html#a393cbe5a2176cbb0aec10aa62431ad1f',1,'consistent_hash(const string &amp;msg):&#160;ConsistentHash.cpp'],['../ConsistentHash_8hpp.html#ad4f308eabc64fcd535a172ffed67f7e2',1,'consistent_hash(const std::string &amp;msg):&#160;ConsistentHash.hpp']]],
   ['consistenthash_2ecpp',['ConsistentHash.cpp',['../ConsistentHash_8cpp.html',1,'']]],
   ['consistenthash_2ehpp',['ConsistentHash.hpp',['../ConsistentHash_8hpp.html',1,'']]],

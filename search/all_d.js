@@ -20,7 +20,7 @@ var searchData=
   ['ping_5ftimeout_5f',['ping_timeout_',['../classswim_1_1GossipFailureDetector.html#a11e2ea4fac9f6bc16f96356b203cf1a6',1,'swim::GossipFailureDetector']]],
   ['polling_5finterval_5f',['polling_interval_',['../classswim_1_1SwimServer.html#a7925d558fa41ac5d9e696160db833c5a',1,'swim::SwimServer']]],
   ['port',['port',['../classswim_1_1SwimServer.html#a4640bf38b341a632da28133924272e9c',1,'swim::SwimServer']]],
-  ['port_5f',['port_',['../classswim_1_1SwimServer.html#a53159d5acabc3082872dc74ce1e9cff7',1,'swim::SwimServer']]],
+  ['port_5f',['port_',['../classswim_1_1rest_1_1ApiServer.html#ad7d703825790d9c0d0d2972566de8a6b',1,'swim::rest::ApiServer::port_()'],['../classswim_1_1SwimServer.html#a53159d5acabc3082872dc74ce1e9cff7',1,'swim::SwimServer::port_()']]],
   ['positional_5fargs',['positional_args',['../classutils_1_1ParseArgs.html#a103a13e9c812a8c6967382494dfe1e5d',1,'utils::ParseArgs']]],
   ['positional_5fargs_5f',['positional_args_',['../classutils_1_1ParseArgs.html#af266e9267af2f82d0b026caf2b25e6c0',1,'utils::ParseArgs']]],
   ['postmessage',['postMessage',['../classswim_1_1SwimClient.html#a79dab0f6c4b597dd7107c16fd5813c32',1,'swim::SwimClient']]],

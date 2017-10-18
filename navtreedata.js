@@ -42,8 +42,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"Bucket_8cpp.html",
-"files.html"
+"ApiServer_8cpp.html",
+"classutils_1_1not__implemented.html#af3cfaef4e68db58c97eb6992755062e7"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

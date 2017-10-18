@@ -1,5 +1,5 @@
 var namespaces =
 [
-    [ "swim", "namespaceswim.html", null ],
+    [ "swim", "namespaceswim.html", "namespaceswim" ],
     [ "utils", "namespaceutils.html", null ]
 ];

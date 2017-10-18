@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bucket',['Bucket',['../classBucket.html',1,'']]]
+  ['apiserver',['ApiServer',['../classswim_1_1rest_1_1ApiServer.html',1,'swim::rest']]]
 ];

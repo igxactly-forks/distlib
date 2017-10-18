@@ -1,5 +1,6 @@
 var hierarchy =
 [
+    [ "swim::rest::ApiServer", "classswim_1_1rest_1_1ApiServer.html", null ],
     [ "binary_function", null, [
       [ "swim::ServerRecordPtrLess", "structswim_1_1ServerRecordPtrLess.html", null ]
     ] ],
@@ -7,6 +8,7 @@ var hierarchy =
     [ "exception", null, [
       [ "md5_error", "classmd5__error.html", null ],
       [ "swim::empty_set", "structswim_1_1empty__set.html", null ],
+      [ "swim::rest::HttpCannotStartError", "classswim_1_1rest_1_1HttpCannotStartError.html", null ],
       [ "utils::not_implemented", "classutils_1_1not__implemented.html", null ],
       [ "utils::parse_error", "classutils_1_1parse__error.html", null ]
     ] ],

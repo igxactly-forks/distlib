@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['merkle_5fdemo_2ecpp',['merkle_demo.cpp',['../merkle__demo_8cpp.html',1,'']]],
-  ['merklenode_2ehpp',['MerkleNode.hpp',['../MerkleNode_8hpp.html',1,'']]],
-  ['misc_2ecpp',['misc.cpp',['../misc_8cpp.html',1,'']]]
+  ['gossip_5fexample_2ecpp',['gossip_example.cpp',['../gossip__example_8cpp.html',1,'']]],
+  ['gossipfailuredetector_2ecpp',['GossipFailureDetector.cpp',['../GossipFailureDetector_8cpp.html',1,'']]],
+  ['gossipfailuredetector_2ehpp',['GossipFailureDetector.hpp',['../GossipFailureDetector_8hpp.html',1,'']]]
 ];

@@ -7,5 +7,6 @@ var searchData=
   ['addrecordstobudget',['AddRecordsToBudget',['../classswim_1_1SwimServer.html#a6b152df633090196fdfb41068faa3f5b',1,'swim::SwimServer']]],
   ['alive_5fempty',['alive_empty',['../classswim_1_1SwimServer.html#a9458f7ffee2cc9d4e62695466e0f93f4',1,'swim::SwimServer']]],
   ['alive_5fsize',['alive_size',['../classswim_1_1SwimServer.html#a167fe932b8650b7b0d2f6e9ae4938fe6',1,'swim::SwimServer']]],
+  ['apiserver',['ApiServer',['../classswim_1_1rest_1_1ApiServer.html#a986eff5b5e77da22e66f70adb4bcdba5',1,'swim::rest::ApiServer']]],
   ['at',['at',['../classutils_1_1ParseArgs.html#a7af74ca9fa73611d7a5f05d4514c644c',1,'utils::ParseArgs']]]
 ];

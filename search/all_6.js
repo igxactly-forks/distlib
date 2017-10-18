@@ -7,5 +7,7 @@ var searchData=
   ['hash_5fpoints_5f',['hash_points_',['../classBucket.html#a4c1ca502797aba1c23eadc0127d6f274',1,'Bucket']]],
   ['hash_5fstr',['hash_str',['../ConsistentHash_8cpp.html#abea2bdca50245305d77d51dd8be914ab',1,'hash_str(const string &amp;msg):&#160;ConsistentHash.cpp'],['../ConsistentHash_8hpp.html#a47f6848dc03a101d570276a5173e02bf',1,'hash_str(const std::string &amp;msg):&#160;ConsistentHash.hpp']]],
   ['hash_5fstr_5ffunc',['hash_str_func',['../MerkleNode_8hpp.html#af948847c103eedd9cca2d1ab7c3bc416',1,'MerkleNode.hpp']]],
-  ['hostname',['Hostname',['../namespaceutils.html#aa7e31f740d5bcccb06b11b932235e83b',1,'utils']]]
+  ['hostname',['Hostname',['../namespaceutils.html#aa7e31f740d5bcccb06b11b932235e83b',1,'utils']]],
+  ['httpcannotstarterror',['HttpCannotStartError',['../classswim_1_1rest_1_1HttpCannotStartError.html',1,'swim::rest']]],
+  ['httpd_5f',['httpd_',['../classswim_1_1rest_1_1ApiServer.html#aad87a63fa3b3f3d62325726a2d44e610',1,'swim::rest::ApiServer']]]
 ];

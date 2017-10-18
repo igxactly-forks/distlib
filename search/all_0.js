@@ -9,6 +9,9 @@ var searchData=
   ['alive_5fempty',['alive_empty',['../classswim_1_1SwimServer.html#a9458f7ffee2cc9d4e62695466e0f93f4',1,'swim::SwimServer']]],
   ['alive_5fmutex_5f',['alive_mutex_',['../classswim_1_1SwimServer.html#a5e917344051adc999e1922f0780cecc7',1,'swim::SwimServer']]],
   ['alive_5fsize',['alive_size',['../classswim_1_1SwimServer.html#a167fe932b8650b7b0d2f6e9ae4938fe6',1,'swim::SwimServer']]],
+  ['apiserver',['ApiServer',['../classswim_1_1rest_1_1ApiServer.html',1,'swim::rest::ApiServer'],['../classswim_1_1rest_1_1ApiServer.html#a986eff5b5e77da22e66f70adb4bcdba5',1,'swim::rest::ApiServer::ApiServer()']]],
+  ['apiserver_2ecpp',['ApiServer.cpp',['../ApiServer_8cpp.html',1,'']]],
+  ['apiserver_2ehpp',['ApiServer.hpp',['../ApiServer_8hpp.html',1,'']]],
   ['args_5f',['args_',['../classutils_1_1ParseArgs.html#aa7045df29764a0b3dd6b5501319524b2',1,'utils::ParseArgs']]],
   ['at',['at',['../classutils_1_1ParseArgs.html#a7af74ca9fa73611d7a5f05d4514c644c',1,'utils::ParseArgs']]]
 ];

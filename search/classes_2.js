@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gossipfailuredetector',['GossipFailureDetector',['../classswim_1_1GossipFailureDetector.html',1,'swim']]]
+  ['empty_5fset',['empty_set',['../structswim_1_1empty__set.html',1,'swim']]]
 ];

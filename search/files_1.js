@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['consistenthash_2ecpp',['ConsistentHash.cpp',['../ConsistentHash_8cpp.html',1,'']]],
-  ['consistenthash_2ehpp',['ConsistentHash.hpp',['../ConsistentHash_8hpp.html',1,'']]]
+  ['bucket_2ecpp',['Bucket.cpp',['../Bucket_8cpp.html',1,'']]],
+  ['bucket_2ehpp',['Bucket.hpp',['../Bucket_8hpp.html',1,'']]]
 ];
