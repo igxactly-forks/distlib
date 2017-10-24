@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('index.html','');});
 <h2>Conan packages</h2>
 <p>To build the project, you need to first donwload/build the necessary binary dependencies, as listed in <code>conanfile.text</code>.</p>
 <p>This is done as follows:</p>
-<div class="fragment"><div class="line">$ sudo -H pip install -U conan</div><div class="line">$ mkdir .conan &amp;&amp; cd .conan</div><div class="line">$ conan install .. -s compiler=clang -s compiler.version=3.6 \</div><div class="line">    -s compiler.libcxx=libstdc++11 --build=missing</div></div><!-- fragment --><p><b>note</b> &gt;I've found Conan not to work terribly well inside virtualenvs - but if you can make it work there, that'd be the preferred way.</p>
+<div class="fragment"><div class="line">sudo -H pip install -U conan</div><div class="line">mkdir .conan &amp;&amp; cd .conan</div><div class="line">conan install .. -s compiler=clang -s compiler.version=4.0 \</div><div class="line">    -s compiler.libcxx=libstdc++11 --build=missing</div></div><!-- fragment --><p><b>note</b> &gt;I've found Conan not to work terribly well inside virtualenvs - but if you can make it work there, that'd be the preferred way.</p>
 <p>After the dependencies are built, you can see information about them using <code>conan info ..</code> (the commands above assume that <code>clang</code> is configured on the <code>PATH</code> and that you have version 3.6 installed).</p>
 <p>See also <code>CMakeLists.txt</code> for the changes necessary to add Conan's builds to the targets.</p>
 <p>We use the following packages in this project:</p>
