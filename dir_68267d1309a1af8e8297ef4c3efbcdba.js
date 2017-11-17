@@ -7,7 +7,6 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "Bucket.hpp", "Bucket_8hpp.html", "Bucket_8hpp" ],
     [ "ConsistentHash.cpp", "ConsistentHash_8cpp.html", "ConsistentHash_8cpp" ],
     [ "ConsistentHash.hpp", "ConsistentHash_8hpp.html", "ConsistentHash_8hpp" ],
-    [ "merkle_demo.cpp", "merkle__demo_8cpp.html", "merkle__demo_8cpp" ],
     [ "MerkleNode.hpp", "MerkleNode_8hpp.html", "MerkleNode_8hpp" ],
     [ "View.cpp", "View_8cpp.html", "View_8cpp" ],
     [ "View.hpp", "View_8hpp.html", "View_8hpp" ]

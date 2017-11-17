@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['main',['main',['../gossip__example_8cpp.html#ac0f2228420376f4db7e1274f2b41667c',1,'main(int argc, const char *argv[]):&#160;gossip_example.cpp'],['../server__demo_8cpp.html#ac0f2228420376f4db7e1274f2b41667c',1,'main(int argc, const char *argv[]):&#160;server_demo.cpp'],['../merkle__demo_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;merkle_demo.cpp']]],
+  ['main',['main',['../gossip__example_8cpp.html#ac0f2228420376f4db7e1274f2b41667c',1,'main(int argc, const char *argv[]):&#160;gossip_example.cpp'],['../merkle__demo_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;merkle_demo.cpp'],['../server__demo_8cpp.html#ac0f2228420376f4db7e1274f2b41667c',1,'main(int argc, const char *argv[]):&#160;server_demo.cpp']]],
   ['makerecord',['MakeRecord',['../namespaceswim.html#a71d206032cf982058af39f3ce72e892e',1,'swim']]],
   ['makeserver',['MakeServer',['../namespaceswim.html#a338b56df2eeb18a3e88d9a1cd2bf00ac',1,'swim']]],
   ['max_5fallowed_5fdefault',['MAX_ALLOWED_DEFAULT',['../SwimClient_8hpp.html#a83448cfb7cac902aeb69bc6c23b30691',1,'SwimClient.hpp']]],
