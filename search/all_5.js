@@ -5,6 +5,8 @@ var searchData=
   ['getint',['getInt',['../classutils_1_1ParseArgs.html#ac0b61e628d39f17928bfd98cd37bffcf',1,'utils::ParseArgs']]],
   ['getnames',['getNames',['../classutils_1_1ParseArgs.html#a01acbfadf18c09adc82261e1f5886c13',1,'utils::ParseArgs']]],
   ['getrandomneighbor',['GetRandomNeighbor',['../classswim_1_1SwimServer.html#aaea7385ad987bd094f47953a0994c7f2',1,'swim::SwimServer']]],
+  ['getreport',['getReport',['../namespaceswim_1_1rest.html#aa6b1ebd0e626a12403f7ba2133a1deb4',1,'swim::rest']]],
+  ['getuint',['getUInt',['../classutils_1_1ParseArgs.html#afb1f5589ea3f1d9aaa9dd16116cdeeb3',1,'utils::ParseArgs']]],
   ['getuniqueneighbors',['GetUniqueNeighbors',['../classswim_1_1GossipFailureDetector.html#aa5ed4874c43606a7ae9a0a26ffd0f0c3',1,'swim::GossipFailureDetector']]],
   ['gossip_5fexample_2ecpp',['gossip_example.cpp',['../gossip__example_8cpp.html',1,'']]],
   ['gossip_5fserver',['gossip_server',['../classswim_1_1GossipFailureDetector.html#ab4bdbaa1e8909cc4c8df8d26296e484a',1,'swim::GossipFailureDetector']]],

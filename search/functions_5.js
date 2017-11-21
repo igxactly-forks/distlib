@@ -5,6 +5,8 @@ var searchData=
   ['getint',['getInt',['../classutils_1_1ParseArgs.html#ac0b61e628d39f17928bfd98cd37bffcf',1,'utils::ParseArgs']]],
   ['getnames',['getNames',['../classutils_1_1ParseArgs.html#a01acbfadf18c09adc82261e1f5886c13',1,'utils::ParseArgs']]],
   ['getrandomneighbor',['GetRandomNeighbor',['../classswim_1_1SwimServer.html#aaea7385ad987bd094f47953a0994c7f2',1,'swim::SwimServer']]],
+  ['getreport',['getReport',['../namespaceswim_1_1rest.html#aa6b1ebd0e626a12403f7ba2133a1deb4',1,'swim::rest']]],
+  ['getuint',['getUInt',['../classutils_1_1ParseArgs.html#afb1f5589ea3f1d9aaa9dd16116cdeeb3',1,'utils::ParseArgs']]],
   ['getuniqueneighbors',['GetUniqueNeighbors',['../classswim_1_1GossipFailureDetector.html#aa5ed4874c43606a7ae9a0a26ffd0f0c3',1,'swim::GossipFailureDetector']]],
   ['gossip_5fserver',['gossip_server',['../classswim_1_1GossipFailureDetector.html#ab4bdbaa1e8909cc4c8df8d26296e484a',1,'swim::GossipFailureDetector']]],
   ['gossipfailuredetector',['GossipFailureDetector',['../classswim_1_1GossipFailureDetector.html#a68c2e712d58b9fa398b8f5e098502b8e',1,'swim::GossipFailureDetector::GossipFailureDetector(const GossipFailureDetector &amp;)=delete'],['../classswim_1_1GossipFailureDetector.html#a7ed9921456f74038aee171f71174f72b',1,'swim::GossipFailureDetector::GossipFailureDetector(const GossipFailureDetector &amp;&amp;)=delete'],['../classswim_1_1GossipFailureDetector.html#a515b5c4beebb75107f0fab02d729a47f',1,'swim::GossipFailureDetector::GossipFailureDetector(unsigned short port, const long interval, const long grace_period, const long ping_timeout_msec=kDefaultTimeoutMsec)']]],

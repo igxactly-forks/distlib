@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>distlib: src/examples/gossip_example.cpp File Reference</title>
+<title>distlib: swim::rest::post_info Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,7 +64,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('gossip__example_8cpp.html','');});
+$(document).ready(function(){initNavTree('structswim_1_1rest_1_1post__info.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -83,66 +83,74 @@ $(document).ready(function(){initNavTree('gossip__example_8cpp.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="structswim_1_1rest_1_1post__info-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">gossip_example.cpp File Reference</div>  </div>
+<div class="title">swim::rest::post_info Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
-<code>#include &lt;atomic&gt;</code><br />
-<code>#include &lt;chrono&gt;</code><br />
-<code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;iomanip&gt;</code><br />
-<code>#include &lt;memory&gt;</code><br />
-<code>#include &lt;thread&gt;</code><br />
-<code>#include &lt;glog/logging.h&gt;</code><br />
-<code>#include &lt;zmq.hpp&gt;</code><br />
-<code>#include &quot;swim.pb.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="GossipFailureDetector_8hpp_source.html">swim/GossipFailureDetector.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ApiServer_8hpp_source.html">swim/rest/ApiServer.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ParseArgs_8hpp_source.html">utils/ParseArgs.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="utils_8hpp_source.html">utils/utils.hpp</a>&quot;</code><br />
-</div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ac0f2228420376f4db7e1274f2b41667c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gossip__example_8cpp.html#ac0f2228420376f4db7e1274f2b41667c">main</a> (int argc, const char *argv[])</td></tr>
-<tr class="separator:ac0f2228420376f4db7e1274f2b41667c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ab87cc233147d739ef8873b6e23ecf4cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classswim_1_1GossipFailureDetector.html">swim::GossipFailureDetector</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structswim_1_1rest_1_1post__info.html#ab87cc233147d739ef8873b6e23ecf4cf">detector</a></td></tr>
+<tr class="separator:ab87cc233147d739ef8873b6e23ecf4cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abadf86bb0f1f034cdc789a99e3bcaf58"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structswim_1_1rest_1_1post__info.html#abadf86bb0f1f034cdc789a99e3bcaf58">resource</a></td></tr>
+<tr class="separator:abadf86bb0f1f034cdc789a99e3bcaf58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a282405eefe774fb5fd1af97e3892f275"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structswim_1_1rest_1_1post__info.html#a282405eefe774fb5fd1af97e3892f275">success</a></td></tr>
+<tr class="separator:a282405eefe774fb5fd1af97e3892f275"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="ac0f2228420376f4db7e1274f2b41667c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0f2228420376f4db7e1274f2b41667c">&#9670;&nbsp;</a></span>main()</h2>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ab87cc233147d739ef8873b6e23ecf4cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab87cc233147d739ef8873b6e23ecf4cf">&#9670;&nbsp;</a></span>detector</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int main </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>argc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>argv</em>[]&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname"><a class="el" href="classswim_1_1GossipFailureDetector.html">swim::GossipFailureDetector</a>* swim::rest::post_info::detector</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
+<a id="abadf86bb0f1f034cdc789a99e3bcaf58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abadf86bb0f1f034cdc789a99e3bcaf58">&#9670;&nbsp;</a></span>resource</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string swim::rest::post_info::resource</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a282405eefe774fb5fd1af97e3892f275"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a282405eefe774fb5fd1af97e3892f275">&#9670;&nbsp;</a></span>success</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool swim::rest::post_info::success</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>src/swim/rest/<a class="el" href="ApiServer_8cpp.html">ApiServer.cpp</a></li>
+</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_e931c1a3f0014e624d0645a271726ad2.html">examples</a></li><li class="navelem"><a class="el" href="gossip__example_8cpp.html">gossip_example.cpp</a></li>
+    <li class="navelem"><a class="el" href="namespaceswim.html">swim</a></li><li class="navelem"><a class="el" href="namespaceswim_1_1rest.html">rest</a></li><li class="navelem"><a class="el" href="structswim_1_1rest_1_1post__info.html">post_info</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

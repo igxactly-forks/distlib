@@ -15,6 +15,7 @@ var searchData=
   ['port',['port',['../classswim_1_1SwimServer.html#a4640bf38b341a632da28133924272e9c',1,'swim::SwimServer']]],
   ['positional_5fargs',['positional_args',['../classutils_1_1ParseArgs.html#a103a13e9c812a8c6967382494dfe1e5d',1,'utils::ParseArgs']]],
   ['postmessage',['postMessage',['../classswim_1_1SwimClient.html#a79dab0f6c4b597dd7107c16fd5813c32',1,'swim::SwimClient']]],
+  ['postserver',['postServer',['../namespaceswim_1_1rest.html#a27b4fd4822a787a7fbcb64da164137a8',1,'swim::rest']]],
   ['preparereport',['PrepareReport',['../classswim_1_1SwimServer.html#af1d032e23c16e72e630edfeb50f0f23b',1,'swim::SwimServer']]],
   ['printversion',['PrintVersion',['../namespaceutils.html#aff8bd8ae36b2520a198bd9fa105b7af0',1,'utils']]],
   ['progname',['progname',['../classutils_1_1ParseArgs.html#ad5f4fdc88527cfe4d25fc53afac07223',1,'utils::ParseArgs']]]

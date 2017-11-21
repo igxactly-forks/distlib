@@ -9,6 +9,7 @@ var classutils_1_1ParseArgs =
     [ "get", "classutils_1_1ParseArgs.html#a6b20f782c3f7c3ae39824f1ddca65b6e", null ],
     [ "getInt", "classutils_1_1ParseArgs.html#ac0b61e628d39f17928bfd98cd37bffcf", null ],
     [ "getNames", "classutils_1_1ParseArgs.html#a01acbfadf18c09adc82261e1f5886c13", null ],
+    [ "getUInt", "classutils_1_1ParseArgs.html#afb1f5589ea3f1d9aaa9dd16116cdeeb3", null ],
     [ "has", "classutils_1_1ParseArgs.html#a4553dc2716a857aa5c804dfb77ed10e2", null ],
     [ "operator[]", "classutils_1_1ParseArgs.html#acb7f3c6ed90ef25a6e915bd05593e9e0", null ],
     [ "operator[]", "classutils_1_1ParseArgs.html#a525c71653a5b38c5ca05bb8589e6ff15", null ],

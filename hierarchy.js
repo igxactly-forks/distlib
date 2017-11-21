@@ -18,6 +18,7 @@ var hierarchy =
       [ "MD5StringMerkleNode", "classMD5StringMerkleNode.html", null ]
     ] ],
     [ "utils::ParseArgs", "classutils_1_1ParseArgs.html", null ],
+    [ "swim::rest::post_info", "structswim_1_1rest_1_1post__info.html", null ],
     [ "swim::SwimClient", "classswim_1_1SwimClient.html", null ],
     [ "swim::SwimServer", "classswim_1_1SwimServer.html", null ],
     [ "View", "classView.html", null ]

@@ -83,7 +83,9 @@ $(document).ready(function(){initNavTree('namespaceswim_1_1rest.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">swim::rest Namespace Reference</div>  </div>
 </div><!--header-->
@@ -95,7 +97,174 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1rest_1_1HttpCannotStartError.html">HttpCannotStartError</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structswim_1_1rest_1_1post__info.html">post_info</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:aa6b1ebd0e626a12403f7ba2133a1deb4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim_1_1rest.html#aa6b1ebd0e626a12403f7ba2133a1deb4">getReport</a> (struct MHD_Connection *connection, const <a class="el" href="classswim_1_1GossipFailureDetector.html">swim::GossipFailureDetector</a> *gfd)</td></tr>
+<tr class="separator:aa6b1ebd0e626a12403f7ba2133a1deb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27b4fd4822a787a7fbcb64da164137a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim_1_1rest.html#a27b4fd4822a787a7fbcb64da164137a8">postServer</a> (<a class="el" href="classswim_1_1GossipFailureDetector.html">swim::GossipFailureDetector</a> *gfd, const std::string &amp;jsonBody)</td></tr>
+<tr class="separator:a27b4fd4822a787a7fbcb64da164137a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a807a145ca2242a65c1b97f70fc5cb2e7"><td class="memItemLeft" align="right" valign="top">const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim_1_1rest.html#a807a145ca2242a65c1b97f70fc5cb2e7">kApiVersionPrefix</a> = &quot;/api/v1&quot;</td></tr>
+<tr class="separator:a807a145ca2242a65c1b97f70fc5cb2e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48f5121c2869e3abd863bfc5dc482c73"><td class="memItemLeft" align="right" valign="top">const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim_1_1rest.html#a48f5121c2869e3abd863bfc5dc482c73">kApplicationJson</a> = &quot;application/json&quot;</td></tr>
+<tr class="separator:a48f5121c2869e3abd863bfc5dc482c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac04ee23f29879fd4c076d123a6fd0b38"><td class="memItemLeft" align="right" valign="top">const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim_1_1rest.html#ac04ee23f29879fd4c076d123a6fd0b38">kApplicationProtobuf</a> = &quot;application/x-protobuf&quot;</td></tr>
+<tr class="separator:ac04ee23f29879fd4c076d123a6fd0b38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45a9d10a7895a98b227e8045b8490e03"><td class="memItemLeft" align="right" valign="top">const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim_1_1rest.html#a45a9d10a7895a98b227e8045b8490e03">kNoApiUrl</a> = &quot;Unknown API endpoint; should start with /api/v1/&quot;</td></tr>
+<tr class="separator:a45a9d10a7895a98b227e8045b8490e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cc36a81524321c6dcb7f5c9607e05f5"><td class="memItemLeft" align="right" valign="top">const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim_1_1rest.html#a2cc36a81524321c6dcb7f5c9607e05f5">kIllegalRequest</a> = &quot;Cannot parse JSON into valid PB&quot;</td></tr>
+<tr class="separator:a2cc36a81524321c6dcb7f5c9607e05f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1be22cbec1c34fa3fc9600c7c07af99b"><td class="memItemLeft" align="right" valign="top">const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim_1_1rest.html#a1be22cbec1c34fa3fc9600c7c07af99b">kInvalidResource</a> = &quot;Not a valid resource&quot;</td></tr>
+<tr class="separator:a1be22cbec1c34fa3fc9600c7c07af99b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="aa6b1ebd0e626a12403f7ba2133a1deb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6b1ebd0e626a12403f7ba2133a1deb4">&#9670;&nbsp;</a></span>getReport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int swim::rest::getReport </td>
+          <td>(</td>
+          <td class="paramtype">struct MHD_Connection *&#160;</td>
+          <td class="paramname"><em>connection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classswim_1_1GossipFailureDetector.html">swim::GossipFailureDetector</a> *&#160;</td>
+          <td class="paramname"><em>gfd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a27b4fd4822a787a7fbcb64da164137a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27b4fd4822a787a7fbcb64da164137a8">&#9670;&nbsp;</a></span>postServer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool swim::rest::postServer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classswim_1_1GossipFailureDetector.html">swim::GossipFailureDetector</a> *&#160;</td>
+          <td class="paramname"><em>gfd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>jsonBody</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a807a145ca2242a65c1b97f70fc5cb2e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a807a145ca2242a65c1b97f70fc5cb2e7">&#9670;&nbsp;</a></span>kApiVersionPrefix</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char *const swim::rest::kApiVersionPrefix = &quot;/api/v1&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>API Version </p>
+
+</div>
+</div>
+<a id="a48f5121c2869e3abd863bfc5dc482c73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48f5121c2869e3abd863bfc5dc482c73">&#9670;&nbsp;</a></span>kApplicationJson</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* const swim::rest::kApplicationJson = &quot;application/json&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac04ee23f29879fd4c076d123a6fd0b38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac04ee23f29879fd4c076d123a6fd0b38">&#9670;&nbsp;</a></span>kApplicationProtobuf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* const swim::rest::kApplicationProtobuf = &quot;application/x-protobuf&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2cc36a81524321c6dcb7f5c9607e05f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cc36a81524321c6dcb7f5c9607e05f5">&#9670;&nbsp;</a></span>kIllegalRequest</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* const swim::rest::kIllegalRequest = &quot;Cannot parse JSON into valid PB&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1be22cbec1c34fa3fc9600c7c07af99b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1be22cbec1c34fa3fc9600c7c07af99b">&#9670;&nbsp;</a></span>kInvalidResource</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* const swim::rest::kInvalidResource = &quot;Not a valid resource&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a45a9d10a7895a98b227e8045b8490e03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45a9d10a7895a98b227e8045b8490e03">&#9670;&nbsp;</a></span>kNoApiUrl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* const swim::rest::kNoApiUrl = &quot;Unknown API endpoint; should start with /api/v1/&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

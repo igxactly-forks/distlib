@@ -8,7 +8,8 @@ var searchData=
   ['reportselector',['ReportSelector',['../namespaceswim.html#abd032c4c089bbddcdaf9e169a94be349',1,'swim']]],
   ['reportsuspected',['ReportSuspected',['../classswim_1_1SwimServer.html#a6f60a0f5ef59546e2843454e3acaf983',1,'swim::SwimServer']]],
   ['requestping',['RequestPing',['../classswim_1_1SwimClient.html#a4c6e5cd54e6477c7a62fe40bc41ade26',1,'swim::SwimClient']]],
-  ['right',['RIGHT',['../classMerkleNode.html#a3b3409b820a2e9278f86939fc537909aa350f82019b943a0acedbe495ac474df7',1,'MerkleNode::RIGHT()'],['../classMerkleNode.html#a093e772c6bffa7e1a8380bb85ad2743c',1,'MerkleNode::right() const']]],
+  ['resource',['resource',['../structswim_1_1rest_1_1post__info.html#abadf86bb0f1f034cdc789a99e3bcaf58',1,'swim::rest::post_info']]],
+  ['right',['right',['../classMerkleNode.html#a093e772c6bffa7e1a8380bb85ad2743c',1,'MerkleNode::right() const'],['../classMerkleNode.html#a3b3409b820a2e9278f86939fc537909aa350f82019b943a0acedbe495ac474df7',1,'MerkleNode::RIGHT()']]],
   ['right_5f',['right_',['../classMerkleNode.html#a1ef13045fcde7ce701e0b5ce324208ba',1,'MerkleNode']]],
   ['runclient',['runClient',['../server__demo_8cpp.html#a51f90f1b8046ae31d3fd878462e199a1',1,'server_demo.cpp']]]
 ];
