@@ -1,15 +1,6 @@
 var searchData=
 [
-  ['name',['name',['../classBucket.html#a67bed83edf088821410bb418c6012e36',1,'Bucket']]],
-  ['name_5f',['name_',['../classBucket.html#ae312331c291010539cfe483643fc710d',1,'Bucket']]],
-  ['nearest_5fpartition_5fpoint',['nearest_partition_point',['../classBucket.html#a3d7c480b5f347b98b2533f0f2a9516f8',1,'Bucket']]],
-  ['network_2ecpp',['network.cpp',['../network_8cpp.html',1,'']]],
-  ['not_5fimplemented',['not_implemented',['../classutils_1_1not__implemented.html',1,'utils::not_implemented'],['../classutils_1_1not__implemented.html#a378f8272abff9488485d05e6e9baecaa',1,'utils::not_implemented::not_implemented()']]],
-  ['num_5fbuckets',['num_buckets',['../classView.html#ac74b1d359fe00f7c33c075797dcc931f',1,'View']]],
-  ['num_5fbuckets_5f',['num_buckets_',['../classView.html#ae2d17b8950965b24b5f5bf12c0975550',1,'View']]],
-  ['num_5fforwards',['num_forwards',['../classswim_1_1GossipFailureDetector.html#a751790d38f73addec42d7bbdaf59307d',1,'swim::GossipFailureDetector']]],
-  ['num_5fforwards_5f',['num_forwards_',['../classswim_1_1GossipFailureDetector.html#a3d819b00fddd14c9f33b9554a2019e24',1,'swim::GossipFailureDetector']]],
-  ['num_5freports',['num_reports',['../classswim_1_1GossipFailureDetector.html#a285bc125bb07acb1bbb3b646036fdd86',1,'swim::GossipFailureDetector']]],
-  ['num_5freports_5f',['num_reports_',['../classswim_1_1GossipFailureDetector.html#ad96fb04e25b2e5150006fd247afd39a7',1,'swim::GossipFailureDetector']]],
-  ['num_5fthreads_5f',['num_threads_',['../classswim_1_1SwimServer.html#a407c684fcef528edbf470452eb4aa8f6',1,'swim::SwimServer']]]
+  ['operator_3c',['operator&lt;',['../namespaceswim.html#a1b8acda1e853f81e48baf71153775fc1',1,'swim::operator&lt;(const ServerRecord &amp;lhs, const ServerRecord &amp;rhs)'],['../namespaceswim.html#a71fd18e4c1d15cd25d0813c449f82357',1,'swim::operator&lt;(const Server &amp;lhs, const Server &amp;rhs)']]],
+  ['operator_3c_3c',['operator&lt;&lt;',['../Bucket_8cpp.html#a759345a2a81dd90a69a24cec59f5eef1',1,'operator&lt;&lt;(std::ostream &amp;out, const Bucket &amp;bucket):&#160;Bucket.cpp'],['../View_8cpp.html#a5316655da5e4be3527ef470063743628',1,'operator&lt;&lt;(std::ostream &amp;out, const View &amp;view):&#160;View.cpp']]],
+  ['operator_3d_3d',['operator==',['../namespaceswim.html#a2c2aca82834314bb6399890165b4672b',1,'swim']]]
 ];

@@ -92,7 +92,7 @@ $(document).ready(function(){initNavTree('ApiServer_8cpp.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;google/protobuf/util/json_util.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="ApiServer_8hpp_source.html">ApiServer.hpp</a>&quot;</code><br />
+<code>#include &quot;../../../include/swim/rest/ApiServer.hpp&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -108,15 +108,15 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa6b1ebd0e626a12403f7ba2133a1deb4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim_1_1rest.html#aa6b1ebd0e626a12403f7ba2133a1deb4">swim::rest::getReport</a> (struct MHD_Connection *connection, const <a class="el" href="classswim_1_1GossipFailureDetector.html">swim::GossipFailureDetector</a> *gfd)</td></tr>
+<tr class="memitem:aa6b1ebd0e626a12403f7ba2133a1deb4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim_1_1rest.html#aa6b1ebd0e626a12403f7ba2133a1deb4">swim::rest::getReport</a> (struct MHD_Connection *connection, const swim::GossipFailureDetector *gfd)</td></tr>
 <tr class="separator:aa6b1ebd0e626a12403f7ba2133a1deb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27b4fd4822a787a7fbcb64da164137a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim_1_1rest.html#a27b4fd4822a787a7fbcb64da164137a8">swim::rest::postServer</a> (<a class="el" href="classswim_1_1GossipFailureDetector.html">swim::GossipFailureDetector</a> *gfd, const std::string &amp;jsonBody)</td></tr>
+<tr class="memitem:a27b4fd4822a787a7fbcb64da164137a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim_1_1rest.html#a27b4fd4822a787a7fbcb64da164137a8">swim::rest::postServer</a> (swim::GossipFailureDetector *gfd, const std::string &amp;jsonBody)</td></tr>
 <tr class="separator:a27b4fd4822a787a7fbcb64da164137a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a807a145ca2242a65c1b97f70fc5cb2e7"><td class="memItemLeft" align="right" valign="top">const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim_1_1rest.html#a807a145ca2242a65c1b97f70fc5cb2e7">swim::rest::kApiVersionPrefix</a> = &quot;/api/v1&quot;</td></tr>
-<tr class="separator:a807a145ca2242a65c1b97f70fc5cb2e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5695f2c78ead054c7b2f551372d091e"><td class="memItemLeft" align="right" valign="top">const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim_1_1rest.html#ad5695f2c78ead054c7b2f551372d091e">swim::rest::kApiVersionPrefix</a> = &quot;/api/v1&quot;</td></tr>
+<tr class="separator:ad5695f2c78ead054c7b2f551372d091e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48f5121c2869e3abd863bfc5dc482c73"><td class="memItemLeft" align="right" valign="top">const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim_1_1rest.html#a48f5121c2869e3abd863bfc5dc482c73">swim::rest::kApplicationJson</a> = &quot;application/json&quot;</td></tr>
 <tr class="separator:a48f5121c2869e3abd863bfc5dc482c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac04ee23f29879fd4c076d123a6fd0b38"><td class="memItemLeft" align="right" valign="top">const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim_1_1rest.html#ac04ee23f29879fd4c076d123a6fd0b38">swim::rest::kApplicationProtobuf</a> = &quot;application/x-protobuf&quot;</td></tr>

@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('ConsistentHash_8cpp.html','');});
 <div class="title">ConsistentHash.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="ConsistentHash_8hpp_source.html">ConsistentHash.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;../include/ConsistentHash.hpp&quot;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;openssl/md5.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
@@ -144,17 +144,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Computes the hash of the given <code>value</code> and puts into the destination buffer, <code>hash_value</code>, whose length is returned.</p>
-<p>The buffer is newly allocated and it is the caller's responsibility to deallocate it when done.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">value</td><td>the value to hash. </td></tr>
-    <tr><td class="paramname">len</td><td>the length of the value to hash. </td></tr>
-    <tr><td class="paramname">hash_value</td><td>the digest from the hash, newly allocated.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the size of the digest buffer. </dd></dl>
 
 </div>
 </div>
@@ -209,15 +198,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Converts a char buffer into a hex string.</p>
-<p>It expects the <code>digest</code> buffer to contain exactly <code>MD5_DIGEST_LENGTH</code> bytes, that will be converted to hex notation and appended to the returned string.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">digest</td><td>The MD5 digest to convert into a string; exactly <code>MD5_DIGEST_LENGTH</code> bytes in length. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the hex-encoded string representation of the <code>digest</code>. </dd></dl>
 
 </div>
 </div>

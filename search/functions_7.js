@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['inetaddress',['InetAddress',['../namespaceutils.html#af2c29b86a495aeff46f374cb1b6c381a',1,'utils']]],
-  ['initallbackgroundthreads',['InitAllBackgroundThreads',['../classswim_1_1GossipFailureDetector.html#a86af22f043e202697212295f305654f9',1,'swim::GossipFailureDetector']]],
-  ['isrunning',['isRunning',['../classswim_1_1SwimServer.html#aedfd0ad6424b51f655e22d66fc522776',1,'swim::SwimServer']]]
+  ['postserver',['postServer',['../namespaceswim_1_1rest.html#a27b4fd4822a787a7fbcb64da164137a8',1,'swim::rest']]],
+  ['printversion',['PrintVersion',['../namespaceutils.html#a825cc36f134fae2d69acf374cc20ed5e',1,'utils']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['destinationuri',['destinationUri',['../classswim_1_1SwimClient.html#aadce8af4591de69ef909f18ce82c4e1c',1,'swim::SwimClient']]],
-  ['destroy',['destroy',['../MerkleNode_8hpp.html#a8391ba35acac8d88227c7857373d687e',1,'MerkleNode.hpp']]]
+  ['hash_5fstr',['hash_str',['../ConsistentHash_8cpp.html#abea2bdca50245305d77d51dd8be914ab',1,'ConsistentHash.cpp']]],
+  ['hostname',['Hostname',['../namespaceutils.html#aa7e31f740d5bcccb06b11b932235e83b',1,'utils']]]
 ];

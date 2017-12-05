@@ -88,16 +88,14 @@ $(document).ready(function(){initNavTree('View_8cpp.html','');});
 <div class="title">View.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="View_8hpp_source.html">View.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ConsistentHash_8hpp_source.html">ConsistentHash.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;../include/View.hpp&quot;</code><br />
+<code>#include &quot;../include/ConsistentHash.hpp&quot;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
-<code>#include &lt;set&gt;</code><br />
-<code>#include &lt;glog/logging.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a5316655da5e4be3527ef470063743628"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="View_8cpp.html#a5316655da5e4be3527ef470063743628">operator&lt;&lt;</a> (std::ostream &amp;out, const <a class="el" href="classView.html">View</a> &amp;view)</td></tr>
+<tr class="memitem:a5316655da5e4be3527ef470063743628"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="View_8cpp.html#a5316655da5e4be3527ef470063743628">operator&lt;&lt;</a> (std::ostream &amp;out, const View &amp;view)</td></tr>
 <tr class="separator:a5316655da5e4be3527ef470063743628"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -111,13 +109,13 @@ Functions</h2></td></tr>
           <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
           <td>(</td>
           <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>out</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classView.html">View</a> &amp;&#160;</td>
-          <td class="paramname">&#160;</td>
+          <td class="paramtype">const View &amp;&#160;</td>
+          <td class="paramname"><em>view</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -126,7 +124,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Streams a view, listing all the intervals and associated buckets; then emits a list of all the buckets. </p>
 
 </div>
 </div>

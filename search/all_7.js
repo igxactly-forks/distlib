@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['inetaddress',['InetAddress',['../namespaceutils.html#af2c29b86a495aeff46f374cb1b6c381a',1,'utils']]],
-  ['initallbackgroundthreads',['InitAllBackgroundThreads',['../classswim_1_1GossipFailureDetector.html#a86af22f043e202697212295f305654f9',1,'swim::GossipFailureDetector']]],
-  ['isrunning',['isRunning',['../classswim_1_1SwimServer.html#aedfd0ad6424b51f655e22d66fc522776',1,'swim::SwimServer']]]
+  ['kapiversionprefix',['kApiVersionPrefix',['../namespaceswim_1_1rest.html#ad5695f2c78ead054c7b2f551372d091e',1,'swim::rest']]],
+  ['kapplicationjson',['kApplicationJson',['../namespaceswim_1_1rest.html#a48f5121c2869e3abd863bfc5dc482c73',1,'swim::rest']]],
+  ['kapplicationprotobuf',['kApplicationProtobuf',['../namespaceswim_1_1rest.html#ac04ee23f29879fd4c076d123a6fd0b38',1,'swim::rest']]],
+  ['killegalrequest',['kIllegalRequest',['../namespaceswim_1_1rest.html#a2cc36a81524321c6dcb7f5c9607e05f5',1,'swim::rest']]],
+  ['kinvalidresource',['kInvalidResource',['../namespaceswim_1_1rest.html#a1be22cbec1c34fa3fc9600c7c07af99b',1,'swim::rest']]],
+  ['knoapiurl',['kNoApiUrl',['../namespaceswim_1_1rest.html#a45a9d10a7895a98b227e8045b8490e03',1,'swim::rest']]]
 ];

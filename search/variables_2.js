@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['dest_5f',['dest_',['../classswim_1_1SwimClient.html#acdb8aee4654799d864042251c7eb877f',1,'swim::SwimClient']]],
-  ['detector',['detector',['../structswim_1_1rest_1_1post__info.html#ab87cc233147d739ef8873b6e23ecf4cf',1,'swim::rest::post_info']]],
-  ['detector_5f',['detector_',['../classswim_1_1rest_1_1ApiServer.html#ae419373d2d927a1b5daef6d4f7d6f986',1,'swim::rest::ApiServer']]]
+  ['kapiversionprefix',['kApiVersionPrefix',['../namespaceswim_1_1rest.html#ad5695f2c78ead054c7b2f551372d091e',1,'swim::rest']]],
+  ['kapplicationjson',['kApplicationJson',['../namespaceswim_1_1rest.html#a48f5121c2869e3abd863bfc5dc482c73',1,'swim::rest']]],
+  ['kapplicationprotobuf',['kApplicationProtobuf',['../namespaceswim_1_1rest.html#ac04ee23f29879fd4c076d123a6fd0b38',1,'swim::rest']]],
+  ['killegalrequest',['kIllegalRequest',['../namespaceswim_1_1rest.html#a2cc36a81524321c6dcb7f5c9607e05f5',1,'swim::rest']]],
+  ['kinvalidresource',['kInvalidResource',['../namespaceswim_1_1rest.html#a1be22cbec1c34fa3fc9600c7c07af99b',1,'swim::rest']]],
+  ['knoapiurl',['kNoApiUrl',['../namespaceswim_1_1rest.html#a45a9d10a7895a98b227e8045b8490e03',1,'swim::rest']]]
 ];

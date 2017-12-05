@@ -93,24 +93,20 @@ $(document).ready(function(){initNavTree('namespaceswim_1_1rest.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1rest_1_1ApiServer.html">ApiServer</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classswim_1_1rest_1_1HttpCannotStartError.html">HttpCannotStartError</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structswim_1_1rest_1_1post__info.html">post_info</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa6b1ebd0e626a12403f7ba2133a1deb4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim_1_1rest.html#aa6b1ebd0e626a12403f7ba2133a1deb4">getReport</a> (struct MHD_Connection *connection, const <a class="el" href="classswim_1_1GossipFailureDetector.html">swim::GossipFailureDetector</a> *gfd)</td></tr>
+<tr class="memitem:aa6b1ebd0e626a12403f7ba2133a1deb4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim_1_1rest.html#aa6b1ebd0e626a12403f7ba2133a1deb4">getReport</a> (struct MHD_Connection *connection, const swim::GossipFailureDetector *gfd)</td></tr>
 <tr class="separator:aa6b1ebd0e626a12403f7ba2133a1deb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27b4fd4822a787a7fbcb64da164137a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim_1_1rest.html#a27b4fd4822a787a7fbcb64da164137a8">postServer</a> (<a class="el" href="classswim_1_1GossipFailureDetector.html">swim::GossipFailureDetector</a> *gfd, const std::string &amp;jsonBody)</td></tr>
+<tr class="memitem:a27b4fd4822a787a7fbcb64da164137a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim_1_1rest.html#a27b4fd4822a787a7fbcb64da164137a8">postServer</a> (swim::GossipFailureDetector *gfd, const std::string &amp;jsonBody)</td></tr>
 <tr class="separator:a27b4fd4822a787a7fbcb64da164137a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a807a145ca2242a65c1b97f70fc5cb2e7"><td class="memItemLeft" align="right" valign="top">const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim_1_1rest.html#a807a145ca2242a65c1b97f70fc5cb2e7">kApiVersionPrefix</a> = &quot;/api/v1&quot;</td></tr>
-<tr class="separator:a807a145ca2242a65c1b97f70fc5cb2e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5695f2c78ead054c7b2f551372d091e"><td class="memItemLeft" align="right" valign="top">const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim_1_1rest.html#ad5695f2c78ead054c7b2f551372d091e">kApiVersionPrefix</a> = &quot;/api/v1&quot;</td></tr>
+<tr class="separator:ad5695f2c78ead054c7b2f551372d091e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48f5121c2869e3abd863bfc5dc482c73"><td class="memItemLeft" align="right" valign="top">const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim_1_1rest.html#a48f5121c2869e3abd863bfc5dc482c73">kApplicationJson</a> = &quot;application/json&quot;</td></tr>
 <tr class="separator:a48f5121c2869e3abd863bfc5dc482c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac04ee23f29879fd4c076d123a6fd0b38"><td class="memItemLeft" align="right" valign="top">const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceswim_1_1rest.html#ac04ee23f29879fd4c076d123a6fd0b38">kApplicationProtobuf</a> = &quot;application/x-protobuf&quot;</td></tr>
@@ -138,7 +134,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classswim_1_1GossipFailureDetector.html">swim::GossipFailureDetector</a> *&#160;</td>
+          <td class="paramtype">const swim::GossipFailureDetector *&#160;</td>
           <td class="paramname"><em>gfd</em>&#160;</td>
         </tr>
         <tr>
@@ -160,7 +156,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">bool swim::rest::postServer </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classswim_1_1GossipFailureDetector.html">swim::GossipFailureDetector</a> *&#160;</td>
+          <td class="paramtype">swim::GossipFailureDetector *&#160;</td>
           <td class="paramname"><em>gfd</em>, </td>
         </tr>
         <tr>
@@ -180,18 +176,17 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a807a145ca2242a65c1b97f70fc5cb2e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a807a145ca2242a65c1b97f70fc5cb2e7">&#9670;&nbsp;</a></span>kApiVersionPrefix</h2>
+<a id="ad5695f2c78ead054c7b2f551372d091e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5695f2c78ead054c7b2f551372d091e">&#9670;&nbsp;</a></span>kApiVersionPrefix</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char *const swim::rest::kApiVersionPrefix = &quot;/api/v1&quot;</td>
+          <td class="memname">const char* const swim::rest::kApiVersionPrefix = &quot;/api/v1&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>API Version </p>
 
 </div>
 </div>
